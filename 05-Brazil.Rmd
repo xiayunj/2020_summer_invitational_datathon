@@ -1,0 +1,527 @@
+# Brazil - 2016 Rio Olympics
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(naniar)
+library(zoo)
+library(reactable)
+library(scales)
+library(ggridges)
+library(viridis)
+```
+
+
+```{r include=FALSE}
+br_gdp <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_gdp.csv')
+br_ia <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_international_arrivals.csv')
+br_mi <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_monthly_income.csv')
+br_tj <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_tourism_jobs.csv')
+br_un <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_unemployment.csv')
+```
+
+# Preliminary Analysis of Economic impacts on Brazil hosting Olympics by Regions   
+    
+We can divide Brazil to 5 regions, where `Rio de Janeiro` is in the South-East Region.    
+Reference: https://en.wikipedia.org/wiki/Regions_of_Brazil      
+    
+## 1. Brazil GDP    
+Source Data: `brazil_gdp.csv`      
+     
+### 1.1 Brazil Regional GDP     
+```{r include=FALSE}
+north <- c('Acre', 'Amapá', 'Amazonas', 'Pará', 'Rondônia', 'Roraima', 'Tocantins')
+north_east <- c('Alagoas', 'Bahia', 'Ceará', 'Maranhão', 'Paraíba', 'Pernambuco', 'Piauí', 
+                'Rio Grande do Norte', 'Sergipe')
+mid_west <- c('Goiás', 'Mato Grosso', 'Mato Grosso do Sul', 'Distrito Federal')
+south_east <- c('Espírito Santo', 'Minas Gerais', 'Rio de Janeiro', 'São Paulo')
+south <- c('Paraná', 'Rio Grande do Sul', 'Santa Catarina')
+
+for (i in 1:nrow(br_gdp)){
+  if (br_gdp[i,'state'] %in% north){
+    br_gdp[i,'larger_region'] <- 'North Region'
+  } else if (br_gdp[i,'state'] %in% north_east){
+    br_gdp[i,'larger_region'] <- 'North East Region'
+  } else if (br_gdp[i,'state'] %in% mid_west){
+    br_gdp[i,'larger_region'] <- 'Mid West Region'
+  } else if (br_gdp[i,'state'] %in% south_east){
+    br_gdp[i,'larger_region'] <- 'South East Region'
+  } else {
+    br_gdp[i,'larger_region'] <- 'South Region'
+  }
+}
+
+```
+
+```{r include=FALSE}
+df_gdp <- br_gdp[,c('year','larger_region','value')] %>% 
+  group_by(year, larger_region) %>% 
+  summarise(gdp = sum(value))
+df_gdp[,'gdp'] <- df_gdp$gdp/1000000000
+```
+
+
+```{r echo=FALSE, fig.height=5, fig.width=10}
+ggplot(df_gdp, aes(year, gdp, color=larger_region)) + 
+  geom_line() +
+  geom_vline(xintercept = 2016, linetype="dashed", color = "red", size=1.5) +
+  geom_text(aes(x = 2016, label = 'Rio Olympics', y = 2), colour = 'black', size = 4) +
+  ggtitle('Brazil GDP by Regions', subtitle = 'From 2002 to 2017') +
+  labs(x = 'Year', y = 'GDP in trillions of Reals', color = 'Regions') +
+  scale_x_continuous(breaks = seq(2002, 2017, 1)) +
+  theme_gray(13)
+```
+
+### 1.2 Brazil Regional GDP Increasing Rate from 2013 to 2017    
+```{r echo=FALSE}
+gdp_rate_temp <- df_gdp[41:80,]
+gdp_rate <- data.frame('Year' = c('2011','2012','2013','2014', '2015', '2016', '2017'))
+```
+
+```{r echo=FALSE}
+for (i in 2011:2017){
+  for (j in c('Mid West Region', 'North East Region',
+              'North Region', 'South East Region', 'South Region')){
+      gdp_rate[i-2010, j] <- round(as.numeric(
+      (gdp_rate_temp[which(gdp_rate_temp$year == i & gdp_rate_temp$larger_region == j), 'gdp'] - 
+      gdp_rate_temp[which(gdp_rate_temp$year == i-1 & gdp_rate_temp$larger_region == j), 'gdp']) /
+      gdp_rate_temp[which(gdp_rate_temp$year == i-1 & gdp_rate_temp$larger_region == j), 'gdp']), 5)
+              }
+}
+```
+
+```{r echo=FALSE}
+temp_col <- numeric(35)
+for (i in 1:7){
+  for (j in 2:6){
+    temp_col <- c(temp_col, as.numeric(gdp_rate[i,j]))
+  }
+}
+```
+
+```{r echo=FALSE}
+orange_pal <- function(x) rgb(colorRamp(c("#ffe4cc", "#ff9500"))(x), maxColorValue = 255)
+reactable(
+  gdp_rate,
+  defaultColDef = colDef(
+    align = 'center',
+    headerStyle = list(background = "#D1E5FC"),
+    format = colFormat(percent = TRUE, digits = 2),
+    style = function(value) {
+    if (!is.numeric(value)) {
+      color <- "#A9D0FD"
+      list(background = color)
+    } else {
+    normalized <- (value - min(temp_col)) / (max(temp_col) - min(temp_col))
+    color <- orange_pal(normalized)
+    list(background = color)
+    }
+  }
+  ),
+  bordered = TRUE
+)
+```
+
+
+
+#### Observation:   
+1. South East Region of Brazil has much higher GDP than other 4 regions over years.    
+2. Seems no significant increasing on Brazil regional GDP by 2016 Rio Olympics.    
+3. Seems changes of regional GDP are unrelated to the Olympic games.   
+
+
+## 2. Brazil Monthly Income & Unemployment Rate    
+Source Data: `brazil_monthly_income.csv`, `brazil_unemployment.csv`     
+       
+### 2.1. Monthly Income Distribution   
+   
+    
+```{r include=FALSE}
+#Note: There are some missing values in the raw data table. We choose to drop them. 
+for (i in 1:nrow(br_mi)){
+  if (br_mi[i,'state'] %in% north){
+    br_mi[i,'larger_region'] <- 'North Region'
+  } else if (br_mi[i,'state'] %in% north_east){
+    br_mi[i,'larger_region'] <- 'North East Region'
+  } else if (br_mi[i,'state'] %in% mid_west){
+    br_mi[i,'larger_region'] <- 'Mid West Region'
+  } else if (br_mi[i,'state'] %in% south_east){
+    br_mi[i,'larger_region'] <- 'South East Region'
+  } else {
+    br_mi[i,'larger_region'] <- 'South Region'
+  }
+}
+```
+
+
+First, take a view at the distribution of monthly income for the entire country from 2012 to 2020:    
+Note: We dropped missing values.   
+```{r include=FALSE}
+br_mi1 <- br_mi %>% drop_na()
+```
+
+
+```{r echo=FALSE, fig.height=5, fig.width=10}
+ggplot(br_mi1, aes(x = as.factor(year), y = value)) + 
+  geom_boxplot(fill = "#cc9a38", color = "#473e2c") + 
+  ggtitle("Boxplots of Brazil Monthly Income ",
+          subtitle = "From 2012 to 2020") +
+  labs(x = "Year", y = "Monthly Income") +
+  theme_grey(16) +
+  theme(plot.title = element_text(face = "bold")) +
+  theme(plot.subtitle = element_text(face = "bold", color = "grey35")) +
+  theme(plot.caption = element_text(color = "grey68")) +
+  scale_x_discrete(labels = c('2016'='2016 (Olympics)'))
+```
+
+From the Boxplots wo can find that the median of monthly income shows an increasing pattern from 2012 to 2020. However, there are higher outliers for each year, so we remove those higher outliers for further analysis on density estimation for better visualization.       
+Higher Outlier definition: points above $Q_3 + (1.5\times \text{IQR})$, where $Q_3$ is the upper quartile and IQR is the Interquatile Range.    
+
+```{r include=FALSE}
+for (i in 2012:2020){
+  temp_value <- br_mi1[which(br_mi1$year == i),]$value
+  Q1 <- quantile(temp_value)[2]
+  Q3 <- quantile(temp_value)[4]
+  outlier <- Q3 + 1.5*(Q3-Q1)
+  br_mi1 <- br_mi1[-which(br_mi1$year == i & br_mi1$value > outlier),]
+}
+```
+
+
+```{r echo=FALSE, fig.height=6, fig.width=10, message=FALSE, warning=FALSE}
+ggplot(br_mi1, aes(x = value, y = as.factor(year), fill = year))+
+  geom_density_ridges_gradient(scale = 4, show.legend = FALSE) + 
+  theme_ridges() +
+  scale_y_discrete(expand = c(0.01, 0), labels = c('2016'='2016 \n (Olympics)')) +
+  scale_x_continuous(expand = c(0.01, 0)) +
+  labs(x = "Brazil Monthly Income",y = "Year") +
+  ggtitle("Density estimation of Brazil Monthly Income", 
+  subtitle = 'From 2012 to 2020 (outlier removed)') +
+  theme(plot.title = element_text(hjust = 0.5), plot.subtitle = element_text(hjust = 0.5)) +
+  scale_fill_viridis()
+```
+
+     
+### 2.2 Regional Monthly Income Distribution in the Olympics Year 2016     
+```{r echo=FALSE, fig.height=7, fig.width=10}
+ggplot(br_mi1[which(br_mi1$year == 2016),], aes(x = value, y = ..density..)) + 
+  geom_histogram(bins = 20, colour = "#80593D", fill = "#9FC29F", boundary = 0) +
+  geom_density(color = "#3D6480") + 
+  facet_wrap(~larger_region) +
+  ggtitle("2016 Brazil Monthly Income Distribution",
+          subtitle = "by Regions (outlier removed)") +
+  labs(x = "Monthly Income", y = 'Density') +
+  theme(plot.title = element_text(face = "bold")) +
+  theme(plot.subtitle = element_text(face = "bold", color = "grey35")) +
+  theme(plot.caption = element_text(color = "grey68"))
+```
+   
+#### Observation:  
+Our hypothesis may be "hosting the Olympics can increase peoples' income in the hosting city/region". However, from this plot we find that the South East Region does not show a distribution of higher monthly income in year 2016.     
+
+
+### 2.3 Regional Average Monthly Income    
+Now we want to visualize the regional average monthly income. Here we keep the outliers because we are calculating the regional average for each year.   
+
+```{r include=FALSE}
+df_mi <- br_mi[, c('year','value','larger_region')] %>% 
+  drop_na() %>%
+  group_by(year, larger_region) %>% 
+  summarise(monthly_income = mean(value))
+```
+
+
+```{r echo=FALSE, fig.height=5, fig.width=10}
+ggplot(df_mi, aes(year, monthly_income, color=larger_region)) + 
+  geom_line() +
+  geom_vline(xintercept = 2016, linetype="dashed", color = "red", size=1.5) +
+  geom_text(aes(x = 2016, label = 'Rio Olympics', y = 3000), colour = 'black', size = 4) +
+  ggtitle('Brazil Average Monthly Income by Regions', 
+          subtitle = 'From 2012 to 2020') +
+  labs(x = 'Year', y = 'Average Monthly Income in Reals', color = 'Regions') +
+  scale_x_continuous(breaks = seq(2012, 2020, 1)) +
+  theme_gray(13)
+```
+
+
+```{r echo=FALSE}
+mi_rate_temp <- df_mi
+mi_rate <- data.frame('Year' = c('2013', '2014', '2015', '2016', '2017',
+                                 '2018', '2019', '2020'))
+```
+
+```{r echo=FALSE}
+for (i in 2013:2020){
+  for (j in c('Mid West Region', 'North East Region',
+              'North Region', 'South East Region', 'South Region')){
+      mi_rate[i-2012, j] <- round(as.numeric(
+      (mi_rate_temp[which(mi_rate_temp$year == i & 
+                            mi_rate_temp$larger_region == j), 'monthly_income'] - 
+      mi_rate_temp[which(mi_rate_temp$year == i-1 & 
+                            mi_rate_temp$larger_region == j), 'monthly_income']) /
+      mi_rate_temp[which(mi_rate_temp$year == i-1 & 
+                            mi_rate_temp$larger_region == j), 'monthly_income']), 5)
+              }
+}
+```
+
+```{r echo=FALSE}
+temp_col_mi <- numeric(40)
+for (i in 1:8){
+  for (j in 2:6){
+    temp_col_mi <- c(temp_col_mi, as.numeric(mi_rate[i,j]))
+  }
+}
+```
+
+
+### 2.4 Regional Monthly Income Increasing Rate from 2012 to 2020      
+```{r echo=FALSE}
+reactable(
+  mi_rate,
+  defaultColDef = colDef(
+    align = 'center',
+    headerStyle = list(background = "#D1E5FC"),
+    format = colFormat(percent = TRUE, digits = 2),
+    style = function(value) {
+    if (!is.numeric(value)) {
+      color <- "#A9D0FD"
+      list(background = color)
+    } else {
+    normalized <- (value - min(temp_col_mi)) / (max(temp_col_mi) - min(temp_col_mi))
+    color <- orange_pal(normalized)
+    list(background = color)
+    }
+  }
+  ),
+  bordered = TRUE
+)
+```  
+
+#### Observation:      
+1. Seems no significant difference of increasing rate between the 5 regions around year 2016.    
+2. For South East Region, the increasing rate in 2016 is lower than that in 2015. (Why?)   
+   
+### 2.5. Unemployment Rate     
+```{r include=FALSE}
+for (i in 1:nrow(br_un)){
+  if (br_un[i,'state'] %in% north){
+    br_un[i,'larger_region'] <- 'North Region'
+  } else if (br_un[i,'state'] %in% north_east){
+    br_un[i,'larger_region'] <- 'North East Region'
+  } else if (br_un[i,'state'] %in% mid_west){
+    br_un[i,'larger_region'] <- 'Mid West Region'
+  } else if (br_un[i,'state'] %in% south_east){
+    br_un[i,'larger_region'] <- 'South East Region'
+  } else {
+    br_un[i,'larger_region'] <- 'South Region'
+  }
+}
+```
+
+```{r include=FALSE}
+br_un_bar <- br_un[which(br_un$category != 'Outside the workforce' & br_un$year != 2020),
+                   c('year','quarter','category','value','larger_region')] %>%
+  group_by(year, quarter, category) %>%
+  summarise(value = sum(value))
+
+for (i in 1:nrow(br_un_bar)){
+  y_temp <- br_un_bar$year[i]
+  q_temp <- br_un_bar$quarter[i]
+  un_temp <- br_un_bar[which(br_un_bar$year == y_temp & br_un_bar$quarter == q_temp &
+                  br_un_bar$category == 'Workforce - Unemployed'), 'value']
+  e_temp <- br_un_bar[which(br_un_bar$year == y_temp & br_un_bar$quarter == q_temp &
+                  br_un_bar$category == 'Workforce - Employed'), 'value']
+  if (br_un_bar$category[i] == 'Workforce - Unemployed'){
+    br_un_bar[i,'rate'] <- un_temp/(un_temp+e_temp)
+  } else {
+    br_un_bar[i,'rate'] <- e_temp/(un_temp+e_temp)
+  }
+  br_un_bar[i,'work_force'] <- un_temp+e_temp
+}
+
+br_un_bar <- br_un_bar %>%
+  group_by(year, category) %>%
+  summarize(avg_rate = mean(rate)) 
+```
+
+
+```{r echo=FALSE, fig.height=6, fig.width=10, message=FALSE, warning=FALSE}
+ggplot(br_un_bar, aes(x = as.factor(year), y = avg_rate, fill = category)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  ggtitle('Stacked Bar Chart of Average Brazil Unemployment/Employment Rate',
+          subtitle = 'From 2012 to 2019') +
+  labs(x = 'Rate', y = 'Year') +
+  theme_gray(13)
+```
+      
+From this plot we find that year 2017 has the highest average unemployment rate. Also, the average unemployment rate keeps increasing from 2015 to 2017.      
+      
+
+### 2.6 Unemployment Rate by Regions     
+```{r include=FALSE}
+#Calculate unemployment rate and work force for each quarter of each year (by region)  
+df_un <- br_un[which(br_un$category != 'Outside the workforce'),
+               c('year','quarter','category','value','larger_region')] %>% 
+  group_by(year, quarter, category, larger_region) %>% 
+  summarise(value = sum(value)) 
+```
+
+```{r include=FALSE}
+for (i in 1:nrow(df_un)){
+  y_temp <- df_un$year[i]
+  q_temp <- df_un$quarter[i]
+  r_temp <- df_un$larger_region[i]
+  un_temp <- df_un[which(df_un$year == y_temp & df_un$quarter == q_temp & df_un$larger_region == r_temp &
+                  df_un$category == 'Workforce - Unemployed'), 'value']
+  e_temp <- df_un[which(df_un$year == y_temp & df_un$quarter == q_temp & df_un$larger_region == r_temp &
+                  df_un$category == 'Workforce - Employed'), 'value']
+  df_un[i,'unemployment_rate'] <- un_temp/(un_temp+e_temp)
+  df_un[i,'work_force'] <- un_temp+e_temp
+}
+```
+
+
+```{r include=FALSE}
+df_un <- unique(subset(df_un, select=-c(category,value)))
+```
+
+ 
+```{r include=FALSE}
+#Calculate average unemployment rate for each year (by region)  
+df_un1 <- df_un %>%
+  group_by(year, larger_region) %>% 
+  summarise(avg_un_rate = mean(unemployment_rate))
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=10, message=FALSE, warning=FALSE}
+ggplot(df_un1[1:40,], aes(year, avg_un_rate, color=larger_region)) + 
+  geom_line() +
+  ggtitle('Brazil Average Yearly Unemployment Rate by Regions from 2012 to 2019') +
+  labs(x = 'Year', y = 'Average Yearly Unemployment Rate', color = 'Regions') +
+  scale_x_continuous(breaks = seq(2012, 2019, 1)) +
+  theme_gray(13) +
+  geom_vline(xintercept = 2016, linetype="dashed", color = "red", size=1.5) +
+  geom_text(aes(x = 2016, label = 'Rio Olympics', y = 0.06), colour = 'black', size = 4)
+```
+
+### 2.7 Unemployment Rate Increasing Rate by Regions from 2012 to 2019   
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+un_rate_temp <- df_un1[1:40,]
+un_rate <- data.frame('Year' = c('2013', '2014', '2015', '2016', '2017',
+                                 '2018', '2019'))
+```
+
+```{r echo=FALSE}
+for (i in 2013:2019){
+  for (j in c('Mid West Region', 'North East Region',
+              'North Region', 'South East Region', 'South Region')){
+      un_rate[i-2012, j] <- round(as.numeric(
+      (un_rate_temp[which(un_rate_temp$year == i & 
+                            un_rate_temp$larger_region == j), 'avg_un_rate'] - 
+      un_rate_temp[which(un_rate_temp$year == i-1 & 
+                            un_rate_temp$larger_region == j), 'avg_un_rate']) /
+      un_rate_temp[which(un_rate_temp$year == i-1 & 
+                            un_rate_temp$larger_region == j), 'avg_un_rate']), 5)
+              }
+}
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+temp_col_un <- numeric(35)
+for (i in 1:7){
+  for (j in 2:6){
+    temp_col_un <- c(temp_col_un, as.numeric(un_rate[i,j]))
+  }
+}
+```
+
+   
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+reactable(
+  un_rate,
+  defaultColDef = colDef(
+    align = 'center',
+    headerStyle = list(background = "#D1E5FC"),
+    format = colFormat(percent = TRUE, digits = 2),
+    style = function(value) {
+    if (!is.numeric(value)) {
+      color <- "#A9D0FD"
+      list(background = color)
+    } else {
+    normalized <- (value - min(temp_col_un)) / (max(temp_col_un) - min(temp_col_un))
+    color <- orange_pal(normalized)
+    list(background = color)
+    }
+  }
+  ),
+  bordered = TRUE
+)
+```  
+
+#### Obserevation:    
+Since 2014, the average unemployment rate keeps increasing for all of the 5 regions until 2017. The highest increasing rate appears at year 2016 which is the Olympics year for all of the 5 regions.    
+
+       
+## 3. Brazil Tourism   
+Source Data: `brazil_tourism_jobs.csv`    
+```{r include=FALSE}
+for (i in 1:nrow(br_tj)){
+  if (br_tj[i,'state'] %in% north){
+    br_tj[i,'larger_region'] <- 'North Region'
+  } else if (br_tj[i,'state'] %in% north_east){
+    br_tj[i,'larger_region'] <- 'North East Region'
+  } else if (br_tj[i,'state'] %in% mid_west){
+    br_tj[i,'larger_region'] <- 'Mid West Region'
+  } else if (br_tj[i,'state'] %in% south_east){
+    br_tj[i,'larger_region'] <- 'South East Region'
+  } else {
+    br_tj[i,'larger_region'] <- 'South Region'
+  }
+}
+```
+
+```{r include=FALSE}
+df_tj <- br_tj %>% 
+  group_by(year, month, larger_region) %>% 
+  summarise(total_jobs = sum(jobs)) %>%
+  group_by(year, larger_region) %>%
+  summarise(avg_jobs = mean(total_jobs)/1000)
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=10}
+ggplot(df_tj, aes(year, avg_jobs, color=larger_region)) + 
+  geom_line() +
+  ggtitle('Brazil Average Yearly Tourism Jobs by Regions from 2006 to 2018') +
+  labs(x = 'Year', y = 'Average Yearly Tourism Jobs in Thousands', color = 'Regions') +
+  scale_x_continuous(breaks = seq(2006, 2018, 1)) +
+  theme_gray(13) +
+  geom_vline(xintercept = 2016, linetype="dashed", color = "red", size=1.5) +
+  geom_text(aes(x = 2016, label = 'Rio Olympics', y = 300), colour = 'black', size = 4)
+```
+
+### Brazil International Tourists  
+```{r include=FALSE}
+df_ia <- br_ia %>%
+  replace_with_na(replace = list(value = '')) %>%
+  drop_na() %>%
+  mutate(value = as.numeric(as.character(gsub(',','',value)))) %>%
+  group_by(year, month) %>%
+  summarize(value = sum(value)/1000)
+```
+
+```{r include=FALSE}
+df_ia$Date <- as.yearmon(paste(df_ia$year, df_ia$month), "%Y %m")
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=10}
+ggplot(df_ia, aes(Date, value)) + 
+  geom_line() +
+  ggtitle('Brazil International Tourists from 1989 to 2018') +
+  labs(x = 'Year', y = 'International Tourists in Thousands') +
+  scale_x_continuous(breaks = seq(1989, 2018, 2)) +
+  theme_gray(13)
+```
