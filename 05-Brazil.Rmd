@@ -74,7 +74,7 @@ ggplot(df_gdp, aes(year, gdp, color=larger_region)) +
   theme_gray(13)
 ```
 
-<font size="5"><b> Brazil Regional GDP Increasing Rate from 2013 to 2017 </b></font>    
+<font size="5"><b> Brazil Regional GDP Increasing Rate from 2011 to 2017 </b></font>    
 ```{r echo=FALSE}
 gdp_rate_temp <- df_gdp[41:80,]
 gdp_rate <- data.frame('Year' = c('2011','2012','2013','2014', '2015', '2016', '2017'))
@@ -132,7 +132,7 @@ reactable(
 3. Seems changes of regional GDP are unrelated to the Olympic games.   
 
 
-## Brazil Monthly Income & Unemployment Rate    
+## Brazil Monthly Income  
 Source Data: `brazil_monthly_income.csv`, `brazil_unemployment.csv`     
        
 <font size="5"><b> Monthly Income Distribution </b></font>   
@@ -306,7 +306,8 @@ reactable(
 1. Seems no significant difference of increasing rate between the 5 regions around year 2016.    
 2. For South East Region, the increasing rate in 2016 is lower than that in 2015. (Why?)   
    
-<font size="5"><b> Unemployment Rate </b></font>      
+## Brazil Unemployment Rate     
+ 
 ```{r include=FALSE}
 for (i in 1:nrow(br_un)){
   if (br_un[i,'state'] %in% north){
@@ -357,7 +358,8 @@ ggplot(br_un_bar, aes(x = as.factor(year), y = avg_rate, fill = category)) +
   ggtitle('Stacked Bar Chart of Average Brazil Unemployment/Employment Rate',
           subtitle = 'From 2012 to 2019') +
   labs(x = 'Rate', y = 'Year') +
-  theme_gray(13)
+  theme_gray(13) +
+  scale_x_discrete(labels = c('2016'='2016 \n (Olympics)'))
 ```
       
 From this plot we find that year 2017 has the highest average unemployment rate. Also, the average unemployment rate keeps increasing from 2015 to 2017.      
@@ -402,7 +404,8 @@ df_un1 <- df_un %>%
 ```{r echo=FALSE, fig.height=5, fig.width=10, message=FALSE, warning=FALSE}
 ggplot(df_un1[1:40,], aes(year, avg_un_rate, color=larger_region)) + 
   geom_line() +
-  ggtitle('Brazil Average Yearly Unemployment Rate by Regions from 2012 to 2019') +
+  ggtitle('Brazil Average Yearly Unemployment Rate by Regions',
+          subtitle = 'From 2012 to 2019') +
   labs(x = 'Year', y = 'Average Yearly Unemployment Rate', color = 'Regions') +
   scale_x_continuous(breaks = seq(2012, 2019, 1)) +
   theme_gray(13) +
@@ -497,7 +500,8 @@ df_tj <- br_tj %>%
 ```{r echo=FALSE, fig.height=5, fig.width=10}
 ggplot(df_tj, aes(year, avg_jobs, color=larger_region)) + 
   geom_line() +
-  ggtitle('Brazil Average Yearly Tourism Jobs by Regions from 2006 to 2018') +
+  ggtitle('Brazil Average Yearly Tourism Jobs by Regions', 
+          subtitle = 'From 2006 to 2018') +
   labs(x = 'Year', y = 'Average Yearly Tourism Jobs in Thousands', color = 'Regions') +
   scale_x_continuous(breaks = seq(2006, 2018, 1)) +
   theme_gray(13) +

@@ -1,1 +1,349 @@
-# Canada - 2010 Vancouver Olympics    
+# Canada - 2010 Vancouver Winter Olympics     
+<font size="6"><b> Analysis of Economic impacts on Canada hosting Olympics by Regions </b></font>     
+
+
+
+```{r include=FALSE}
+ca_gdp_raw <- read.csv('/Users/xiayunj/Desktop/datathon/supplementary_data/canada_gdp.csv')
+ca_in_un_raw <- read.csv('/Users/xiayunj/Desktop/datathon/supplementary_data/canada_in_un.csv')
+```
+
+We can divide Canada to 5 regions, where Vancouver is in the West Coast region.   
+1. The Atlantic Provinces   
+2. Central Canada   
+3. The Prairie Provinces   
+4. The West Coast   
+5. The Northern Territories   
+Reference: https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html      
+
+```{r include=FALSE}
+atlantic <- c('Newfoundland and Labrador', 'Prince Edward Island', 'Nova Scotia', 'New Brunswick')
+central <- c('Quebec', 'Ontario')
+prairie <- c('Manitoba', 'Saskatchewan', 'Alberta')
+west_coast <- c('British Columbia')
+north <- c('Nunavut', 'Northwest Territories', 'Northwest territories', 'Yukon')
+```
+
+
+## Canada GDP     
+Source Data:    
+Statistics Canada.  Table  36-10-0402-01   Gross domestic product (GDP) at basic prices, by industry, provinces and territories (x 1,000,000)   
+DOI: https://doi.org/10.25318/3610040201-eng     
+website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610040201     
+Note: The value of GDP is in Chained (2012) Dollars in Millions.    
+
+```{r include=FALSE}
+ca_gdp <- ca_gdp_raw[, c('REF_DATE', 'GEO', 'VALUE')]
+for (i in 1:nrow(ca_gdp)){
+  if (ca_gdp[i,'GEO'] %in% atlantic){
+    ca_gdp[i,'larger_region'] <- 'The Atlantic Provinces'
+  } else if (ca_gdp[i,'GEO'] %in% central){
+    ca_gdp[i,'larger_region'] <- 'Central Canada'
+  } else if (ca_gdp[i,'GEO'] %in% prairie){
+    ca_gdp[i,'larger_region'] <- 'The Prairie Provinces'
+  } else if (ca_gdp[i,'GEO'] %in% west_coast){
+    ca_gdp[i,'larger_region'] <- 'The West Coast'
+  } else {
+    ca_gdp[i,'larger_region'] <- 'The Northern Territories'
+  }
+}
+```
+
+```{r include=FALSE}
+ca_gdp1 <- ca_gdp %>% 
+  group_by(REF_DATE, larger_region) %>% 
+  summarise(gdp = sum(VALUE))
+ca_gdp1[,'gdp'] <- ca_gdp1$gdp/1000000
+```
+
+
+```{r echo=FALSE, fig.height=5, fig.width=10}
+ggplot(ca_gdp1, aes(REF_DATE, gdp, color=larger_region)) + 
+  geom_line() +
+  geom_vline(xintercept = 2010, linetype="dashed", color = "red", size=1.5) +
+  geom_text(aes(x = 2010, label = 'Vancouver Olympics', y = 0.5), colour = 'black', size = 4) +
+  ggtitle('Canada GDP by Regions', subtitle = 'From 2000 to 2019') +
+  labs(x = 'Year', y = 'GDP in trillions of Chained (2012) Dolloars', color = 'Regions') +
+  scale_x_continuous(breaks = seq(2000, 2019, 2)) +
+  theme_gray(13)
+```
+  
+<font size="5"><b> Canada Regional GDP Increasing Rate from 2007 to 2015 </b></font>    
+```{r include=FALSE}
+ca_gdp_rate_temp <- ca_gdp1[31:80,]
+ca_gdp_rate <- data.frame('Year' = c('2007','2008','2009','2010','2011','2012','2013','2014','2015'))
+```
+
+```{r echo=FALSE}
+for (i in 2007:2015){
+  for (j in c('The Atlantic Provinces','Central Canada','The Prairie Provinces',
+              'The West Coast','The Northern Territories')){
+      ca_gdp_rate[i-2006, j] <- round(as.numeric(
+      (ca_gdp_rate_temp[which(ca_gdp_rate_temp$REF_DATE == i & 
+                                ca_gdp_rate_temp$larger_region == j), 'gdp'] - 
+      ca_gdp_rate_temp[which(ca_gdp_rate_temp$REF_DATE == i-1 & 
+                               ca_gdp_rate_temp$larger_region == j), 'gdp']) /
+      ca_gdp_rate_temp[which(ca_gdp_rate_temp$REF_DATE == i-1 & 
+                               ca_gdp_rate_temp$larger_region == j), 'gdp']), 5)
+              }
+}
+```
+
+```{r echo=FALSE}
+temp_col <- numeric(45)
+for (i in 1:9){
+  for (j in 2:6){
+    temp_col <- c(temp_col, as.numeric(ca_gdp_rate[i,j]))
+  }
+}
+```
+
+```{r echo=FALSE}
+orange_pal <- function(x) rgb(colorRamp(c("#ffe4cc", "#ff9500"))(x), maxColorValue = 255)
+reactable(
+  ca_gdp_rate,
+  defaultColDef = colDef(
+    align = 'center',
+    headerStyle = list(background = "#D1E5FC"),
+    format = colFormat(percent = TRUE, digits = 2),
+    style = function(value) {
+    if (!is.numeric(value)) {
+      color <- "#A9D0FD"
+      list(background = color)
+    } else {
+    normalized <- (value - min(temp_col)) / (max(temp_col) - min(temp_col))
+    color <- orange_pal(normalized)
+    list(background = color)
+    }
+  }
+  ),
+  bordered = TRUE
+)
+```
+
+## Canada Household Income Per Capita  
+Source Data:    
+Statistics Canada.  Table  36-10-0229-01   Long-run provincial and territorial data
+DOI: https://doi.org/10.25318/3610022901-eng   
+website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610022901    
+Note: The value of Household Income Per Capita is in Dollars.   
+
+```{r include=FALSE}
+ca_in_un <- ca_in_un_raw[, c(1,2,5,12)]
+ca_in <- ca_in_un[which(ca_in_un$Long.run.variables == 'Household income per capita' & 
+                          ca_in_un$GEO %in% c(atlantic, central, prairie, west_coast, north)),]
+for (i in 1:nrow(ca_in)){
+  if (ca_in[i,'GEO'] %in% atlantic){
+    ca_in[i,'larger_region'] <- 'The Atlantic Provinces'
+  } else if (ca_gdp[i,'GEO'] %in% central){
+    ca_in[i,'larger_region'] <- 'Central Canada'
+  } else if (ca_gdp[i,'GEO'] %in% prairie){
+    ca_in[i,'larger_region'] <- 'The Prairie Provinces'
+  } else if (ca_gdp[i,'GEO'] %in% west_coast){
+    ca_in[i,'larger_region'] <- 'The West Coast'
+  } else {
+    ca_in[i,'larger_region'] <- 'The Northern Territories'
+  }
+}
+```
+
+<font size="5"><b> Regional Average Household Income Per Capita</b></font>    
+
+```{r include=FALSE}
+ca_in1 <- ca_in %>%
+  group_by(REF_DATE, larger_region) %>% 
+  summarise(income = mean(VALUE))
+```
+
+
+```{r echo=FALSE, fig.height=5, fig.width=10}
+ggplot(ca_in1, aes(REF_DATE, income, color=larger_region)) + 
+  geom_line() +
+  geom_vline(xintercept = 2010, linetype="dashed", color = "red", size=1.5) +
+  geom_text(aes(x = 2010, label = 'Vancouver Olympics', y = 48000), colour = 'black', size = 4) +
+  ggtitle('Canada Average Household Income Per Capita by Regions', 
+          subtitle = 'From 2000 to 2016') +
+  labs(x = 'Year', y = 'Average Household Income Per Capita in Dollars', color = 'Regions') +
+  scale_x_continuous(breaks = seq(2000, 2016, 2)) +
+  theme_gray(13)
+```
+
+
+<font size="5"><b> Canada Regional Household Income Per Capita Increasing Rate from 2007 to 2015 </b></font>    
+```{r echo=FALSE}
+ca_in_rate_temp <- ca_in1[31:80,]
+ca_in_rate <- data.frame('Year' = c('2007','2008','2009','2010','2011','2012','2013','2014','2015'))
+```
+
+```{r echo=FALSE}
+for (i in 2007:2015){
+  for (j in c('The Atlantic Provinces','Central Canada','The Prairie Provinces',
+              'The West Coast','The Northern Territories')){
+      ca_in_rate[i-2006, j] <- round(as.numeric(
+      (ca_in_rate_temp[which(ca_in_rate_temp$REF_DATE == i & 
+                                ca_in_rate_temp$larger_region == j), 'income'] - 
+      ca_in_rate_temp[which(ca_in_rate_temp$REF_DATE == i-1 & 
+                               ca_in_rate_temp$larger_region == j), 'income']) /
+      ca_in_rate_temp[which(ca_in_rate_temp$REF_DATE == i-1 & 
+                               ca_in_rate_temp$larger_region == j), 'income']), 5)
+              }
+}
+```
+
+```{r include=FALSE}
+temp_col <- numeric(45)
+for (i in 1:9){
+  for (j in 2:6){
+    temp_col <- c(temp_col, as.numeric(ca_in_rate[i,j]))
+  }
+}
+```
+
+```{r echo=FALSE}
+reactable(
+  ca_in_rate,
+  defaultColDef = colDef(
+    align = 'center',
+    headerStyle = list(background = "#D1E5FC"),
+    format = colFormat(percent = TRUE, digits = 2),
+    style = function(value) {
+    if (!is.numeric(value)) {
+      color <- "#A9D0FD"
+      list(background = color)
+    } else {
+    normalized <- (value - min(temp_col)) / (max(temp_col) - min(temp_col))
+    color <- orange_pal(normalized)
+    list(background = color)
+    }
+  }
+  ),
+  bordered = TRUE
+)
+```
+
+## Canada Unemployment Rate    
+Source Data:    
+Statistics Canada.  Table  36-10-0229-01   Long-run provincial and territorial data     
+DOI: https://doi.org/10.25318/3610022901-eng   
+website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610022901    
+Note: The value of Unemployment Rate is in Percent.   
+
+```{r include=FALSE}
+ca_un <- ca_in_un[which(ca_in_un$Long.run.variables == 'Unemployment rate' & 
+                          ca_in_un$GEO %in% c(atlantic, central, prairie, west_coast, north)),]
+for (i in 1:nrow(ca_un)){
+  if (ca_un[i,'GEO'] %in% atlantic){
+    ca_un[i,'larger_region'] <- 'The Atlantic Provinces'
+  } else if (ca_un[i,'GEO'] %in% central){
+    ca_un[i,'larger_region'] <- 'Central Canada'
+  } else if (ca_un[i,'GEO'] %in% prairie){
+    ca_un[i,'larger_region'] <- 'The Prairie Provinces'
+  } else if (ca_un[i,'GEO'] %in% west_coast){
+    ca_un[i,'larger_region'] <- 'The West Coast'
+  } else {
+    ca_un[i,'larger_region'] <- 'The Northern Territories'
+  }
+}
+
+ca_un_temp <- ca_un[,c('REF_DATE', 'Long.run.variables', 'VALUE')] %>%
+  drop_na() %>%
+  group_by(REF_DATE, Long.run.variables) %>%
+  summarize(rate = round(mean(VALUE),2))
+```
+
+
+```{r include=FALSE}
+for (i in 1:nrow(ca_un_temp)){
+  ca_un_temp <- data.frame(ca_un_temp) %>% add_row(REF_DATE = ca_un_temp$REF_DATE[i],
+                         Long.run.variables = 'Employment rate',
+                         rate = 100 - ca_un_temp$rate[i])
+}
+
+ca_un_temp <- ca_un_temp %>% filter(ca_un_temp$REF_DATE >=2006 & ca_un_temp$REF_DATE <= 2015)
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=10}
+ggplot(ca_un_temp, aes(x = as.factor(REF_DATE), y = rate, fill = forcats::fct_rev(Long.run.variables))) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  ggtitle('Stacked Bar Chart of Average Canada Unemployment/Employment Rate',
+          subtitle = 'From 2006 to 2015, Rate in Percent') +
+  labs(x = 'Rate in Percent', y = 'Year', fill = 'Category') +
+  theme_gray(13) +
+  scale_x_discrete(labels = c('2010'='2010 \n (Olympics)'))
+```
+
+<font size="5"><b> Unemployment Rate by Regions </b></font>    
+```{r include=FALSE}
+ca_un1 <- ca_un %>%
+  drop_na() %>%
+  group_by(REF_DATE, larger_region) %>%
+  summarize(rate = mean(VALUE))
+```
+
+
+```{r echo=FALSE, fig.height=5, fig.width=10, message=FALSE, warning=FALSE}
+ggplot(ca_un1, aes(REF_DATE, rate, color=larger_region)) + 
+  geom_line() +
+  ggtitle('Canada Average Yearly Unemployment Rate by Regions',
+          subtitle = 'From 2000 to 2016, Rate in Percent') +
+  labs(x = 'Year', y = 'Average Yearly Unemployment Rate in Percent', color = 'Regions') +
+  scale_x_continuous(breaks = seq(2000, 2016, 2)) +
+  theme_gray(13) +
+  geom_vline(xintercept = 2010, linetype="dashed", color = "red", size=1.5) +
+  geom_text(aes(x = 2010, label = 'Vancouver Olympics', y = 7), colour = 'black', size = 4)
+```
+
+<font size="5"><b> Canada Regional Household Income Per Capita Increasing Rate from 2007 to 2015 </b></font>    
+```{r include=FALSE}
+ca_un_rate_temp <- ca_un1[31:80,]
+ca_un_rate <- data.frame('Year' = c('2007','2008','2009','2010','2011','2012','2013','2014','2015'))
+```
+
+```{r include=FALSE}
+for (i in 2007:2015){
+  for (j in c('The Atlantic Provinces','Central Canada','The Prairie Provinces',
+              'The West Coast','The Northern Territories')){
+      ca_un_rate[i-2006, j] <- round(as.numeric(
+      (ca_un_rate_temp[which(ca_un_rate_temp$REF_DATE == i & 
+                                ca_un_rate_temp$larger_region == j), 'rate'] - 
+      ca_un_rate_temp[which(ca_un_rate_temp$REF_DATE == i-1 & 
+                               ca_un_rate_temp$larger_region == j), 'rate']) /
+      ca_un_rate_temp[which(ca_un_rate_temp$REF_DATE == i-1 & 
+                               ca_un_rate_temp$larger_region == j), 'rate']), 5)
+              }
+}
+```
+
+```{r include=FALSE}
+temp_col <- numeric(45)
+for (i in 1:9){
+  for (j in 2:6){
+    temp_col <- c(temp_col, as.numeric(ca_un_rate[i,j]))
+  }
+}
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=10}
+reactable(
+  ca_un_rate,
+  defaultColDef = colDef(
+    align = 'center',
+    headerStyle = list(background = "#D1E5FC"),
+    format = colFormat(percent = TRUE, digits = 2),
+    style = function(value) {
+    if (!is.numeric(value)) {
+      color <- "#A9D0FD"
+      list(background = color)
+    } else {
+    normalized <- (value - min(temp_col)) / (max(temp_col) - min(temp_col))
+    color <- orange_pal(normalized)
+    list(background = color)
+    }
+  }
+  ),
+  bordered = TRUE
+)
+```
+
+## Canada Tourism     
