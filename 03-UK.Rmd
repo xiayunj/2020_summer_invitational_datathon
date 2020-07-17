@@ -2,4 +2,4 @@
 
 test picture:  
 
-![Alt text](/Users/xiayunj/Desktop/datathon/test.png)
+![Alt text](test.png)
