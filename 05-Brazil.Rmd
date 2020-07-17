@@ -126,7 +126,7 @@ reactable(
 
 
 
-<font size="4"><b> Observation: <b></font>     
+<font size="4"><b> Observation: </b></font>     
 1. South East Region of Brazil has much higher GDP than other 4 regions over years.    
 2. Seems no significant increasing on Brazil regional GDP by 2016 Rio Olympics.    
 3. Seems changes of regional GDP are unrelated to the Olympic games.   
