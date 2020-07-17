@@ -1,6 +1,7 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAMES HERE"
+title: "Regional Economic Impacts on the Olympics Host Country"
+subtitle: "2020 Summer Invitational Datathon"
+author: "Team 34: Evan Vogelbaum, Lyna Kim, Yunjun Xia, Allen Liu"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
