@@ -1,1 +1,5 @@
 # UK - 2012 London Olympics   
+
+test picture:  
+
+![Alt text](/Users/xiayunj/Desktop/datathon/test.png)

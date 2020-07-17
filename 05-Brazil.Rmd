@@ -68,6 +68,8 @@ ggplot(df_gdp, aes(year, gdp, color=larger_region)) +
   geom_line() +
   geom_vline(xintercept = 2016, linetype="dashed", color = "red", size=1.5) +
   geom_text(aes(x = 2016, label = 'Rio Olympics', y = 2), colour = 'black', size = 4) +
+  geom_vline(xintercept = 2009, linetype="dashed", color = "red", size=1.5) +
+  geom_text(aes(x = 2009, label = 'Final Selection', y = 1), colour = 'black', size = 4) +
   ggtitle('Brazil GDP by Regions', subtitle = 'From 2002 to 2017') +
   labs(x = 'Year', y = 'GDP in trillions of Reals', color = 'Regions') +
   scale_x_continuous(breaks = seq(2002, 2017, 1)) +
@@ -76,15 +78,16 @@ ggplot(df_gdp, aes(year, gdp, color=larger_region)) +
 
 <font size="5"><b> Brazil Regional GDP Increasing Rate from 2011 to 2017 </b></font>    
 ```{r echo=FALSE}
-gdp_rate_temp <- df_gdp[41:80,]
-gdp_rate <- data.frame('Year' = c('2011','2012','2013','2014', '2015', '2016', '2017'))
+gdp_rate_temp <- df_gdp
+gdp_rate <- data.frame('Year' = c('2003','2004','2005','2006','2007','2008','2009','2010',
+                                  '2011','2012','2013','2014', '2015', '2016', '2017'))
 ```
 
 ```{r echo=FALSE}
-for (i in 2011:2017){
+for (i in 2003:2017){
   for (j in c('Mid West Region', 'North East Region',
               'North Region', 'South East Region', 'South Region')){
-      gdp_rate[i-2010, j] <- round(as.numeric(
+      gdp_rate[i-2002, j] <- round(as.numeric(
       (gdp_rate_temp[which(gdp_rate_temp$year == i & gdp_rate_temp$larger_region == j), 'gdp'] - 
       gdp_rate_temp[which(gdp_rate_temp$year == i-1 & gdp_rate_temp$larger_region == j), 'gdp']) /
       gdp_rate_temp[which(gdp_rate_temp$year == i-1 & gdp_rate_temp$larger_region == j), 'gdp']), 5)
@@ -93,8 +96,8 @@ for (i in 2011:2017){
 ```
 
 ```{r echo=FALSE}
-temp_col <- numeric(35)
-for (i in 1:7){
+temp_col <- numeric(75)
+for (i in 1:15){
   for (j in 2:6){
     temp_col <- c(temp_col, as.numeric(gdp_rate[i,j]))
   }
@@ -120,16 +123,75 @@ reactable(
     }
   }
   ),
-  bordered = TRUE
+  bordered = TRUE,
+  defaultPageSize = 5
 )
 ```
-
-
 
 <font size="4"><b> Observation: </b></font>     
 1. South East Region of Brazil has much higher GDP than other 4 regions over years.    
 2. Seems no significant increasing on Brazil regional GDP by 2016 Rio Olympics.    
-3. Seems changes of regional GDP are unrelated to the Olympic games.   
+3. Seems changes of regional GDP are unrelated to the Olympic games.    
+
+From the time series plot for regional GDP over years, we find that year 2019 (the final selection year) seems to be a turning point for South East Region: after year 2019, GDP of South East Region increases faster than before. Therefore, we come up with our hypothesis that because of the success of placing a bid, South East Region then has a higher growth rate in GDP than other 4 regions.     
+     
+We want to test our hypothesis using two ANOVA tests: one is for the regional GDP growth rate from year 2003 to 2009; another one is for the regional GDP growth rate from year 2010 to 2017.   
+    
+<font size="4"><b> First ANOVA test on regional GDP from 2003 to 2009: </b></font>      
+<font size="3"><b> Hypothesis: </b></font>       
+$H_0$: The means of GDP increasing rate for the 5 regions from 2003 to 2009 are the same.    
+$H_1$: Otherwise.     
+Test: One-Way ANOVA     
+
+
+```{r include=FALSE}
+br_gdp_anova1_temp <- gdp_rate[1:7, -1]
+br_gdp_anova2_temp <- gdp_rate[8:15, -1]
+
+br_gdp_anova1 <- data.frame('region' = factor(), 'rate' = numeric())
+for (i in 1:7){
+  for (j in c('Mid West Region', 'North East Region',
+              'North Region', 'South East Region', 'South Region')){
+    br_gdp_anova1 <- br_gdp_anova1 %>% add_row(region = j, 
+                                               rate = as.numeric(br_gdp_anova1_temp[i,j]))
+  }
+}
+
+br_gdp_anova2 <- data.frame('region' = factor(), 'rate' = numeric())
+for (i in 1:8){
+  for (j in c('Mid West Region', 'North East Region',
+              'North Region', 'South East Region', 'South Region')){
+    br_gdp_anova2 <- br_gdp_anova2 %>% add_row(region = j, 
+                                               rate = as.numeric(br_gdp_anova2_temp[i,j]))
+  }
+}
+```
+
+<font size="4"><b> Summary of the test: </b></font>       
+```{r echo=FALSE}
+model1 <- aov(rate~region, data = br_gdp_anova1)
+summary(model1)
+```
+     
+<font size="4"><b> Conclusion: </b></font>    
+The p-value is 0.93, which shows that we fail to reject the null hypothesis.     
+        
+        
+<font size="4"><b> First ANOVA test on regional GDP from 2010 to 2017: </b></font>      
+<font size="3"><b> Hypothesis: </b></font>       
+$H_0$: The means of GDP increasing rate for the 5 regions from 2010 to 2017 are the same.    
+$H_1$: Otherwise.     
+Test: One-Way ANOVA     
+   
+<font size="4"><b> Summary of the test: </b></font>       
+```{r echo=FALSE}
+model2 <- aov(rate~region, data = br_gdp_anova2)
+summary(model2)
+```
+
+<font size="4"><b> Conclusion: </b></font>    
+The p-value is 0.881, which shows that we fail to reject the null hypothesis.     
+Therefore, for both tests, we fail to reject the null hypothesis. That is, we cannot say that the mean GDP growth rate for each of the 5 regions has significant difference. This also shows that the event of Olympic games does not impact on the GDP growth rate for regions in Brazil differenly.     
 
 
 ## Brazil Monthly Income  
@@ -279,7 +341,7 @@ for (i in 1:8){
 ```
 
 
-<font size="5"><b> Regional Monthly Income Increasing Rate from 2012 to 2020 </b></font>      
+<font size="5"><b> Regional Monthly Income Increasing Rate from 2013 to 2020 </b></font>      
 ```{r echo=FALSE}
 reactable(
   mi_rate,
@@ -413,7 +475,7 @@ ggplot(df_un1[1:40,], aes(year, avg_un_rate, color=larger_region)) +
   geom_text(aes(x = 2016, label = 'Rio Olympics', y = 0.06), colour = 'black', size = 4)
 ```
 
-<font size="5"><b> Unemployment Rate Increasing Rate by Regions from 2012 to 2019 </b></font>    
+<font size="5"><b> Unemployment Rate Increasing Rate by Regions from 2013 to 2019 </b></font>    
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 un_rate_temp <- df_un1[1:40,]
 un_rate <- data.frame('Year' = c('2013', '2014', '2015', '2016', '2017',
