@@ -1,5 +1,5 @@
 # Brazil - 2016 Rio Olympics
-
+## Analysis of Economic impacts on Brazil hosting Olympics by Regions 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
@@ -22,15 +22,15 @@ br_tj <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_tour
 br_un <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_unemployment.csv')
 ```
 
-# Preliminary Analysis of Economic impacts on Brazil hosting Olympics by Regions   
+  
     
 We can divide Brazil to 5 regions, where `Rio de Janeiro` is in the South-East Region.    
 Reference: https://en.wikipedia.org/wiki/Regions_of_Brazil      
     
-## 1. Brazil GDP    
+## Brazil GDP    
 Source Data: `brazil_gdp.csv`      
      
-### 1.1 Brazil Regional GDP     
+### Brazil Regional GDP     
 ```{r include=FALSE}
 north <- c('Acre', 'Amapá', 'Amazonas', 'Pará', 'Rondônia', 'Roraima', 'Tocantins')
 north_east <- c('Alagoas', 'Bahia', 'Ceará', 'Maranhão', 'Paraíba', 'Pernambuco', 'Piauí', 
@@ -74,7 +74,7 @@ ggplot(df_gdp, aes(year, gdp, color=larger_region)) +
   theme_gray(13)
 ```
 
-### 1.2 Brazil Regional GDP Increasing Rate from 2013 to 2017    
+### Brazil Regional GDP Increasing Rate from 2013 to 2017    
 ```{r echo=FALSE}
 gdp_rate_temp <- df_gdp[41:80,]
 gdp_rate <- data.frame('Year' = c('2011','2012','2013','2014', '2015', '2016', '2017'))
@@ -132,10 +132,10 @@ reactable(
 3. Seems changes of regional GDP are unrelated to the Olympic games.   
 
 
-## 2. Brazil Monthly Income & Unemployment Rate    
+## Brazil Monthly Income & Unemployment Rate    
 Source Data: `brazil_monthly_income.csv`, `brazil_unemployment.csv`     
        
-### 2.1. Monthly Income Distribution   
+### Monthly Income Distribution   
    
     
 ```{r include=FALSE}
@@ -204,7 +204,7 @@ ggplot(br_mi1, aes(x = value, y = as.factor(year), fill = year))+
 ```
 
      
-### 2.2 Regional Monthly Income Distribution in the Olympics Year 2016     
+### Regional Monthly Income Distribution in the Olympics Year 2016     
 ```{r echo=FALSE, fig.height=7, fig.width=10}
 ggplot(br_mi1[which(br_mi1$year == 2016),], aes(x = value, y = ..density..)) + 
   geom_histogram(bins = 20, colour = "#80593D", fill = "#9FC29F", boundary = 0) +
@@ -222,7 +222,7 @@ ggplot(br_mi1[which(br_mi1$year == 2016),], aes(x = value, y = ..density..)) +
 Our hypothesis may be "hosting the Olympics can increase peoples' income in the hosting city/region". However, from this plot we find that the South East Region does not show a distribution of higher monthly income in year 2016.     
 
 
-### 2.3 Regional Average Monthly Income    
+### Regional Average Monthly Income    
 Now we want to visualize the regional average monthly income. Here we keep the outliers because we are calculating the regional average for each year.   
 
 ```{r include=FALSE}
@@ -277,7 +277,7 @@ for (i in 1:8){
 ```
 
 
-### 2.4 Regional Monthly Income Increasing Rate from 2012 to 2020      
+### Regional Monthly Income Increasing Rate from 2012 to 2020      
 ```{r echo=FALSE}
 reactable(
   mi_rate,
@@ -304,7 +304,7 @@ reactable(
 1. Seems no significant difference of increasing rate between the 5 regions around year 2016.    
 2. For South East Region, the increasing rate in 2016 is lower than that in 2015. (Why?)   
    
-### 2.5. Unemployment Rate     
+### Unemployment Rate     
 ```{r include=FALSE}
 for (i in 1:nrow(br_un)){
   if (br_un[i,'state'] %in% north){
@@ -361,7 +361,7 @@ ggplot(br_un_bar, aes(x = as.factor(year), y = avg_rate, fill = category)) +
 From this plot we find that year 2017 has the highest average unemployment rate. Also, the average unemployment rate keeps increasing from 2015 to 2017.      
       
 
-### 2.6 Unemployment Rate by Regions     
+### Unemployment Rate by Regions     
 ```{r include=FALSE}
 #Calculate unemployment rate and work force for each quarter of each year (by region)  
 df_un <- br_un[which(br_un$category != 'Outside the workforce'),
@@ -408,7 +408,7 @@ ggplot(df_un1[1:40,], aes(year, avg_un_rate, color=larger_region)) +
   geom_text(aes(x = 2016, label = 'Rio Olympics', y = 0.06), colour = 'black', size = 4)
 ```
 
-### 2.7 Unemployment Rate Increasing Rate by Regions from 2012 to 2019   
+### Unemployment Rate Increasing Rate by Regions from 2012 to 2019   
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 un_rate_temp <- df_un1[1:40,]
 un_rate <- data.frame('Year' = c('2013', '2014', '2015', '2016', '2017',
@@ -466,7 +466,7 @@ reactable(
 Since 2014, the average unemployment rate keeps increasing for all of the 5 regions until 2017. The highest increasing rate appears at year 2016 which is the Olympics year for all of the 5 regions.    
 
        
-## 3. Brazil Tourism   
+## Brazil Tourism   
 Source Data: `brazil_tourism_jobs.csv`    
 ```{r include=FALSE}
 for (i in 1:nrow(br_tj)){
