@@ -24,7 +24,7 @@ br_un <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_unem
 
   
     
-We can divide Brazil to 5 regions, where `Rio de Janeiro` is in the South-East Region.    
+We can divide Brazil to 5 regions, where <b>Rio de Janeiro</b> is in the South-East Region.    
 Reference: https://en.wikipedia.org/wiki/Regions_of_Brazil      
     
 ## Brazil GDP    
@@ -218,11 +218,13 @@ ggplot(br_mi1[which(br_mi1$year == 2016),], aes(x = value, y = ..density..)) +
   theme(plot.caption = element_text(color = "grey68"))
 ```
    
-<font size="4"><b> Observation: </b></font>   
+<font size="4"><b> Observation: </b></font>    
+
 Our hypothesis may be "hosting the Olympics can increase peoples' income in the hosting city/region". However, from this plot we find that the South East Region does not show a distribution of higher monthly income in year 2016.     
 
 
-<font size="5"><b> Regional Average Monthly Income </b></font>    
+<font size="5"><b> Regional Average Monthly Income </b></font>     
+
 Now we want to visualize the regional average monthly income. Here we keep the outliers because we are calculating the regional average for each year.   
 
 ```{r include=FALSE}
@@ -304,7 +306,7 @@ reactable(
 1. Seems no significant difference of increasing rate between the 5 regions around year 2016.    
 2. For South East Region, the increasing rate in 2016 is lower than that in 2015. (Why?)   
    
-<font size="5"><b> Unemployment Rate <b></font>      
+<font size="5"><b> Unemployment Rate </b></font>      
 ```{r include=FALSE}
 for (i in 1:nrow(br_un)){
   if (br_un[i,'state'] %in% north){
@@ -462,7 +464,7 @@ reactable(
 )
 ```  
 
-<font size="4"><b> Obserevation: <b></font>      
+<font size="4"><b> Obserevation: </b></font>      
 Since 2014, the average unemployment rate keeps increasing for all of the 5 regions until 2017. The highest increasing rate appears at year 2016 which is the Olympics year for all of the 5 regions.    
 
        
