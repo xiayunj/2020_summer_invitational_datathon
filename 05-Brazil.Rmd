@@ -14,6 +14,7 @@ library(ggridges)
 library(viridis)
 library(gganimate)
 library(gifski)
+library(magick)
 ```
 
 
@@ -599,5 +600,31 @@ ggplot(df_ia, aes(Date, value)) +
 
 
 ## Interactive 
+   
+```{r include=FALSE}
+Ag <- br_gdp[which(br_gdp$year >= 2012 & br_gdp$year <= 2017),] %>%
+  group_by(year, state, larger_region) %>%
+  summarize(gdp = mean(value)/1000000000)
+Ai <- br_mi[which(br_mi$year >= 2012 & br_mi$year <= 2017),] %>%
+  drop_na() %>%
+  group_by(year, state) %>%
+  summarize(income = mean(value))
 
+Agi <- merge(Ag, Ai, by=c('year', 'state'))
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+anim <- ggplot(Agi, aes(gdp, income, color = larger_region)) +
+  geom_point() +
+  theme_bw() +
+  labs(title = 'Relationship between Brazil GDP in Trillions of Reals and Monthly Income',
+       subtitle = 'Year: {frame_time}', x = 'GDP in Trillions of Reals', 
+       y = 'Average Monthly Income', color = 'Region') +
+  transition_time(year)
+
+animate(
+  anim, renderer = magick_renderer()
+)
+
+```
 

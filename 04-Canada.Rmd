@@ -15,6 +15,7 @@ library(ggridges)
 library(viridis)
 library(gganimate)
 library(gifski)
+library(magick)
 ca_gdp_raw <- read.csv('/Users/xiayunj/Desktop/datathon/supplementary_data/canada_gdp.csv')
 ca_in_un_raw <- read.csv('/Users/xiayunj/Desktop/datathon/supplementary_data/canada_in_un.csv')
 ```
