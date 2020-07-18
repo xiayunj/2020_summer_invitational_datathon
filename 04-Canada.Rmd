@@ -80,17 +80,18 @@ ggplot(ca_gdp1, aes(REF_DATE, gdp, color=larger_region)) +
   theme_gray(13)
 ```
   
-<font size="5"><b> Canada Regional GDP Increasing Rate from 2007 to 2015 </b></font>    
+<font size="5"><b> Canada Regional GDP Increasing Rate from 2001 to 2019 </b></font>    
 ```{r include=FALSE}
-ca_gdp_rate_temp <- ca_gdp1[31:80,]
-ca_gdp_rate <- data.frame('Year' = c('2007','2008','2009','2010','2011','2012','2013','2014','2015'))
+ca_gdp_rate_temp <- ca_gdp1
+ca_gdp_rate <- data.frame('Year' = c('2001','2002','2003','2004','2005','2006','2007','2008','2009',
+                                     '2010','2011','2012','2013','2014','2015','2016','2017','2018','2019'))
 ```
 
 ```{r echo=FALSE}
-for (i in 2007:2015){
+for (i in 2001:2019){
   for (j in c('The Atlantic Provinces','Central Canada','The Prairie Provinces',
               'The West Coast','The Northern Territories')){
-      ca_gdp_rate[i-2006, j] <- round(as.numeric(
+      ca_gdp_rate[i-2000, j] <- round(as.numeric(
       (ca_gdp_rate_temp[which(ca_gdp_rate_temp$REF_DATE == i & 
                                 ca_gdp_rate_temp$larger_region == j), 'gdp'] - 
       ca_gdp_rate_temp[which(ca_gdp_rate_temp$REF_DATE == i-1 & 
@@ -102,8 +103,8 @@ for (i in 2007:2015){
 ```
 
 ```{r echo=FALSE}
-temp_col <- numeric(45)
-for (i in 1:9){
+temp_col <- numeric(19*5)
+for (i in 1:19){
   for (j in 2:6){
     temp_col <- c(temp_col, as.numeric(ca_gdp_rate[i,j]))
   }
@@ -129,7 +130,8 @@ reactable(
     }
   }
   ),
-  bordered = TRUE
+  bordered = TRUE,
+  defaultPageSize = 5
 )
 ```
 
@@ -181,17 +183,19 @@ ggplot(ca_in1, aes(REF_DATE, income, color=larger_region)) +
 ```
 
 
-<font size="5"><b> Canada Regional Household Income Per Capita Increasing Rate from 2007 to 2015 </b></font>    
+<font size="5"><b> Canada Regional Household Income Per Capita Increasing Rate from 2001 to 2016 </b></font>    
 ```{r echo=FALSE}
-ca_in_rate_temp <- ca_in1[31:80,]
-ca_in_rate <- data.frame('Year' = c('2007','2008','2009','2010','2011','2012','2013','2014','2015'))
+ca_in_rate_temp <- ca_in1
+ca_in_rate <- data.frame('Year' = c('2001','2002','2003','2004','2005','2006',
+                                    '2007','2008','2009','2010','2011',
+                                    '2012','2013','2014','2015','2016'))
 ```
 
 ```{r echo=FALSE}
-for (i in 2007:2015){
+for (i in 2001:2016){
   for (j in c('The Atlantic Provinces','Central Canada','The Prairie Provinces',
               'The West Coast','The Northern Territories')){
-      ca_in_rate[i-2006, j] <- round(as.numeric(
+      ca_in_rate[i-2000, j] <- round(as.numeric(
       (ca_in_rate_temp[which(ca_in_rate_temp$REF_DATE == i & 
                                 ca_in_rate_temp$larger_region == j), 'income'] - 
       ca_in_rate_temp[which(ca_in_rate_temp$REF_DATE == i-1 & 
@@ -203,8 +207,8 @@ for (i in 2007:2015){
 ```
 
 ```{r include=FALSE}
-temp_col <- numeric(45)
-for (i in 1:9){
+temp_col <- numeric(16*5)
+for (i in 1:16){
   for (j in 2:6){
     temp_col <- c(temp_col, as.numeric(ca_in_rate[i,j]))
   }
@@ -229,7 +233,8 @@ reactable(
     }
   }
   ),
-  bordered = TRUE
+  bordered = TRUE,
+  defaultPageSize = 5
 )
 ```
 
@@ -306,17 +311,19 @@ ggplot(ca_un1, aes(REF_DATE, rate, color=larger_region)) +
   geom_text(aes(x = 2010, label = 'Vancouver Olympics', y = 7), colour = 'black', size = 4)
 ```
 
-<font size="5"><b> Canada Regional Unemployment Rate Increasing Rate from 2007 to 2015 </b></font>    
+<font size="5"><b> Canada Regional Unemployment Rate Increasing Rate from 2001 to 2016 </b></font>    
 ```{r include=FALSE}
-ca_un_rate_temp <- ca_un1[31:80,]
-ca_un_rate <- data.frame('Year' = c('2007','2008','2009','2010','2011','2012','2013','2014','2015'))
+ca_un_rate_temp <- ca_un1
+ca_un_rate <- data.frame('Year' = c('2001','2002','2003','2004','2005','2006',
+                                    '2007','2008','2009','2010','2011','2012',
+                                    '2013','2014','2015','2016'))
 ```
 
 ```{r include=FALSE}
-for (i in 2007:2015){
+for (i in 2001:2016){
   for (j in c('The Atlantic Provinces','Central Canada','The Prairie Provinces',
               'The West Coast','The Northern Territories')){
-      ca_un_rate[i-2006, j] <- round(as.numeric(
+      ca_un_rate[i-2000, j] <- round(as.numeric(
       (ca_un_rate_temp[which(ca_un_rate_temp$REF_DATE == i & 
                                 ca_un_rate_temp$larger_region == j), 'rate'] - 
       ca_un_rate_temp[which(ca_un_rate_temp$REF_DATE == i-1 & 
@@ -328,8 +335,8 @@ for (i in 2007:2015){
 ```
 
 ```{r include=FALSE}
-temp_col <- numeric(45)
-for (i in 1:9){
+temp_col <- numeric(16*5)
+for (i in 1:16){
   for (j in 2:6){
     temp_col <- c(temp_col, as.numeric(ca_un_rate[i,j]))
   }
@@ -354,8 +361,65 @@ reactable(
     }
   }
   ),
-  bordered = TRUE
+  bordered = TRUE,
+  defaultPageSize = 5
 )
 ```
 
-## Canada Tourism     
+## Canada Tourism   
+
+Source Data:    
+Statistics Canada.  Table  24-10-0005-01   International travellers entering or returning to Canada, by province of entry, seasonally adjusted     
+DOI:   https://doi.org/10.25318/2410000501-eng      
+website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=2410000501        
+
+
+```{r include=FALSE}
+ca_vis_raw <- read.csv('/Users/xiayunj/Desktop/datathon/supplementary_data/ca_vis.csv')
+```
+
+
+
+```{r include=FALSE}
+ca_vis <- ca_vis_raw[,c('REF_DATE','GEO','VALUE')]
+for (i in 1:nrow(ca_vis)){
+  if (ca_vis[i,'GEO'] %in% atlantic){
+    ca_vis[i,'larger_region'] <- 'The Atlantic Provinces'
+  } else if (ca_vis[i,'GEO'] %in% central){
+    ca_vis[i,'larger_region'] <- 'Central Canada'
+  } else if (ca_vis[i,'GEO'] %in% prairie){
+    ca_vis[i,'larger_region'] <- 'The Prairie Provinces'
+  } else if (ca_vis[i,'GEO'] %in% west_coast){
+    ca_vis[i,'larger_region'] <- 'The West Coast'
+  } else if (ca_vis[i,'GEO'] %in% north){
+    ca_vis[i,'larger_region'] <- 'The Northern Territories'
+  }
+}
+```  
+
+
+```{r echo=FALSE, fig.height=5, fig.width=10}
+ggplot(ca_vis[which(ca_vis$GEO == 'Canada'),], aes(as.Date(as.yearmon(REF_DATE)), VALUE/1000000)) + 
+  geom_line() +
+  ggtitle('Canada International Tourists', subtitle = 'From 2000 to 2018') +
+  labs(x = 'Year', y = 'Number of International Tourists in Billions') +
+  theme_gray(13)
+```
+
+```{r include=FALSE}
+ca_vis1 <- ca_vis[which(ca_vis$GEO != 'Canada'),] %>%
+  drop_na() %>%
+  group_by(REF_DATE, larger_region) %>%
+  summarize(VALUE = mean(VALUE))
+```
+
+
+```{r echo=FALSE, fig.height=5, fig.width=10, message=FALSE, warning=FALSE}
+ggplot(ca_vis1, 
+       aes(as.Date(as.yearmon(REF_DATE)), VALUE/1000, color = larger_region)) + 
+  geom_line() +
+  ggtitle('Canada Regional Average International Tourists', subtitle = 'From 2000 to 2018') +
+  labs(x = 'Year', y = 'Average Number of International Tourists in Thousands') +
+  theme_gray(13)
+```
+

@@ -80,7 +80,7 @@ ggplot(df_gdp, aes(year, gdp, color=larger_region)) +
   theme_gray(13)
 ```
 
-<font size="5"><b> Brazil Regional GDP Increasing Rate from 2011 to 2017 </b></font>    
+<font size="5"><b> Brazil Regional GDP Increasing Rate from 2003 to 2017 </b></font>    
 ```{r echo=FALSE}
 gdp_rate_temp <- df_gdp
 gdp_rate <- data.frame('Year' = c('2003','2004','2005','2006','2007','2008','2009','2010',
@@ -364,7 +364,8 @@ reactable(
     }
   }
   ),
-  bordered = TRUE
+  bordered = TRUE,
+  defaultPageSize = 5
 )
 ```  
 
@@ -529,7 +530,8 @@ reactable(
     }
   }
   ),
-  bordered = TRUE
+  bordered = TRUE,
+  defaultPageSize = 5
 )
 ```  
 
