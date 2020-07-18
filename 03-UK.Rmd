@@ -2,6 +2,6 @@
 
 test picture:  
 
-```{r, out.width='50%', fig.align='center'}
-knitr::include_graphics('/Users/xiayunj/Desktop/datathon/test.png')
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('test.png', dpi = NA)
 ```
