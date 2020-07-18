@@ -1,2 +1,11 @@
-# Data sources
+# Data Sources    
+<font size="6"><b> Data Sources Description and Data Manipulation </b></font>    
 
+## Data for Analysis of UK     
+
+## Data for Analysis of Canada      
+
+## Data for Analysis of Brazil    
+
+`brazil_gdp.csv`      
+This dataset is from Datathon Materials which has 4 variables: `state`, `region`, `year`, `value`. The variable `region` is a smaller region in `state`. This dataset covers Brazil GDP from year 2002 to 2017. Since the raw data is on a state-level of Brazil GDP over years, we add an additional variable `larger_region` to indicate which of the 5 regions a row belongs to. The raw data has GDP values in thousands of Reals. For better visualization, we modify the unit to trillions of Reals. For regional GDP calculation, we simply add the GDP value of all states within one larger region to get the result. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate.       

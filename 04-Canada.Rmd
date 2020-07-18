@@ -1,7 +1,5 @@
 # Canada - 2010 Vancouver Winter Olympics     
-<font size="6"><b> Analysis of Economic impacts on Canada hosting Olympics by Regions </b></font>     
-
-
+<font size="6"><b> Analysis of Regional Economic Impacts of Hosting Olympics on Canada </b></font>   
 
 ```{r include=FALSE}
 library(ggplot2)
@@ -366,6 +364,7 @@ reactable(
 )
 ```
 
+
 ## Canada Tourism   
 
 Source Data:    
@@ -402,7 +401,7 @@ for (i in 1:nrow(ca_vis)){
 ggplot(ca_vis[which(ca_vis$GEO == 'Canada'),], aes(as.Date(as.yearmon(REF_DATE)), VALUE/1000000)) + 
   geom_line() +
   ggtitle('Canada International Tourists', subtitle = 'From 2000 to 2018') +
-  labs(x = 'Year', y = 'Number of International Tourists in Billions') +
+  labs(x = 'Year', y = 'Number of International Tourists in Millions') +
   theme_gray(13)
 ```
 
@@ -410,16 +409,16 @@ ggplot(ca_vis[which(ca_vis$GEO == 'Canada'),], aes(as.Date(as.yearmon(REF_DATE))
 ca_vis1 <- ca_vis[which(ca_vis$GEO != 'Canada'),] %>%
   drop_na() %>%
   group_by(REF_DATE, larger_region) %>%
-  summarize(VALUE = mean(VALUE))
+  summarize(VALUE = sum(VALUE))
 ```
 
 
 ```{r echo=FALSE, fig.height=5, fig.width=10, message=FALSE, warning=FALSE}
 ggplot(ca_vis1, 
-       aes(as.Date(as.yearmon(REF_DATE)), VALUE/1000, color = larger_region)) + 
+       aes(as.Date(as.yearmon(REF_DATE)), VALUE/1000000, color = larger_region)) + 
   geom_line() +
   ggtitle('Canada Regional Average International Tourists', subtitle = 'From 2000 to 2018') +
-  labs(x = 'Year', y = 'Average Number of International Tourists in Thousands') +
+  labs(x = 'Year', y = 'Average Number of International Tourists in Millions') +
   theme_gray(13)
 ```
 

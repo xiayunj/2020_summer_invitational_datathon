@@ -1,5 +1,5 @@
 # Brazil - 2016 Rio Olympics
-<font size="6"><b> Analysis of Economic impacts on Brazil hosting Olympics by Regions </b></font>    
+<font size="6"><b> Analysis of Regional Economic Impacts of Hosting Olympics on Brazil </b></font>    
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -25,14 +25,22 @@ br_mi <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_mont
 br_tj <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_tourism_jobs.csv')
 br_un <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_unemployment.csv')
 ```
-
   
+<font size="4"><b> Introduction </b></font>      
+In this section, we discussed the regional difference of economic impacts on Brazil by the 2016 Olympic Games. To find whether or not there were significant differences on a regional level, we analyzed Brazil GDP, monthly income, unemployment rate and tourism over years. The 2016 Olympic Games took place at Rio de Janeiro. Rio was awarded to host the games in 2009.      
     
-We can divide Brazil to 5 regions, where <b>Rio de Janeiro</b> is in the South-East Region.    
+<font size="4"><b> Region Description </b></font>    
+We divided Brazil to 5 regions, where Rio de Janeiro, the city hosted Olympics, is in the South-East Region.     
+1. North region: Acre, Amapá, Amazonas, Pará, Rondônia, Roraima and Tocantins.    
+2. Northeast region: Alagoas, Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte and Sergipe.    
+3. Midwest region: Goiás, Mato Grosso, Mato Grosso do Sul and Distrito Federal (Federal District).   
+4. Southeast region: Espírito Santo, Minas Gerais, Rio de Janeiro and São Paulo.   
+5. South region: Paraná, Rio Grande do Sul and Santa Catarina.    
+      
 Reference: https://en.wikipedia.org/wiki/Regions_of_Brazil      
-    
+      
+     
 ## Brazil GDP    
-Source Data: `brazil_gdp.csv`      
      
 <font size="5"><b> Brazil Regional GDP </b></font>      
 ```{r include=FALSE}
@@ -66,6 +74,7 @@ df_gdp <- br_gdp[,c('year','larger_region','value')] %>%
 df_gdp[,'gdp'] <- df_gdp$gdp/1000000000
 ```
 
+First, we want to visualize the regional GDP of Brazil, so we make a multiple time series plot. Also, we add two vertical lines to mark the year of final selection (2009) and the year of the Olympics (2016).    
 
 ```{r echo=FALSE, fig.height=5, fig.width=10}
 ggplot(df_gdp, aes(year, gdp, color=larger_region)) + 
@@ -79,6 +88,12 @@ ggplot(df_gdp, aes(year, gdp, color=larger_region)) +
   scale_x_continuous(breaks = seq(2002, 2017, 1)) +
   theme_gray(13)
 ```
+
+From this plot, we find that from year 2002 to 2017, South East region always has a higher GDP than other 4 regions. After year 2019, the GDP for all of the 5 regions seem to increase faster than before, especially the South East region. Since 2009 is the year when Rio was awared to host the 2016 Olympics, we come up with a hypothesis that the success of the bid for Brazil helps to increase the GDP growth rate, especially for the South East.    
+
+However, the plot does not show a higher increasing rate for all of the 5 regions after the Olympic year 2016. Also, since our raw data does not provide the statistics after year 2017, our analysis may have some limitation to analyze the regional GDP impact after year 2016.   
+
+Before we get to our conclusion, we want to get a closer look at regional GDP growth rate.      
 
 <font size="5"><b> Brazil Regional GDP Increasing Rate from 2003 to 2017 </b></font>    
 ```{r echo=FALSE}
@@ -132,12 +147,9 @@ reactable(
 )
 ```
 
-<font size="4"><b> Observation: </b></font>     
-1. South East Region of Brazil has much higher GDP than other 4 regions over years.    
-2. Seems no significant increasing on Brazil regional GDP by 2016 Rio Olympics.    
-3. Seems changes of regional GDP are unrelated to the Olympic games.    
+  
 
-From the time series plot for regional GDP over years, we find that year 2019 (the final selection year) seems to be a turning point for South East Region: after year 2019, GDP of South East Region increases faster than before. Therefore, we come up with our hypothesis that because of the success of placing a bid, South East Region then has a higher growth rate in GDP than other 4 regions.     
+ 
      
 We want to test our hypothesis using two ANOVA tests: one is for the regional GDP growth rate from year 2003 to 2009; another one is for the regional GDP growth rate from year 2010 to 2017.   
     

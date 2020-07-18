@@ -1,5 +1,5 @@
 --- 
-title: "Regional Economic Impacts on the Olympics Host Country"
+title: "Regional Economic Impact on Host Countries from Olympic Games"
 subtitle: "2020 Summer Invitational Datathon"
 author: "Team 34: Evan Vogelbaum, Lyna Kim, Yunjun Xia, Allen Liu"
 date: "`r Sys.Date()`"
@@ -8,3 +8,6 @@ site: bookdown::bookdown_site
 
 # Introduction
 
+## Non-Technical Executive Summary    
+
+## Techinal Exposition   

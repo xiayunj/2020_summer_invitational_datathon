@@ -1,5 +1,5 @@
-# UK - 2012 London Olympics   
-
+# UK - 2012 London Olympics    
+<font size="6"><b> Analysis of Regional Economic Impacts of Hosting Olympics on the United Kingdom </b></font> 
 
 ## UK GDP   
 Source Data:    
@@ -142,6 +142,20 @@ reactable(
 knitr::include_graphics('extra_plots/UK_tourists.png', dpi = NA)
 ```
 
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/UK_regional_visits.png', dpi = NA)
+```
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/UK_regional_spend.png', dpi = NA)
+```
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/UK_regional_nights.png', dpi = NA)
+```
+
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
 knitr::include_graphics('extra_plots/UK_paired_tourists.jpeg', dpi = NA)
 ```
+

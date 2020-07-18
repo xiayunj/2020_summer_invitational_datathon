@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Data sources | Regional Economic Impacts on the Olympics Host Country</title>
-  <meta name="description" content="Chapter 2 Data sources | Regional Economic Impacts on the Olympics Host Country" />
+  <title>Chapter 2 Data Sources | Regional Economic Impact on Host Countries from Olympic Games</title>
+  <meta name="description" content="Chapter 2 Data Sources | Regional Economic Impact on Host Countries from Olympic Games" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Data sources | Regional Economic Impacts on the Olympics Host Country" />
+  <meta property="og:title" content="Chapter 2 Data Sources | Regional Economic Impact on Host Countries from Olympic Games" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Data sources | Regional Economic Impacts on the Olympics Host Country" />
+  <meta name="twitter:title" content="Chapter 2 Data Sources | Regional Economic Impact on Host Countries from Olympic Games" />
   
   
   
@@ -75,8 +75,15 @@
 <li><a href="./">regional_impacts_olympics</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#non-technical-executive-summary"><i class="fa fa-check"></i><b>1.1</b> Non-Technical Executive Summary</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#techinal-exposition"><i class="fa fa-check"></i><b>1.2</b> Techinal Exposition</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data Sources</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#data-for-analysis-of-uk"><i class="fa fa-check"></i><b>2.1</b> Data for Analysis of UK</a></li>
+<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#data-for-analysis-of-canada"><i class="fa fa-check"></i><b>2.2</b> Data for Analysis of Canada</a></li>
+<li class="chapter" data-level="2.3" data-path="data-sources.html"><a href="data-sources.html#data-for-analysis-of-brazil"><i class="fa fa-check"></i><b>2.3</b> Data for Analysis of Brazil</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html"><i class="fa fa-check"></i><b>3</b> UK - 2012 London Olympics</a><ul>
 <li class="chapter" data-level="3.1" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html#uk-gdp"><i class="fa fa-check"></i><b>3.1</b> UK GDP</a></li>
 <li class="chapter" data-level="3.2" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html#uk-unemployment-rate"><i class="fa fa-check"></i><b>3.2</b> UK Unemployment Rate</a></li>
@@ -106,7 +113,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Regional Economic Impacts on the Olympics Host Country</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Regional Economic Impact on Host Countries from Olympic Games</a>
           </h1>
         </div>
 
@@ -115,8 +122,20 @@
 
             <section class="normal" id="section-">
 <div id="data-sources" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Data sources</h1>
+<h1><span class="header-section-number">Chapter 2</span> Data Sources</h1>
+<p><font size="6"><b> Data Sources Description and Data Manipulation </b></font></p>
+<div id="data-for-analysis-of-uk" class="section level2">
+<h2><span class="header-section-number">2.1</span> Data for Analysis of UK</h2>
+</div>
+<div id="data-for-analysis-of-canada" class="section level2">
+<h2><span class="header-section-number">2.2</span> Data for Analysis of Canada</h2>
+</div>
+<div id="data-for-analysis-of-brazil" class="section level2">
+<h2><span class="header-section-number">2.3</span> Data for Analysis of Brazil</h2>
+<p><code>brazil_gdp.csv</code><br />
+This dataset is from Datathon Materials which has 4 variables: <code>state</code>, <code>region</code>, <code>year</code>, <code>value</code>. The variable <code>region</code> is a smaller region in <code>state</code>. This dataset covers Brazil GDP from year 2002 to 2017. Since the raw data is on a state-level of Brazil GDP over years, we add an additional variable <code>larger_region</code> to indicate which of the 5 regions a row belongs to. The raw data has GDP values in thousands of Reals. For better visualization, we modify the unit to trillions of Reals. For regional GDP calculation, we simply add the GDP value of all states within one larger region to get the result. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate.</p>
 
+</div>
 </div>
             </section>
 
