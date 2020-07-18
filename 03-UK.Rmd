@@ -2,4 +2,6 @@
 
 test picture:  
 
-![Alt text](test.png)
+```{r, out.width='50%', fig.align='center'}
+knitr::include_graphics('/Users/xiayunj/Desktop/datathon/test.png')
+```

@@ -4,6 +4,17 @@
 
 
 ```{r include=FALSE}
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(naniar)
+library(zoo)
+library(reactable)
+library(scales)
+library(ggridges)
+library(viridis)
+library(gganimate)
+library(gifski)
 ca_gdp_raw <- read.csv('/Users/xiayunj/Desktop/datathon/supplementary_data/canada_gdp.csv')
 ca_in_un_raw <- read.csv('/Users/xiayunj/Desktop/datathon/supplementary_data/canada_in_un.csv')
 ```
@@ -294,7 +305,7 @@ ggplot(ca_un1, aes(REF_DATE, rate, color=larger_region)) +
   geom_text(aes(x = 2010, label = 'Vancouver Olympics', y = 7), colour = 'black', size = 4)
 ```
 
-<font size="5"><b> Canada Regional Household Income Per Capita Increasing Rate from 2007 to 2015 </b></font>    
+<font size="5"><b> Canada Regional Unemployment Rate Increasing Rate from 2007 to 2015 </b></font>    
 ```{r include=FALSE}
 ca_un_rate_temp <- ca_un1[31:80,]
 ca_un_rate <- data.frame('Year' = c('2007','2008','2009','2010','2011','2012','2013','2014','2015'))

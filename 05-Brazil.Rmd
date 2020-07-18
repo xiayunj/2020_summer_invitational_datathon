@@ -1,5 +1,6 @@
 # Brazil - 2016 Rio Olympics
-<font size="6"><b> Analysis of Economic impacts on Brazil hosting Olympics by Regions </b></font>
+<font size="6"><b> Analysis of Economic impacts on Brazil hosting Olympics by Regions </b></font>    
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
@@ -11,6 +12,8 @@ library(reactable)
 library(scales)
 library(ggridges)
 library(viridis)
+library(gganimate)
+library(gifski)
 ```
 
 
@@ -592,4 +595,29 @@ ggplot(df_ia, aes(Date, value)) +
   labs(x = 'Year', y = 'International Tourists in Thousands') +
   scale_x_continuous(breaks = seq(1989, 2018, 2)) +
   theme_gray(13)
+```
+
+
+## Interactive 
+
+```{r include=FALSE}
+Ag <- br_gdp[which(br_gdp$year >= 2012 & br_gdp$year <= 2017),] %>%
+  group_by(year, state, larger_region) %>%
+  summarize(gdp = mean(value)/1000000000)
+Ai <- br_mi[which(br_mi$year >= 2012 & br_mi$year <= 2017),] %>%
+  drop_na() %>%
+  group_by(year, state) %>%
+  summarize(income = mean(value))
+
+Agi <- merge(Ag, Ai, by=c('year', 'state'))
+```
+
+```{r echo=FALSE}
+ggplot(Agi, aes(gdp, income, color = larger_region)) +
+  geom_point() +
+  theme_bw() +
+  labs(x = 'GDP in Trillions of Reals', y = 'Monthly Income') +
+  transition_time(year) +
+  ease_aes('linear')
+
 ```
