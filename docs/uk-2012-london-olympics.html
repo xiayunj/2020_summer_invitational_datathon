@@ -50,12 +50,6 @@
 
 
 
-<script src="libs/core-js-2.5.3/shim.min.js"></script>
-<script src="libs/react-16.12.0/react.min.js"></script>
-<script src="libs/react-16.12.0/react-dom.min.js"></script>
-<script src="libs/reactwidget-1.0.0/react-tools.js"></script>
-<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="libs/reactable-binding-0.2.0/reactable.js"></script>
 
 
 
@@ -77,7 +71,10 @@
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources</a></li>
-<li class="chapter" data-level="3" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html"><i class="fa fa-check"></i><b>3</b> UK - 2012 London Olympics</a></li>
+<li class="chapter" data-level="3" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html"><i class="fa fa-check"></i><b>3</b> UK - 2012 London Olympics</a><ul>
+<li class="chapter" data-level="3.1" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html#uk-gdp"><i class="fa fa-check"></i><b>3.1</b> UK GDP</a></li>
+<li class="chapter" data-level="3.2" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html#uk-international-tourism"><i class="fa fa-check"></i><b>3.2</b> UK International Tourism</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="canada-2010-vancouver-winter-olympics.html"><a href="canada-2010-vancouver-winter-olympics.html"><i class="fa fa-check"></i><b>4</b> Canada - 2010 Vancouver Winter Olympics</a><ul>
 <li class="chapter" data-level="4.1" data-path="canada-2010-vancouver-winter-olympics.html"><a href="canada-2010-vancouver-winter-olympics.html#canada-gdp"><i class="fa fa-check"></i><b>4.1</b> Canada GDP</a></li>
 <li class="chapter" data-level="4.2" data-path="canada-2010-vancouver-winter-olympics.html"><a href="canada-2010-vancouver-winter-olympics.html#canada-household-income-per-capita"><i class="fa fa-check"></i><b>4.2</b> Canada Household Income Per Capita</a></li>
@@ -112,9 +109,15 @@
             <section class="normal" id="section-">
 <div id="uk---2012-london-olympics" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> UK - 2012 London Olympics</h1>
-<p>test picture:</p>
-<p><a href="https://github.com/xiayunj/2020_summer_invitational_datathon" target="_blank"><img src="test.png" style="display: block; margin: auto;" /></a></p>
+<div id="uk-gdp" class="section level2">
+<h2><span class="header-section-number">3.1</span> UK GDP</h2>
+</div>
+<div id="uk-international-tourism" class="section level2">
+<h2><span class="header-section-number">3.2</span> UK International Tourism</h2>
+<p><a href="https://github.com/xiayunj/2020_summer_invitational_datathon/extra_plots" target="_blank"><img src="UK_tourists.png" style="display: block; margin: auto;" /></a></p>
+<p><a href="https://github.com/xiayunj/2020_summer_invitational_datathon/extra_plots" target="_blank"><img src="UK_paired_tourists.png" style="display: block; margin: auto;" /></a></p>
 
+</div>
 </div>
             </section>
 
@@ -172,20 +175,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>
