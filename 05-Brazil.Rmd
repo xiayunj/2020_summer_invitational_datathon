@@ -600,7 +600,7 @@ reactable(
 ```  
 
    
-Since 2014, the average unemployment rate keeps increasing for all of the 5 regions until 2017. The highest increasing rate appears at year 2016 which is the Olympics year for all of the 5 regions. The unemployment rate drops starting from 2018. Therefore, the 2016 Rio Olympic games did not benifit Brazil's unemployment rate. There are no significant difference in regional unemployment pattern observed as well.     
+Since 2014, the average unemployment rate keeps increasing for all of the 5 regions until 2017. The highest increasing rate appears at year 2016 which is the Olympics year for all of the 5 regions. The unemployment rate drops starting from 2018. Therefore, the 2016 Rio Olympic games did not benefit Brazil's unemployment rate. There are no significant differences in regional unemployment patterns observed as well.     
 
        
 ## Brazil Tourism    
@@ -646,11 +646,9 @@ ggplot(df_tj, aes(year, avg_jobs, color=larger_region)) +
 ```
 
 From the multiple time series plot, we find that from 2006 to 2018, South East region alwasys has a much higher number of tourism jobs than the other regions. After 2009, the final selection year, all of the 5 regions seems to increase faster than before in the number of tourism jobs. However, from 2015 to 2017, South East region seems to decreases slightly. This shows that the Olympics does not necessarily increase the number of tourism jobs for South East region. The decreasing in number of tourism jobs in South East region complies with the pattern of Brazil unemployment rate.      
-
-
-
-
-
    
+   
+## Brazil Conclusion    
 
+The above analysis allowed us to view the impact of the Olympics on Brazil and its constituent regions through an economic and tourism lens. We concluded through Anova tests that there are no statistically significant distinctions between the growth rates of each region before and after the Olympics. We also observe that although changes do occur in income distribution, these do not seem to be attributable to the Olympics. A similar conclusion is reached through analysis of unemployment rate -- in fact this data suggests a possible negative impact of the hosting of the Olympics! Finally, analysis of tourism jobs shows almost no changes whatsoever as a result of the Olympics. All of these analyses support our conclusion that the Olympics did not have a considerably positive impact on Brazil or its constituent regions.     
 

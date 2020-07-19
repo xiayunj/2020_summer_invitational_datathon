@@ -1,1 +1,15 @@
-# Conclusion 
+# Conclusion
+
+In this project, we analyzed both the National and Regional impact of hosting the Olympics on a country’s economic and tourism indicators. We drew conclusions on a country by country basis:      
+     
+<b>The United Kingdom: </b>      
+There was a large amount of economic heterogeneity. While tourism data showed more regional distinction, we did not find that any changes intra-region could be attributed to the Olympics.     
+
+<b>Brazil: </b>    
+Extensive analysis of indicators for economic and tourism data demonstrated through both observation and statistical measurements that there were no meaningful changes that could be attributed to the Olympics on the regional level.   
+
+<b>Canada: </b>    
+Although there was growth in tourism within Vancouver following the 2010 Olympics, we did not find any differential effects on economic outcomes across different regions within British Columbia or Canada, suggesting that economic growth after 2010 could not be attributed to the Olympics.       
+
+In the future, we believe additional work can be done in this direction by collecting and analyzing more indicators and performing additional statistical tests. Specifically, we think one could further explore the breakdown of GDP by industries as well as perform statistical tests that can determine whether the Olympics had a statistically significant impact, as most of our analysis is done by inspection. We hope to see these topics explored in the future.       
+    

@@ -439,7 +439,7 @@ The plot shows the number of international visitors entering each of the 5 regio
 
 From the analysis on Canada tourism, it does not appear that British Columbia (West Canada) benefited substantially from hosting the Olympic games: although there was a spike in tourism in early 2010 (likely due to the Olympics), international tourism held steady after 2010 with slight increases (but not visibly different from those in other regions). Since the Prairie provinces, the Northern territories and the Atlantic provinces has low and stable patterns over time, these 3 regions' effects on tourism are neglectable. We want to look at tourism and economic data within British Columbia and Vancouver to better understand the tourism impact of the Olympics.   
 
-## Targetting Tourism in Vancouver   
+## Targeting Tourism in Vancouver   
 
 We first visualize the monthly tourists in Vancouver.  
 
@@ -447,7 +447,7 @@ We first visualize the monthly tourists in Vancouver.
 knitr::include_graphics('extra_plots/ca1.png', dpi = NA)
 ```
 
-Note: the 2010 Olympics occur around mont 120.   
+Note: the 2010 Olympics occur around month 120.   
 Since this data is highly cyclical, we graph the year-over-year change in tourism (starting from January 2001) so that changes are measured between corresponding points in the cycle:    
 
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
@@ -500,7 +500,11 @@ R^2 for consumption_taxes: 0.0356
 
 The coefficients are only significant for the relationships between real_GDP/tourism and revenue/tourism. Thus, tourism does not appear to have a significant impact on employment, salaries, or taxes, even within the tourism sector.     
 
-<font size="3"><b> Conclusion: </b></font>       
-There is some evidence that there is an increase in tourism following the 2010 Olympic games. However, there is not strong evidence that these sustained increases in tourism contributed to substantial economic benefits for Vancouver, British Columbia, or Canada. Based on regional and national economic data, it appears that although there were increases in variables such as employment and wages, improvements in the tourism sector and in regions closest to where the Olympics were held were not larger than improvements in other sectors or areas. Future areas of investigation should be to determine whether the post-2010 increase in total (not only international) tourism to Vancouver exceeded that of other regions of Canada and likewise for economic indicators in the tourism sector. 
-
+## Canada Conclusion      
+    
+On a national level, economic outcomes—specifically GDP, household income, and employment—show growth after the 2010 Olympic games. However, this growth appears to be uniform across regions in Canada. In terms of international tourism, the decline in tourism to Central Canada and the West Coast appears to halt after the 2010 Olympics. However, there is no strong evidence that post-2010 gains in tourism in the West Coast (where the Olympics were held) is greater than that in other regions.      
+  
+Within Vancouver, there is some evidence of an increase in tourism following the 2010 Vancouver Olympics. However, there is not strong evidence that these sustained increases in tourism contributed to substantial economic benefits for Vancouver, British Columbia, or Canada. In fact, tourism increases contributed to tourism GDP and revenue but did not appear to affect any other other economic variables.      
+  
+In conclusion, we find that the Olympics did not have a significantly positive impact on Canada, British Columbia, or Vancouver; even though there were some local gains in tourism within Vancouver, we do not find that the economic outcomes of this tourism were any better than those in the rest of British Columbia or Canada.      
 

@@ -26,7 +26,7 @@ All data files can be found in: https://github.com/xiayunj/2020_summer_invitatio
 <b>Reference:</b> Table  36-10-0402-01   Gross domestic product (GDP) at basic prices, by industry, provinces and territories (x 1,000,000)    
 DOI: https://doi.org/10.25318/3610040201-eng     
 Website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610040201     
-<b>Manipulation:</b> We add an additional variable `larger_region` to indicate the 5 regions in Canada. We also change the unit of GDP from millions to trillions for better visualization. For regional GDP calculation, we simply adde the GDP of all provinces/territories within one larger region. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate. For increasing rate calculation by using other tables in section 4.1 to 4.3, we use the same formula.    
+<b>Manipulation:</b> We add an additional variable `larger_region` to indicate the 5 regions in Canada. We also change the unit of GDP from millions to trillions for better visualization. For regional GDP calculation, we simply add the GDP of all provinces/territories within one larger region. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate. For increasing rate calculation by using other tables in section 4.1 to 4.3, we use the same formula.    
 Note: Raw data has value of GDP in Chained (2012) Dollars in Millions.    
 
 <font size="4"><b> canada_in_un.csv </b></font>    
@@ -46,7 +46,7 @@ website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=2410000501
 <b>Manipulation:</b> We add an additional variable `larger_region` to indicate the 5 regions in Canada. We change the unit of number of visitors to millions. Also, we drop the missing values in this dataset. For calculation of regional number of tourists, we simply add up numbers of tourists entering different provinces/territories within one region.   
 
 <font size="4"><b> Vancouver_employment_by_industry.csv </b></font>    
-<b>Description:</b> This data is from Datathon Materials and has 4 variables: `year`, `industry code`, and `value`. This dataset covers the number of people employed in various industries in British Columbia from 1987 through 2019.    
+<b>Description:</b> This data is from Datathon Materials and has 3 variables: `year`, `industry code`, and `value`. This dataset covers the number of people employed in various industries in British Columbia from 1987 through 2019.    
 <b>Manipulation:</b> Although the data covers various sub-industries within larger sectors, we used data from the larger industries: Agriculture, Forestry/fishing/mining/oil/gas, Utilities, Construction, Manufacturing, Trade, Transportation and Warehousing, Finance/Insurance/Real Estate/Leasing, Professional/Scientific/Technical Services, Business/Building/Other Support Services, Educational Services, Health Care/Social Assistance, Information/Culture/Recreation, Accommodation/Food Services, Other Services, Public Administration; in addition, we use data for the larger categories: Goods-Producing Sector, Services-Producing Sector, and Total. The industry names are converted from the numerical codes to the names provided in an Excel sheet from Statistics Canada:  https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028703. We graph each of these variables by year. 
 We graph yearly changes in employment: we use the total employment (industry_code = ‘0’) and graph the employment rate of change from 1988-2019: (employment in year i - employment in year i-1) / (employment in year i ).   
 
@@ -58,10 +58,6 @@ We graph the rate of change of each of the employment variables by year and the 
 <font size="4"><b> Vancouver_visits.csv </b></font>     
 <b>Description:</b> This dataset is from Datathon Materials. It covers Vancouver overnight visitors from 1994 to 2018. It has 3 variables: `year`, `month` and `value`.     
 <b>Manipulation:</b> We graph the number of monthly tourists in Vancouver from 2000 through 2018. Additionally, we sum monthly tourists for entire years, graph yearly tourists and graph annual changes in tourism.    
-
-<font size="4"><b> Vancouver_room_revenues_2010_2019.csv </b></font>     
-<b>Description:</b> This dataset is from Datathon Materials. It covers Vancouver room revenues from 2010 to 2019. It has 5 variables: `year`, `month`, `region_code`, `region_name`, `revenue`.    
-<b>Manipulation:</b> This data tracks revenue from room bookings by month and region. We use the monthly room revenue totals for the region ‘DR01’ and plot them against monthly tourists in Vancouver.    
 
 
 ## Data for Analysis of Brazil    

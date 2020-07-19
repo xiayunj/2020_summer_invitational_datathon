@@ -8,6 +8,16 @@ site: bookdown::bookdown_site
 
 # Introduction
 
-## Non-Technical Executive Summary    
+Github: https://github.com/xiayunj/2020_summer_invitational_datathon     
 
-## Techinal Exposition   
+<font size="5"><b> Non-Technical Executive Summary </b></font>    
+
+Hosting the Olympic Games has been a coveted position from its inception, touted as an incredible honor intended to showcase the opulence of the host country and an opportunity to earn a windfall of billions with the influx of tourists and international recognition. Countries spend hundreds of millions on their bids to the International Olympic Committee (IOC) alone , vying for the chance to bring the windfall to their doorstep. However, the claim to economic fame as a result of the Olympics has come under question in recent years, with continued cost overruns inflating costs  and the IOC taking increasing cuts from the host countries’ revenue. In combination with the travel restrictions and limitations on large group gatherings in the post-COVID-19 world, the financial future of the Olympic Games is uncertain – countries must be cautious, should they bid to host the Olympics, to be aware of the financial implications of such a decision.      
+
+This study attempts to provide further granularity to such an understanding by comparing the economic impacts of hosting the Olympics for a given country at the regional level. We examine the tourism, GDP, income and unemployment data at the regional level for three different case study countries – Canada for Vancouver 2010, the United Kingdom for London 2012, and Brazil for Rio 2016 – leading up to and following an Olympics hosting. Through tourism, we aim to be able to break down a commonly cited source of revenue from the Olympics; GDP provides insight into the total economic growth of the event; unemployment, similar to tourism, tracks one of the claimed long-term effects of the Olympics. With this analysis, we hope to provide insight into the regional breakdown of the economic effects, or lack thereof, of hosting an Olympics and how in aggregate they contribute to the more widely known national economic impacts of the games.   
+
+Reference:    
+https://www.cfr.org/backgrounder/economics-hosting-olympic-games    
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2804554      
+
+

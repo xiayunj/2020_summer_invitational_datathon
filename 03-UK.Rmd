@@ -247,12 +247,17 @@ grid.arrange(regional_pay_plots$`South West`, regional_pay_plots$Wales,
              nrow = 4, ncol = 3)
 ```
     
-Through inspection, we conclude that these plots as well support the conclusion that the 2012 Olympics had no impact on the distribution of pay in any region. In fact, the near uniformity of the distributions calls into question whether any meaningful regional distinctions among worker pay are to be had in the UK.      
+Through inspection, we conclude that these plots as well support the conclusion that the 2012 Olympics had no impact on the distribution of pay in any region. In fact, the near uniformity of the distributions calls into question whether any meaningful regional distinctions among worker pay are to be had in the UK.    
+   
+From these regional plots, we make three observations:      
+1. With the sole exception of London, each of the distributions is nearly uni-modal with peaks ranging from 300 to 600 £. That London is the exception in this case provides further evidence that the regional impact of the Olympics on London may be different than other regions.     
+2. Regardless of the region, we see that while changes do occur in the distribution over time, those changes are well under way before the 2012 Olympics. This leads to the conclusion that the Olympics did not have a large impact on regional pay distribution.       
+3. With reference to observation 1, the near uniformity of many of the distributions across regions suggests a further conclusion that meaningful regional distinctions in worker pay may not be had, with the exception of London.      
 
 
 <font size="5"><b> Regional Average Weekly Pay </b></font>     
 
-After analyzing regional densities for weekly pay. We calculate the regional average weekly pay to visualiza the trend before and after the Olympic year 2012.    
+After analyzing regional densities for weekly pay. We calculate the regional average weekly pay to visualize the trend before and after the Olympic year 2012.    
 
 ```{r echo=FALSE, fig.height=5, fig.width=10}
 ggplot(test2, aes(year, pay, color=area)) + 
@@ -265,7 +270,10 @@ ggplot(test2, aes(year, pay, color=area)) +
   theme_gray(13)
 ```
 
-The multiple time series plot shows that there is no significant increase in average weekly pay from 2012 to 2014 for all the regions. London seems to increase its average weekly pay starting from 2014. The trends for the 12 regions follow a similar increasing pattern from 2002 to 2019, but the Olympic year does not bring any significant increase in weekly pay for London.      
+The multiple time series plot shows that there is no significant increase in average weekly pay from 2012 to 2014 for all the regions. London seems to increase its average weekly pay starting from 2014. The trends for the 12 regions follow a similar increasing pattern from 2002 to 2019, but the Olympic year does not bring any significant increase in weekly pay for London.    
+
+The above plot allows us to conclude by inspection that with the possible exception of London, no meaningful regional impact was had by the Olympics on Average Weekly Pay. We are able to observe that London’s average weekly pay plot appears to follow a flat if not downward trend leading up to and soon after the Olympics and that in 2014 this trend is reversed leading to increased growth. However, we were not able to perform statistical tests to analyze whether this change can be attributed to the Olympics. Again we note the uniformity of the trends in Average Weekly Pay shown by most other regions, reinforcing our preliminary conclusion that regional differences are not very large.    
+
 
 ## UK International Tourism    
 
@@ -299,4 +307,9 @@ The red line in the above plots indicates the London 2012 Olympics. Although we 
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
 knitr::include_graphics('extra_plots/UK_paired_tourists.jpeg', dpi = NA)
 ```
-  
+   
+These plots allow for further clarity on the regional breakdown of these tourism indicators. Of note, we do see meaningful regional distinctions among these factors. This is in contrast to the regional breakdown of economic data, which showed almost no distinction among regions. This conclusion makes sense, as certain parts of the UK are more attractive tourist destinations than other parts. Nonetheless, irregardless of which region we explore, none of them seem to show are large change in behavior directly following or as a result of the 2012 Olympics.      
+
+## UK Conclusion    
+
+From the above observational analysis, we are able to conclude that the Olympics does not have a large impact on the national or regional economic and tourism indicators for the United Kingdom. When broken down by region, we found that the economic data showed a large degree of uniformity, leading to a suggestion that meaningful economic differences cannot be found across regions. The tourism data did show more heterogeneity when broken down by region, however in all indicators measured we did not find that the Olympics produced significant changes for any individual region.    
