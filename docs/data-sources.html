@@ -100,7 +100,6 @@
 <li class="chapter" data-level="5.2" data-path="brazil-2016-rio-olympics.html"><a href="brazil-2016-rio-olympics.html#brazil-monthly-income"><i class="fa fa-check"></i><b>5.2</b> Brazil Monthly Income</a></li>
 <li class="chapter" data-level="5.3" data-path="brazil-2016-rio-olympics.html"><a href="brazil-2016-rio-olympics.html#brazil-unemployment-rate"><i class="fa fa-check"></i><b>5.3</b> Brazil Unemployment Rate</a></li>
 <li class="chapter" data-level="5.4" data-path="brazil-2016-rio-olympics.html"><a href="brazil-2016-rio-olympics.html#brazil-tourism"><i class="fa fa-check"></i><b>5.4</b> Brazil Tourism</a></li>
-<li class="chapter" data-level="5.5" data-path="brazil-2016-rio-olympics.html"><a href="brazil-2016-rio-olympics.html#interactive"><i class="fa fa-check"></i><b>5.5</b> Interactive</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -132,8 +131,13 @@
 </div>
 <div id="data-for-analysis-of-brazil" class="section level2">
 <h2><span class="header-section-number">2.3</span> Data for Analysis of Brazil</h2>
-<p><code>brazil_gdp.csv</code><br />
-This dataset is from Datathon Materials which has 4 variables: <code>state</code>, <code>region</code>, <code>year</code>, <code>value</code>. The variable <code>region</code> is a smaller region in <code>state</code>. This dataset covers Brazil GDP from year 2002 to 2017. Since the raw data is on a state-level of Brazil GDP over years, we add an additional variable <code>larger_region</code> to indicate which of the 5 regions a row belongs to. The raw data has GDP values in thousands of Reals. For better visualization, we modify the unit to trillions of Reals. For regional GDP calculation, we simply add the GDP value of all states within one larger region to get the result. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate.</p>
+<p><font size="4"><b> brazil_gdp.csv </b></font><br />
+Description: This dataset is from Datathon Materials which has 4 variables: <code>state</code>, <code>region</code>, <code>year</code>, <code>value</code>. The variable <code>region</code> is a smaller region in <code>state</code>. It covers Brazil GDP from year 2002 to 2017.<br />
+Manipulation: Since the raw data is on a state-level of Brazil GDP over years, we add an additional variable <code>larger_region</code> to indicate which of the 5 regions a row belongs to. The regional division criteria is in section 5. The raw data has GDP values in thousands of Reals. For better visualization, we modify the unit to trillions of Reals. For regional GDP calculation, we simply add the GDP value of all states within one larger region to get the result. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate.</p>
+<p><font size="4"><b> brazil_monthly_income.csv </b></font><br />
+Description: This dataset is from Datathon Materials which has 5 variables: <code>year</code>, <code>quarter</code>, <code>job_type</code>, <code>state</code>, <code>value</code>. It covers Brazil monthly income from year 2012 to 2020.<br />
+Manipulation: We also add an additional variable <code>larger_region</code> to indicate Brazil’s 5 regions. This data has missing values, we choose to drop all missing values. Also, for the ridgeline plot and histograms in section 5.2, we remove higher outliers by using the criteria: <span class="math inline">\(Q_3 + (1.5\times \text{IQR})\)</span>, where <span class="math inline">\(Q_3\)</span> is the upper quartile and IQR is the Interquatile Range. Points above the criteria are defined to be higher outliers. For each region’s average monthly income, we take the mean of all data points within one region.</p>
+<p><font size="4"><b> brazil_unemployment.csv </b></font></p>
 
 </div>
 </div>

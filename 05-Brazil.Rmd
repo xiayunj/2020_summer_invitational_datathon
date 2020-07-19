@@ -89,13 +89,14 @@ ggplot(df_gdp, aes(year, gdp, color=larger_region)) +
   theme_gray(13)
 ```
 
-From this plot, we find that from year 2002 to 2017, South East region always has a higher GDP than other 4 regions. After year 2019, the GDP for all of the 5 regions seem to increase faster than before, especially the South East region. Since 2009 is the year when Rio was awared to host the 2016 Olympics, we come up with a hypothesis that the success of the bid for Brazil helps to increase the GDP growth rate, especially for the South East.    
+From this plot, we find that from year 2002 to 2017, South East region always has a higher GDP than other 4 regions. After year 2019, the GDP for all of the 5 regions seem to increase faster than before, especially the South East region. Since 2009 is the year when Rio was awarded to host the 2016 Olympics, we come up with a hypothesis that the success of the bid for Brazil helps to increase the GDP growth rate, especially for the South East. In other words, the final selection brings different regional GDP growth impact on Brazil.      
 
-However, the plot does not show a higher increasing rate for all of the 5 regions after the Olympic year 2016. Also, since our raw data does not provide the statistics after year 2017, our analysis may have some limitation to analyze the regional GDP impact after year 2016.   
+However, the plot does not show a higher increasing rate for all of the 5 regions after the Olympic year 2016. Also, since our raw data does not provide the statistics after year 2017, our analysis may have some limitation to analyze the regional GDP impact after year 2016. Also, the plot shows that the GDP growth rate of South East region decreases from 2014 to 2016.    
 
 Before we get to our conclusion, we want to get a closer look at regional GDP growth rate.      
 
 <font size="5"><b> Brazil Regional GDP Increasing Rate from 2003 to 2017 </b></font>    
+
 ```{r echo=FALSE}
 gdp_rate_temp <- df_gdp
 gdp_rate <- data.frame('Year' = c('2003','2004','2005','2006','2007','2008','2009','2010',
@@ -148,16 +149,18 @@ reactable(
 ```
 
   
+From this table, we find that the highest GDP growth rate appears at year 2010 in North region, which is 24.60%, whereas the lowest GDP growth rate appears at year 2015 in South East region, which is 2.02%. Also, the regional GDP increase rate peaked at 2010 for almost all regions. Year 2010 is the year after the final selection of Olympics, whereas year 2015 is the year before the Olympic games.    
 
- 
-     
-We want to test our hypothesis using two ANOVA tests: one is for the regional GDP growth rate from year 2003 to 2009; another one is for the regional GDP growth rate from year 2010 to 2017.   
-    
-<font size="4"><b> First ANOVA test on regional GDP from 2003 to 2009: </b></font>      
+The table also shows that in year 2016, the GDP growth rate for each of the 5 regions has no significant changes compared to 2015. The highest increase in GDP growth rate appears at Mid West region in the Olympic year, but the increasing percent is $9.2\%-6.84\% = 2.36\%$, which is small. The changes of growth rate in year 2017 are also not significant for the 5 regions.    
+
+Moreover, we find that before year 2019, the GDP growth rate for all 5 regions stays around 10+ percent, but the previous multiple time series plot shows that South East region may have a higher GDP growth rate than the other 4 regions after 2009. If we have an assumption that "before 2009, all of the 5 regions in Brazil have the same GDP growth rate", we can then test whether the 5 regions still have the same GDP growth rate after 2009. The reason why we want to do this test is to check if the success of Olympic bid will bring a more significant GDP growth for South East region. Therefore, we want to first test our assumption by using a One-Way ANOVA test using the existing data from 2003 to 2009.   
+         
+         
+<font size="5"><b> First ANOVA test on regional GDP from 2003 to 2009: </b></font>      
 <font size="3"><b> Hypothesis: </b></font>       
 $H_0$: The means of GDP increasing rate for the 5 regions from 2003 to 2009 are the same.    
 $H_1$: Otherwise.     
-Test: One-Way ANOVA     
+Description: This test is for checking whether our initial assumption holds, where the assumption is "Before the final selection year, the 5 regions in Brazil have the same GDP growth rate".       
 
 
 ```{r include=FALSE}
@@ -183,41 +186,42 @@ for (i in 1:8){
 }
 ```
 
-<font size="4"><b> Summary of the test: </b></font>       
+<font size="3"><b> Summary of the test: </b></font>       
 ```{r echo=FALSE}
 model1 <- aov(rate~region, data = br_gdp_anova1)
 summary(model1)
 ```
      
-<font size="4"><b> Conclusion: </b></font>    
-The p-value is 0.93, which shows that we fail to reject the null hypothesis.     
+<font size="3"><b> Conclusion: </b></font>     
+From the summary of test table, we find that the p-value is 0.93, which shows that we fail to reject the null hypothesis. That is, we cannot say the mean of GDP growth rate for each of the 5 regions have significant difference. Therefore, our initial assumption holds, then we can continue to test whether there are significant differences in the means of GDP growth rate for the 5 regions after 2009. In the next test, we still use the One-Way ANOVA test, but we use the existing data from 2010 to 2017.         
         
         
-<font size="4"><b> First ANOVA test on regional GDP from 2010 to 2017: </b></font>      
+<font size="5"><b> Second ANOVA test on regional GDP from 2010 to 2017: </b></font>      
 <font size="3"><b> Hypothesis: </b></font>       
 $H_0$: The means of GDP increasing rate for the 5 regions from 2010 to 2017 are the same.    
 $H_1$: Otherwise.     
-Test: One-Way ANOVA     
+Description: Based on the assumption from the first ANOVA test, we want to conduct a second test to check whether the means of GDP growth rate for the 5 regions still remain the same from 2010 to 2017. If the test result shows a significant difference in the means, we can conclude that the succuss of 2016 Olympic bid shows a significant GDP growth on regional levels.      
    
-<font size="4"><b> Summary of the test: </b></font>       
+<font size="3"><b> Summary of the test: </b></font>       
 ```{r echo=FALSE}
 model2 <- aov(rate~region, data = br_gdp_anova2)
 summary(model2)
 ```
 
-<font size="4"><b> Conclusion: </b></font>    
-The p-value is 0.881, which shows that we fail to reject the null hypothesis.     
-Therefore, for both tests, we fail to reject the null hypothesis. That is, we cannot say that the mean GDP growth rate for each of the 5 regions has significant difference. This also shows that the event of Olympic games does not impact on the GDP growth rate for regions in Brazil differenly.     
+<font size="3"><b> Conclusion: </b></font>    
+From the summary table, we find that the p-value is 0.881, which shows that we fail to reject the null hypothesis. That is, from 2010 to 2017, we cannot say the GDP growth rate for each of the 5 regions has a significant difference.     
+       
+For both tests, we fail to reject the null hypothesis. Therefore, the year 2009 does not bring a different regional GDP growth rate impact on Brazil. This conclusion is not consistent with our initial hypothesis from the multiple time series plot.     
+
+In conclusion, for Brazil regional GDP analysis, the data does not show that the Olympic games results in any significant difference in GDP growth across the regions in Brazil.    
 
 
-## Brazil Monthly Income  
-Source Data: `brazil_monthly_income.csv`, `brazil_unemployment.csv`     
+## Brazil Monthly Income   
        
 <font size="5"><b> Monthly Income Distribution </b></font>   
    
     
 ```{r include=FALSE}
-#Note: There are some missing values in the raw data table. We choose to drop them. 
 for (i in 1:nrow(br_mi)){
   if (br_mi[i,'state'] %in% north){
     br_mi[i,'larger_region'] <- 'North Region'
@@ -234,12 +238,11 @@ for (i in 1:nrow(br_mi)){
 ```
 
 
-First, take a view at the distribution of monthly income for the entire country from 2012 to 2020:    
-Note: We dropped missing values.   
 ```{r include=FALSE}
 br_mi1 <- br_mi %>% drop_na()
 ```
 
+Before we analyze the regional average monthly income, we want to first visualize the distribution of monthly income for the entire country from 2012 to 2020. This will help us to get a better understanding of the overall distribution of Brazil monthly income over years. We first make a multiple boxplot over years to better visualize the robust statistics: medians, quartiles and outliers.     
 
 ```{r echo=FALSE, fig.height=5, fig.width=10}
 ggplot(br_mi1, aes(x = as.factor(year), y = value)) + 
@@ -254,8 +257,11 @@ ggplot(br_mi1, aes(x = as.factor(year), y = value)) +
   scale_x_discrete(labels = c('2016'='2016 (Olympics)'))
 ```
 
-From the Boxplots wo can find that the median of monthly income shows an increasing pattern from 2012 to 2020. However, there are higher outliers for each year, so we remove those higher outliers for further analysis on density estimation for better visualization.       
-Higher Outlier definition: points above $Q_3 + (1.5\times \text{IQR})$, where $Q_3$ is the upper quartile and IQR is the Interquatile Range.    
+From the boxplots we find that the median of national monthly income shows an increasing pattern from 2012 to 2020. However, the plot does not show any significant increase in the median of monthly income after the Olympic year 2016 on national-level. The Interquartile Range also increases from 2012 to 2020.      
+
+Then we want to visualize the density distribution for the national monthly income, but by the boxplots, there are higher outliers for each year. If we keep those outliers, it will be hard to visualize the density plot, so we remove those higher outliers for better visualization.        
+
+Note: Higher Outlier definition: points above $Q_3 + (1.5\times \text{IQR})$, where $Q_3$ is the upper quartile and IQR is the Interquatile Range.    
 
 ```{r include=FALSE}
 for (i in 2012:2020){
@@ -281,6 +287,9 @@ ggplot(br_mi1, aes(x = value, y = as.factor(year), fill = year))+
   scale_fill_viridis()
 ```
 
+The ridgeline plot helps us to better understand the density estimation. From 2012 to 2020, the peak of density curves increases from 1000 to 1500 approximately. Also, the tail of the density curves becomes much heavier from 2012 to 2020. These observations shows that the monthly income has an increasing pattern over years. However, between 2015 and 2017, the density curves do not show a more significant increasing pattern.  
+
+Next, we want to focus on the regional-level. We pick data of the Olympic year 2016 and plot a set of histograms grouped by regions. We want to first check whether there are any significant difference in the distributions of regional monthly income. If hosting the Olympics may result in different regional impact, there may be difference in the regional distribution of monthly income in 2016.        
      
 <font size="5"><b> Regional Monthly Income Distribution in the Olympics Year 2016 </b></font>    
 ```{r echo=FALSE, fig.height=7, fig.width=10}
@@ -296,14 +305,12 @@ ggplot(br_mi1[which(br_mi1$year == 2016),], aes(x = value, y = ..density..)) +
   theme(plot.caption = element_text(color = "grey68"))
 ```
    
-<font size="4"><b> Observation: </b></font>    
-
-Our hypothesis may be "hosting the Olympics can increase peoples' income in the hosting city/region". However, from this plot we find that the South East Region does not show a distribution of higher monthly income in year 2016.     
+In this plot, we also remove the outliers for better visualization. The histograms shows all of the 5 regions have most density in monthly income less than 2000 but greater than 1000. Also, South East region does not show a distribution of higher monthly income than other regions in year 2016.      
 
 
 <font size="5"><b> Regional Average Monthly Income </b></font>     
 
-Now we want to visualize the regional average monthly income. Here we keep the outliers because we are calculating the regional average for each year.   
+Now we move to visualize the regional average monthly income. Here we keep the outliers because we are calculating the regional average for each year.   
 
 ```{r include=FALSE}
 df_mi <- br_mi[, c('year','value','larger_region')] %>% 
@@ -384,6 +391,35 @@ reactable(
 <font size="4"><b> Observation: </b></font>      
 1. Seems no significant difference of increasing rate between the 5 regions around year 2016.    
 2. For South East Region, the increasing rate in 2016 is lower than that in 2015. (Why?)   
+
+
+<font size="5"><b> Relationship between Brazil GDP in Trillions of Reals and Monthly Income </b></font>   
+```{r include=FALSE}
+Ag <- br_gdp[which(br_gdp$year >= 2012 & br_gdp$year <= 2017),] %>%
+  group_by(year, state, larger_region) %>%
+  summarize(gdp = mean(value)/1000000000)
+Ai <- br_mi[which(br_mi$year >= 2012 & br_mi$year <= 2017),] %>%
+  drop_na() %>%
+  group_by(year, state) %>%
+  summarize(income = mean(value))
+
+Agi <- merge(Ag, Ai, by=c('year', 'state'))
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+anim <- ggplot(Agi, aes(gdp, income, color = larger_region)) +
+  geom_point() +
+  theme_bw() +
+  labs(title = 'Scatter Plot between GDP and Monthly Income by Regions',
+       subtitle = 'Year: {frame_time}', x = 'GDP in Trillions of Reals', 
+       y = 'Average Monthly Income', color = 'Region') +
+  transition_time(year)
+
+animate(
+  anim, renderer = magick_renderer()
+)
+
+```
    
 ## Brazil Unemployment Rate     
  
@@ -613,32 +649,6 @@ ggplot(df_ia, aes(Date, value)) +
 ```
 
 
-## Interactive 
    
-```{r include=FALSE}
-Ag <- br_gdp[which(br_gdp$year >= 2012 & br_gdp$year <= 2017),] %>%
-  group_by(year, state, larger_region) %>%
-  summarize(gdp = mean(value)/1000000000)
-Ai <- br_mi[which(br_mi$year >= 2012 & br_mi$year <= 2017),] %>%
-  drop_na() %>%
-  group_by(year, state) %>%
-  summarize(income = mean(value))
 
-Agi <- merge(Ag, Ai, by=c('year', 'state'))
-```
-
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-anim <- ggplot(Agi, aes(gdp, income, color = larger_region)) +
-  geom_point() +
-  theme_bw() +
-  labs(title = 'Relationship between Brazil GDP in Trillions of Reals and Monthly Income',
-       subtitle = 'Year: {frame_time}', x = 'GDP in Trillions of Reals', 
-       y = 'Average Monthly Income', color = 'Region') +
-  transition_time(year)
-
-animate(
-  anim, renderer = magick_renderer()
-)
-
-```
 

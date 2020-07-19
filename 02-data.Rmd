@@ -7,5 +7,14 @@
 
 ## Data for Analysis of Brazil    
 
-`brazil_gdp.csv`      
-This dataset is from Datathon Materials which has 4 variables: `state`, `region`, `year`, `value`. The variable `region` is a smaller region in `state`. This dataset covers Brazil GDP from year 2002 to 2017. Since the raw data is on a state-level of Brazil GDP over years, we add an additional variable `larger_region` to indicate which of the 5 regions a row belongs to. The raw data has GDP values in thousands of Reals. For better visualization, we modify the unit to trillions of Reals. For regional GDP calculation, we simply add the GDP value of all states within one larger region to get the result. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate.       
+<font size="4"><b> brazil_gdp.csv </b></font>     
+Description: This dataset is from Datathon Materials which has 4 variables: `state`, `region`, `year`, `value`. The variable `region` is a smaller region in `state`. It covers Brazil GDP from year 2002 to 2017.   
+Manipulation: Since the raw data is on a state-level of Brazil GDP over years, we add an additional variable `larger_region` to indicate which of the 5 regions a row belongs to. The regional division criteria is in section 5. The raw data has GDP values in thousands of Reals. For better visualization, we modify the unit to trillions of Reals. For regional GDP calculation, we simply add the GDP value of all states within one larger region to get the result. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate.       
+    
+    
+<font size="4"><b> brazil_monthly_income.csv </b></font>   
+Description: This dataset is from Datathon Materials which has 5 variables: `year`, `quarter`, `job_type`, `state`, `value`. It covers Brazil monthly income from year 2012 to 2020.   
+Manipulation: We also add an additional variable `larger_region` to indicate Brazil's 5 regions. This data has missing values, we choose to drop all missing values. Also, for the ridgeline plot and histograms in section 5.2, we remove higher outliers by using the criteria: $Q_3 + (1.5\times \text{IQR})$, where $Q_3$ is the upper quartile and IQR is the Interquatile Range. Points above the criteria are defined to be higher outliers. For each region's average monthly income, we take the mean of all data points within one region.     
+
+
+<font size="4"><b> brazil_unemployment.csv </b></font>  
