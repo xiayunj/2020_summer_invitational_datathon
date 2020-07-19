@@ -2,7 +2,7 @@
 <font size="6"><b> Analysis of Regional Economic Impacts of Hosting Olympics on the United Kingdom </b></font>   
 
 <font size="4"><b> Introduction </b></font>      
-In this part of our report, we discuss the impact of the 2012 London Olympics on the UK as a whole, as well as its constituent subregions.     
+In this part of our report, we discuss the impact of the 2012 London Olympics on the UK as a whole, as well as its constituent subregions. We focused on UK GDP, weekly pay and international tourism. The 2012 Olympic Games took place at London. London was awarded to host the games in 2005.    
 
 <font size="4"><b> Region Description </b></font>    
 We divide the UK into 12 regions, with London, which hosted the Olympics, being one of them. The regions consist of the normal division of England as well as separate regions for Scotland, Wales, and Northern Ireland.    
@@ -41,6 +41,7 @@ library(gganimate)
 library(gifski)
 library(magick)
 library(readxl)
+library(gridExtra)
 ```
 
 ```{r include=FALSE}
@@ -65,7 +66,7 @@ for (i in 1:nrow(uk_gdp)){
 }
 ```
 
-```{r echo=FALSE, fig.height=5, fig.width=10}
+```{r echo=FALSE, fig.height=5, fig.width=7}
 ggplot(uk_gdp_clean[which(uk_gdp_clean$Region == 'United Kingdom'),], 
        aes(Year, GDP, color=Region)) + 
   geom_line(size =1.5, color = 'blue') +
@@ -177,27 +178,100 @@ This boxplots above lead to two important conclusion:
      
 We can further analyze this second conclusion by viewing the distribution of pay over time using a Joyplot.      
 
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
-knitr::include_graphics('extra_plots/uk_joy.png', dpi = NA)
-```  
+<font size="5"><b> Density Estimation on Weekly Pay </b></font>   
+
+```{r include=FALSE}
+test <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/London/london_earnings_by_borough.csv')
+```
+
+
+```{r include=FALSE}
+test1 <- test[which(test$area %in% c('South West', 'Wales', 'East', 'North East', 
+                                     'Northern Ireland', 'North West', 'West Midlands', 
+                                     'East Midlands', 'South East', 'Scotland', 'London', 
+                                     'Yorkshire and The Humber' ) &
+                      test$pay_type == 'Weekly'), c('year', 'area', 'pay')]
+```
+
+```{r include=FALSE}
+test2 <- test1 %>% 
+  drop_na() %>%
+  group_by(year, area) %>%
+  summarize(pay = mean(pay))
+```
+
+```{r echo=FALSE, fig.height=6, fig.width=8, message=FALSE, warning=FALSE}
+ggplot(test1, aes(x = pay, y = as.factor(year), fill = year))+
+  geom_density_ridges_gradient(scale = 4, show.legend = FALSE) + 
+  theme_ridges() +
+  scale_y_discrete(expand = c(0.01, 0)) +
+  scale_x_continuous(expand = c(0.01, 0)) +
+  labs(x = "Weekly Pay",y = "Year") +
+  ggtitle("Density estimation of UK Weekly Pay", 
+  subtitle = 'From 2002 to 2019') +
+  theme(plot.title = element_text(hjust = 0.5), plot.subtitle = element_text(hjust = 0.5)) +
+  scale_fill_viridis()
+```
 
 Although this plot does admit some changes in the distribution of weekly pay from 2002 to 2019, it reinforces the conclusion that the 2012 Olympic Games were not the cause of this change. Instead, we conclude through inspection that this shift begins around 2004 and and is nearly complete by 2008. All the years after 2008 appear to have nearly identical distributions, including 2012 and beyond.       
     
 The above conclusion can be analyzed on the regional level by plotting similar Joyplots of distribution of pay for each of our regions of interest.    
 
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
-knitr::include_graphics('extra_plots/uk_regional_pay.png', dpi = NA)
-``` 
+```{r include=FALSE}
+regional_pay_plots <- list(12)
+
+for (i in c('South West', 'Wales', 'East', 'North East', 'Northern Ireland', 'North West', 'West Midlands', 
+            'East Midlands', 'South East', 'Scotland', 'London', 'Yorkshire and The Humber' ) ){
+  temp <- ggplot(test1[which(test1$area == i),], aes(x = pay, y = as.factor(year), fill = year))+
+  geom_density_ridges_gradient(scale = 4, show.legend = FALSE) + 
+  theme_ridges() +
+  scale_y_discrete(expand = c(0.01, 0)) +
+  scale_x_continuous(expand = c(0.01, 0)) +
+  labs(x = paste(i," Weekly Pay"),y = "Year") +
+  ggtitle(paste(i),  subtitle = 'From 2002 to 2019') +
+  theme(plot.title = element_text(hjust = 0.5), plot.subtitle = element_text(hjust = 0.5)) +
+  scale_fill_viridis()
+  regional_pay_plots[[i]] <- temp
+            }
+```
+
+
+```{r echo=FALSE, fig.height=18, fig.width=14, message=FALSE, warning=FALSE}
+
+grid.arrange(regional_pay_plots$`South West`, regional_pay_plots$Wales, 
+             regional_pay_plots$East, regional_pay_plots$`North East`,
+             regional_pay_plots$`Northern Ireland`, regional_pay_plots$`North West`,
+             regional_pay_plots$`West Midlands`, regional_pay_plots$`East Midlands`,
+             regional_pay_plots$`South East`, regional_pay_plots$Scotland,
+             regional_pay_plots$London, regional_pay_plots$`Yorkshire and The Humber`,
+             nrow = 4, ncol = 3)
+```
     
 Through inspection, we can conclude that these plots as well support the conclusion that the 2012 Olympics had no impact on the distribution of pay in any region. In fact, the near uniformity of the distributions calls into question whether any meaningful regional distinctions among worker pay are to be had in the UK.      
 
 
+<font size="5"><b> Regional Average Weekly Pay </b></font>     
+
+After analyzing regional densities for weekly pay. We calculate the regional average weekly pay to visualiza the trend before and after the Olympic year 2012.    
+
+```{r echo=FALSE, fig.height=5, fig.width=10}
+ggplot(test2, aes(year, pay, color=area)) + 
+  geom_line() +
+  geom_vline(xintercept = 2012, linetype="dashed", color = "red", size=1.5) +
+  geom_text(aes(x = 2012, label = 'London Olympics', y = 420), colour = 'black', size = 4) +
+  ggtitle('UK Average Weekly Pay by Regions', subtitle = 'From 2002 to 2019') +
+  labs(x = 'Year', y = 'Average Weekly Pay', color = 'Regions') +
+  scale_x_continuous(breaks = seq(2002, 2019, 2)) +
+  theme_gray(13)
+```
+
+The multiple time series plot shows that there is no significant increase in average weekly pay from 2012 to 2014 for all the regions. London seems to increase its average weekly pay starting from 2014. The trends for the 12 regions follow a similar increasing pattern from 2002 to 2019, but the Olympic year does not bring any significant increase in weekly pay for London.      
 
 ## UK International Tourism    
 
 To further examine our theory that no meaningful impact was had by the London 2012 Olympics on the regional level, we can explore another metric of regional and country success: tourism. An initial analysis can be obtained by plotting the total number of tourists.    
 
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+```{r fig.align='center', out.height = "70%", echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
 knitr::include_graphics('extra_plots/UK_tourists.png', dpi = NA)
 ```
 

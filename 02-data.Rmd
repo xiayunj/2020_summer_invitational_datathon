@@ -1,46 +1,89 @@
 # Data Sources    
 <font size="6"><b> Data Sources Description and Data Manipulation </b></font>     
 
-All data files are stored in: https://github.com/xiayunj/2020_summer_invitational_datathon     
+All data files can be found in: https://github.com/xiayunj/2020_summer_invitational_datathon     
 
 ## Data for Analysis of UK     
 
-<font size="4"><b> regionalgrossdomesticproductgdpallnutslevelregions.xlsx </b></font>    
-Description: This dataset is one of our supplementary datasets found on ons.gov.uk. The raw data is an xlsx file with 13 tables about UK GDP. We make use of table 5 which is UK's Gross domestic product at current market prices.    
-Website: https://www.ons.gov.uk/economy/grossdomesticproductgdp/datasets/regionalgrossdomesticproductallnutslevelregions     
-Manipulation: We use excel to extract only the regional GDP over years and output the new data table as a csv file with name uk_gdp.csv.   
+<font size="4"><b> uk_regional_gdp.xlsx </b></font>    
+<b>Description:</b> This dataset is one of our supplementary datasets found on ons.gov.uk. The raw data is an xlsx file with 13 tables about UK GDP. We make use of table 5 which is UK's Gross domestic product at current market prices.    
+<b>Reference:</b> https://www.ons.gov.uk/economy/grossdomesticproductgdp/datasets/regionalgrossdomesticproductallnutslevelregions     
+<b>Manipulation:</b> We use excel to extract only the regional GDP over years and output the new data table as a csv file with name uk_gdp.csv.   
 
 <font size="4"><b> london_earnings_by_borough.csv </b></font>     
-Description: This dataset is from the Datathon materials and details information on the pay of workers in various regions of the UK from 2002 to 2019. The dataset has 6 variables, of which we make use of `year`, `area`, and `pay` variables. Year details the year of the datapoint’s collection. Area details the area in the UK of the worker for whom the datapoint was collected. Pay details the pay in hours or weekly.     
-Manipulation: We convert hourly pay to weekly pay by dropping any rows that have either no pay_type or no pay, and then multiplying all hourly pay by 40 to get weekly pay under the assumption of a 40 hour work week.       
+<b>Description:</b> This dataset is from the Datathon materials and details information on the pay of workers in various regions of the UK from 2002 to 2019. The dataset has 6 variables, of which we make use of `year`, `area`, and `pay` variables. Year details the year of the datapoint’s collection. Area details the area in the UK of the worker for whom the datapoint was collected. Pay details the pay in hours or weekly.     
+<b>Manipulation:</b> We convert hourly pay to weekly pay by dropping any rows that have either no pay_type or no pay, and then multiplying all hourly pay by 40 to get weekly pay under the assumption of a 40 hour work week.       
 
 <font size="4"><b> UK_international-visits.csv </b></font>      
-Description: This dataset, also from the provided Datathon materials, details the activity of various groups of international visitors to regions of the UK from the years 2002 to 2019. The dataset has 11 variables, and we make use of the `year`, `quarter`, `area`, `visits`, `spend`, and `nights` variables among these. Year details the year of the visit, and quarter details its quarter.     
-Manipulation: We can combine these two variables together to produce a year + quarter variable with entries of the form 2XXXQY (e.g. 2015Q3 would be quarter 3 of 2015). Area details the region the visitors visited. Visits, spend, and nights are the number of visits made by the group samples, the amount spent by the group sampled (in millions of £), and the total number of nights spent in the area detailed by the group sampled respectively.     
+<b>Description:</b> This dataset, also from the provided Datathon materials, details the activity of various groups of international visitors to regions of the UK from the years 2002 to 2019. The dataset has 11 variables, and we make use of the `year`, `quarter`, `area`, `visits`, `spend`, and `nights` variables among these. Year details the year of the visit, and quarter details its quarter.     
+<b>Manipulation:</b> We can combine these two variables together to produce a year + quarter variable with entries of the form 2XXXQY (e.g. 2015Q3 would be quarter 3 of 2015). Area details the region the visitors visited. Visits, spend, and nights are the number of visits made by the group samples, the amount spent by the group sampled (in millions of £), and the total number of nights spent in the area detailed by the group sampled respectively.     
 
 
 ## Data for Analysis of Canada      
 
+<font size="4"><b> canada_gdp.csv </b></font>
+<b>Description:</b> This dataset is one of our supplementary datasets found on Statistics Canada, which covers Canada regional GDP from 2000 to 2019.   
+<b>Reference:</b> Table  36-10-0402-01   Gross domestic product (GDP) at basic prices, by industry, provinces and territories (x 1,000,000)    
+DOI: https://doi.org/10.25318/3610040201-eng     
+Website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610040201     
+<b>Manipulation:</b> We add an additional variable `larger_region` to indicate the 5 regions in Canada. We also change the unit of GDP from millions to trillions for better visualization. For regional GDP calculation, we simply add the GDP of all provinces/territories within one larger region. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate. For increasing rate calculation by using other tables in section 4.1 to 4.3, we use the same formula.    
+Note: Raw data has value of GDP in Chained (2012) Dollars in Millions.    
+
+<font size="4"><b> canada_in_un.csv </b></font>    
+<b>Description:</b> This dataset if one of our supplementary datasets found on Statistics Canada, which covers Canada regional household income per capita and unemployment rate.   
+<b>Reference:</b> Table  36-10-0229-01   Long-run provincial and territorial data   
+DOI: https://doi.org/10.25318/3610022901-eng   
+website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610022901     
+<b>Manipulation:</b> We add an additional variable `larger_region` to indicate the 5 regions in Canada. We drop the missing values in this dataset. Also, we take mean to calculate the regional average household income per capita and unemployment rate.   
+Note: The value of Household Income Per Capita is in Dollars and the value of Unemployment Rate is in Percent.    
+ 
+
+<font size="4"><b> ca_vis.csv </b></font>    
+<b>Description:</b> This dataset if one of our supplementary datasets found on Statistics Canada, which covers the number of international visitors entering different regions of Canada from 2000 to 2019.    
+<b>Reference:</b> Table  24-10-0005-01   International travellers entering or returning to Canada, by province of entry, seasonally adjusted     
+DOI: https://doi.org/10.25318/2410000501-eng      
+website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=2410000501    
+<b>Manipulation:</b> We add an additional variable `larger_region` to indicate the 5 regions in Canada. We change the unit of number of visitors to millions. Also, we drop the missing values in this dataset. For calculation of regional number of tourists, we simply add up numbers of tourists entering different provinces/territories within one region.   
+
+<font size="4"><b> Vancouver_employment_by_industry.csv </b></font>    
+<b>Description:</b> This data is from Datathon Materials and has 4 variables: `year`, `industry code`, and `value`. This dataset covers the number of people employed in various industries in British Columbia from 1987 through 2019.    
+<b>Manipulation:</b> Although the data covers various sub-industries within larger sectors, we use data from the larger industries: Agriculture, Forestry/fishing/mining/oil/gas, Utilities, Construction, Manufacturing, Trade, Transportation and Warehousing, Finance/Insurance/Real Estate/Leasing, Professional/Scientific/Technical Services, Business/Building/Other Support Services, Educational Services, Health Care/Social Assistance, Information/Culture/Recreation, Accommodation/Food Services, Other Services, Public Administration; in addition, we use data for the larger categories: Goods-Producing Sector, Services-Producing Sector, and Total. The industry names were converted from the numerical codes to the names provided in an Excel sheet from Statistics Canada:  https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028703. We graph each of these variables by year. 
+We graph yearly changes in employment: we use the total employment (industry_code = ‘0’) and graph the employment rate of change from 1988-2019: (employment in year i - employment in year i-1) / (employment in year i ).   
+
+<font size="4"><b> Vancouver_turism_indicators.csv </b></font>    
+<b>Description:</b> This data is from the Dataton Materials and tracks economic variables in the tourism industry from 2000 through 2015. We use the following variables: `real_GDP`, `employment`, `revenue`, `wages_and_salaries`, `consumption_taxes`, `employment_vcm`, `employment_vi`, `employment_to`, `employment_nbc`, `employment_nbr`, `employment_ccc`.      
+<b>Manipulation:</b> We adjust revenue, wages and salaries, and consumption taxes for inflation by multiplying these quantities by the implicit_price_index/100 for each year. 
+We graph the rate of change of each of the employment variables by year and the values of the aggregate economic variables. Specifically, we graph all regions (vcm, vi, to, nbc, nbr, ccc) together and all aggregate variables (real_GDP, employment, revenue, wages_and_salaries, consumption_taxes) together.   
+
+<font size="4"><b> Vancouver_visits.csv </b></font>     
+<b>Description:</b> This dataset is from Datathon Materials. It covers Vancouver overnight visitors from 1994 to 2018. It has 3 variables: `year`, `month` and `value`.     
+<b>Manipulation:</b> We graph the number of monthly tourists in Vancouver from 2000 through 2018. Additionally, we sum monthly tourists for entire years and graph yearly tourists and graph annual changes in tourism.    
+
+<font size="4"><b> Vancouver_room_revenues_2010_2019.csv </b></font>     
+<b>Description:</b> This dataset is from Datathon Materials. It covers Vancouver room revenues from 2010 to 2019. It has 5 variables: `year`, `month`, `region_code`, `region_name`, `revenue`.    
+<b>Manipulation:</b> This data tracks revenue from room bookings by month and region. We use the monthly room revenue totals for the region ‘DR01’ and plot them against monthly tourists in Vancouver.    
+
+
 ## Data for Analysis of Brazil    
 
 <font size="4"><b> brazil_gdp.csv </b></font>     
-Description: This dataset is from Datathon Materials which has 4 variables: `state`, `region`, `year`, `value`. The variable `region` is a smaller region in `state`. It covers Brazil GDP from year 2002 to 2017.   
-Manipulation: Since the raw data is on a state-level of Brazil GDP over years, we add an additional variable `larger_region` to indicate which of the 5 regions a row belongs to. The regional division criteria is in section 5. The raw data has GDP values in thousands of Reals. For better visualization, we modify the unit to trillions of Reals. For regional GDP calculation, we simply add the GDP value of all states within one larger region to get the result. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate. For increasing rate calculation by using other tables in section 5, we use the same formula.         
+<b>Description:</b> This dataset is from Datathon Materials which has 4 variables: `state`, `region`, `year`, `value`. The variable `region` is a smaller region in `state`. It covers Brazil GDP from year 2002 to 2017.   
+<b>Manipulation:</b> Since the raw data is on a state-level of Brazil GDP over years, we add an additional variable `larger_region` to indicate which of the 5 regions a row belongs to. The regional division criteria is in section 5. The raw data has GDP values in thousands of Reals. For better visualization, we modify the unit to trillions of Reals. For regional GDP calculation, we simply add the GDP value of all states within one larger region to get the result. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate. For increasing rate calculation by using other tables in section 5, we use the same formula.         
     
     
 <font size="4"><b> brazil_monthly_income.csv </b></font>   
-Description: This dataset is from Datathon Materials which has 5 variables: `year`, `quarter`, `job_type`, `state`, `value`. It covers Brazil monthly income from year 2012 to 2020.   
-Manipulation: We add an additional variable `larger_region` to indicate Brazil's 5 regions. This data has missing values, we choose to drop all missing values. Also, for the ridgeline plot and histograms in section 5.2, we remove higher outliers by using the criteria: $Q_3 + (1.5\times \text{IQR})$, where $Q_3$ is the upper quartile and IQR is the Interquatile Range. Points above the criteria are defined to be higher outliers. For each region's average monthly income, we take the mean of all data points within one region.     
+<b>Description:</b> This dataset is from Datathon Materials which has 5 variables: `year`, `quarter`, `job_type`, `state`, `value`. It covers Brazil monthly income from year 2012 to 2020.   
+<b>Manipulation:</b> We add an additional variable `larger_region` to indicate Brazil's 5 regions. This data has missing values, we choose to drop all missing values. Also, for the ridgeline plot and histograms in section 5.2, we remove higher outliers by using the criteria: $Q_3 + (1.5\times \text{IQR})$, where $Q_3$ is the upper quartile and IQR is the Interquatile Range. Points above the criteria are defined to be higher outliers. For each region's average monthly income, we take the mean of all data points within one region.     
    
    
 <font size="4"><b> brazil_unemployment.csv </b></font>    
-Description: This dataset is from Datathon Materials which has 5 variables: `year`, `quarter`, `category`, `state`, `value`. It covers Brazil unemployment from year 2012 to 2019.   
-Manipulation: We add an additional variable `larger_region` to indicate Brazil's 5 regions. For unemployment rate calculation, we first calculate the total workforce. Then use the formula: Unemployment Rate = Number of Unemployment/Workforce, where Workforce = Number of Unemployment + Number of Employment. Then we take the mean to get the average yearly unemployment rate.  
+<b>Description:</b> This dataset is from Datathon Materials which has 5 variables: `year`, `quarter`, `category`, `state`, `value`. It covers Brazil unemployment from year 2012 to 2019.   
+<b>Manipulation:</b> We add an additional variable `larger_region` to indicate Brazil's 5 regions. For unemployment rate calculation, we first calculate the total workforce. Then use the formula: Unemployment Rate = Number of Unemployment/Workforce, where Workforce = Number of Unemployment + Number of Employment. Then we take the mean to get the average yearly unemployment rate.  
    
     
 <font size="4"><b> brazil_tourism_jobs.csv </b></font>     
-Description: This dataset is from Datathon Materials which has 6 variables: `year`, `month`, `region`, `state`, `job_type`,`jobs`. It covers Brazil tourism jobs from year 2006 to 2018.   
-Manipulation: We add an additional variable `larger_region` to indicate Brazil's 5 regions. To calculate the average number of tourism jobs for each region and each year. We first calculate the number of total tourism jobs for each region in each month. Then we calculate the yearly average by taking the mean of 12 months within 1 year. We also change the unit of number of jobs in thousands for better visualization.   
+<b>Description:</b> This dataset is from Datathon Materials which has 6 variables: `year`, `month`, `region`, `state`, `job_type`,`jobs`. It covers Brazil tourism jobs from year 2006 to 2018.   
+<b>Manipulation:</b> We add an additional variable `larger_region` to indicate Brazil's 5 regions. To calculate the average number of tourism jobs for each region and each year. We first calculate the number of total tourism jobs for each region in each month. Then we calculate the yearly average by taking the mean of 12 months within 1 year. We also change the unit of number of jobs in thousands for better visualization.   
     
      
 

@@ -18,13 +18,18 @@ ca_gdp_raw <- read.csv('/Users/xiayunj/Desktop/datathon/supplementary_data/canad
 ca_in_un_raw <- read.csv('/Users/xiayunj/Desktop/datathon/supplementary_data/canada_in_un.csv')
 ```
 
+<font size="4"><b> Introduction </b></font>      
+In this section, we discussed the regional difference of economic impacts on Brazil by the 2016 Olympic Games. To find whether or not there were significant differences on a regional level, we analyzed Brazil GDP, monthly income, unemployment rate and tourism over years. The 2016 Olympic Games took place at Rio de Janeiro. Rio was awarded to host the games in 2009.      
+
+<font size="4"><b> Region Description </b></font>     
 We can divide Canada to 5 regions, where Vancouver is in the West Coast region.   
-1. The Atlantic Provinces   
-2. Central Canada   
-3. The Prairie Provinces   
-4. The West Coast   
-5. The Northern Territories   
+1. The Atlantic Provinces: Newfoundland and Labrador, Prince Edward Island, Nova Scotia, New Brunswick   
+2. Central Canada: Quebec, Ontario    
+3. The Prairie Provinces: Manitoba, Alberta, Saskatchewan    
+4. The West Coast: British Columbia   
+5. The Northern Territories: Nunavut, Northwest Territories, Yukon Territories    
 Reference: https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html      
+
 
 ```{r include=FALSE}
 atlantic <- c('Newfoundland and Labrador', 'Prince Edward Island', 'Nova Scotia', 'New Brunswick')
@@ -36,11 +41,9 @@ north <- c('Nunavut', 'Northwest Territories', 'Northwest territories', 'Yukon')
 
 
 ## Canada GDP     
-Source Data:    
-Statistics Canada.  Table  36-10-0402-01   Gross domestic product (GDP) at basic prices, by industry, provinces and territories (x 1,000,000)   
-DOI: https://doi.org/10.25318/3610040201-eng     
-website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610040201     
-Note: The value of GDP is in Chained (2012) Dollars in Millions.    
+
+The first potential economic outcome of the Olympics that we consider is GDP growth. We make a multiple time series plot to visualize the regional GDP in Canada.  
+
 
 ```{r include=FALSE}
 ca_gdp <- ca_gdp_raw[, c('REF_DATE', 'GEO', 'VALUE')]
@@ -58,6 +61,7 @@ for (i in 1:nrow(ca_gdp)){
   }
 }
 ```
+
 
 ```{r include=FALSE}
 ca_gdp1 <- ca_gdp %>% 
@@ -77,6 +81,8 @@ ggplot(ca_gdp1, aes(REF_DATE, gdp, color=larger_region)) +
   scale_x_continuous(breaks = seq(2000, 2019, 2)) +
   theme_gray(13)
 ```
+  
+The plot shows that there is a slight decreasing for Central Canada and the Prairie provinces between 2008 and 2009, following by a slight increasing pattern after 2009. For the other three regions, the lines of GDP stay quite stable. The 2010 Olympics does not impact regional GDP growth significantly. GDP on the West Coast (British Columbia) appears to improve after 2010 (when the Olympics were held), but as indicated in the table below, the improvement did not outpace that of other regions after the Olympics.    
   
 <font size="5"><b> Canada Regional GDP Increasing Rate from 2001 to 2019 </b></font>    
 ```{r include=FALSE}
@@ -133,13 +139,13 @@ reactable(
 )
 ```
 
-## Canada Household Income Per Capita  
-Source Data:    
-Statistics Canada.  Table  36-10-0229-01   Long-run provincial and territorial data
-DOI: https://doi.org/10.25318/3610022901-eng   
-website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610022901    
-Note: The value of Household Income Per Capita is in Dollars.   
+The table shows that the highest GDP growth rate appears at the Northern territories which is 13.87% in 2001, whereas the lowest GDP growth rate appears at the Northern territories which is -5.85% in 2009. Also, in 2009, all 5 regions have negative GDP growth rates, but in 2010, all 5 regions have positive GDP growth rates. However, the West Coast does not show a higher GDP growth rate than other 4 regions. The Olympics may have increased GDP growth for Canada, but there is no significant regional difference in GDP growth after the Olympics.      
 
+
+## Canada Household Income Per Capita  
+
+We next consider household income per capita. We also make a regional time series plot first.   
+ 
 ```{r include=FALSE}
 ca_in_un <- ca_in_un_raw[, c(1,2,5,12)]
 ca_in <- ca_in_un[which(ca_in_un$Long.run.variables == 'Household income per capita' & 
@@ -180,6 +186,7 @@ ggplot(ca_in1, aes(REF_DATE, income, color=larger_region)) +
   theme_gray(13)
 ```
 
+The plot shows that household income per capita in the West Coast increases fast between 2006 and 2007. It decreases from 2008 to 2010, then starts to increase after 2010. The Prairie provinces follows a same pattern as the West Coast. Also, the Northern territories increases fast between 2012 and 2013. After 2013, household income per capita in the Northern territories exceeds that in the Prairie provinces. Similar to our observation about GDP, although the West Coast grows after the Olympics, its growth rate did not exceed that of the rest of Canada. To make our conclusion more precise, we calculate the household income per capita increasing rate as shown in the following table.     
 
 <font size="5"><b> Canada Regional Household Income Per Capita Increasing Rate from 2001 to 2016 </b></font>    
 ```{r echo=FALSE}
@@ -236,12 +243,11 @@ reactable(
 )
 ```
 
+The table shows that the highest household income per capita growth rate appears at the Northern territories which is 23.99% in 2013, whereas the lowest household income per capita growth rate appears at the Prairie provinces which is -2.25% in 2010. Also, the increasing rates increase for all 5 regions in 2011 comparing to 2010. However, the West Coast does not show a higher growth rate than other 4 regions. Similar to our analysis on GDP, the Olympics may have increased household income per capita growth for Canada, but there is no significant regional difference in GDP growth after the Olympics.   
+
 ## Canada Unemployment Rate    
-Source Data:    
-Statistics Canada.  Table  36-10-0229-01   Long-run provincial and territorial data     
-DOI: https://doi.org/10.25318/3610022901-eng   
-website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610022901    
-Note: The value of Unemployment Rate is in Percent.   
+
+Next, we consider possible gains in employment resulting from the Olympic games by visualizating the overall unemployment rate in Canada over years. This helps us to better understand the national unemployment rate pattern.      
 
 ```{r include=FALSE}
 ca_un <- ca_in_un[which(ca_in_un$Long.run.variables == 'Unemployment rate' & 
@@ -288,7 +294,11 @@ ggplot(ca_un_temp, aes(x = as.factor(REF_DATE), y = rate, fill = forcats::fct_re
   scale_x_discrete(labels = c('2010'='2010 \n (Olympics)'))
 ```
 
+From the stacked bar chart, we find that the lowest unemployment rate appears in 2007 whereas the highest rate appears in the Olympic year 2010. Unemployment appears to increase slight from 20018 to 2010 and remains steady (but not decrease) after the Olympics.    
+
 <font size="5"><b> Unemployment Rate by Regions </b></font>    
+
+To better understand the impact of the Olympics, we plot unemployment over time in different to compare how unemployment changed in British Columbia (where the Olympics were held) versus other regions.
 ```{r include=FALSE}
 ca_un1 <- ca_un %>%
   drop_na() %>%
@@ -308,6 +318,9 @@ ggplot(ca_un1, aes(REF_DATE, rate, color=larger_region)) +
   geom_vline(xintercept = 2010, linetype="dashed", color = "red", size=1.5) +
   geom_text(aes(x = 2010, label = 'Vancouver Olympics', y = 7), colour = 'black', size = 4)
 ```
+
+From 2004 to 2006, the unemployment rate decreases for all 5 regions, but increases from 2008 to 2009. After 2010, the West Coast (British Columbia) has a decreasing pattern in unemployment but not one that was significantly different from the decrease in other regions. This trend can also be observed in the below table, in which the West Coast does not appear to outperform other regions in employment gains after 2010.     
+
 
 <font size="5"><b> Canada Regional Unemployment Rate Increasing Rate from 2001 to 2016 </b></font>    
 ```{r include=FALSE}
@@ -364,14 +377,11 @@ reactable(
 )
 ```
 
+The table shows that the highest unemployment rate increasing rate appears at the West Coast which is 67.39% in 2009, whereas the lowest one appears at the Northern territories which is -23.67% in 2002. Also, the increasing rates of unemployment rate decreases in 2011 comparing to 2010 for the regions except the West Coast. The Olympic games did not result in a significant decrease in unemployment rate for the West coast.   
 
 ## Canada Tourism   
 
-Source Data:    
-Statistics Canada.  Table  24-10-0005-01   International travellers entering or returning to Canada, by province of entry, seasonally adjusted     
-DOI:   https://doi.org/10.25318/2410000501-eng      
-website: https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=2410000501        
-
+The last part for our analysis is on Canada tourism over years. We first plot the overall number of international visitors in Canada to get a better understanding of the national trend.   
 
 ```{r include=FALSE}
 ca_vis_raw <- read.csv('/Users/xiayunj/Desktop/datathon/supplementary_data/ca_vis.csv')
@@ -397,13 +407,15 @@ for (i in 1:nrow(ca_vis)){
 ```  
 
 
-```{r echo=FALSE, fig.height=5, fig.width=10}
+```{r echo=FALSE, fig.height=5, fig.width=7}
 ggplot(ca_vis[which(ca_vis$GEO == 'Canada'),], aes(as.Date(as.yearmon(REF_DATE)), VALUE/1000000)) + 
   geom_line() +
-  ggtitle('Canada International Tourists', subtitle = 'From 2000 to 2018') +
+  ggtitle('Canada International Tourists', subtitle = 'From 2000 to 2019') +
   labs(x = 'Year', y = 'Number of International Tourists in Millions') +
   theme_gray(13)
 ```
+
+The national-level time series of number of international visitors in Canada shows a significant decreasing pattern from 2000 to 2010. Then the number of visitors increases slowly after 2010. The Olympics may have increased Canada's international tourism, but not significantly. Then we want to focous on the regional international tourism.        
 
 ```{r include=FALSE}
 ca_vis1 <- ca_vis[which(ca_vis$GEO != 'Canada'),] %>%
@@ -417,8 +429,77 @@ ca_vis1 <- ca_vis[which(ca_vis$GEO != 'Canada'),] %>%
 ggplot(ca_vis1, 
        aes(as.Date(as.yearmon(REF_DATE)), VALUE/1000000, color = larger_region)) + 
   geom_line() +
-  ggtitle('Canada Regional Average International Tourists', subtitle = 'From 2000 to 2018') +
+  ggtitle('Canada Regional Average International Tourists', subtitle = 'From 2000 to 2019') +
   labs(x = 'Year', y = 'Average Number of International Tourists in Millions') +
   theme_gray(13)
 ```
+
+The plot shows the number of international visitors entering each of the 5 regions. From this plot, we find that the Northern territories, the Prairie provinces and the Atlantic provinces all have stable patterns. Also, the number of visitors is low over years for each of the 3 regions. The central Canada follows the same pattern as the national international visitors as shown in the time series plot before. The line of the West Coast is also relatively stable, but there is a spike in 2010. It is much possible that the 2010 Winter Olympics in Vancouver causes the spike. However, the spike only lasts for a very short time.    
+
+From the analysis on Canada tourism, it does not appear that British Columbia (West Canada) benefited substantially from hosting the Olympic games: although there was a spike in tourism in early 2010 (likely due to the Olympics), international tourism held steady after 2010 with slight increases (but not visibly different from those in other regions). Since the Prairie provinces, the Northern territories and the Atlantic provinces has low and stable patterns over time, these 3 regions' effects on tourism are neglectable. We want to look at tourism and economic data within British Columbia and Vancouver to better understand the tourism impact of the Olympics.   
+
+## Targetting Tourism in Vancouver   
+
+We first visualize the monthly tourists in Vancouver.  
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/ca1.png', dpi = NA)
+```
+
+Note: the 2010 Olympics occur around mont 120.   
+Since this data is highly cyclical, we graph the year-over-year change in tourism (starting from January 2001) so that changes are measured between corresponding points in the cycle:    
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/ca2.png', dpi = NA)
+```
+
+We notice a spike slightly after the month 100, which corresponds to the 2010 Olympics, and a dip slightly after, which corresponds to the year after the Olympics. However, the year-over-year changes do not appear to have an upward trend or spike after the Olympics. We also graph the total number of tourists for each year and the year-over-year change:     
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/ca3.png', dpi = NA)
+```
+
+Total annual tourism appears to have an upward trend. However, trends in tourism growth do not appear to change over time. Growth appears to stay in the positive ranges it was at during previous periods of positive growth—we furthermore note that past declines at tourism occurred during recessions (early 2000s and 2008-2009). There is no evidence that the increases in tourism during the recovery (2010 onwards) are any greater than increases in previous periods of economic growth.     
+
+We now examine economic variables for Vancouver from 2000-2015:    
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/ca4.png', dpi = NA)
+```
+
+All graphs appear to show steady growth except during recessions (early 2000s or 2008-2009). We now examine economic trends by region and industry. Below is a plot of changes in tourism employment for different regions of British Columbia:   
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/ca5.png', dpi = NA)
+```
+
+There does not appear to be a substantial deviation in trends after the Olympics. While tourism employment in Cariboo, Thompson Okanagan, and Northern British Columbia appear to increase in 2013 more than in other regions, employment also falls faster in the subsequent year, suggesting that there was not a differential effect on employment in different regions from the Olympics.      
+
+We plot employment in different sectors within British Columbia over time:      
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/ca789.png', dpi = NA)
+```
+
+We consider changes in employment in various industries: the faster increase in the tourism sector does not appear to deviate substantially from the also faster increases in employment in the good-producing and services sectors.    
+
+We finally compare changes in tourism to changes in economic variables (specific in the tourism sector):    
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/ca9.png', dpi = NA)
+```
+ 
+The clearest trends appear in the relationship between real GDP (from the tourism sector) and annual tourism and the relationship between revenue and tourism. Running linear regressions on the relationships, we get the following R2 values:      
+
+R^2 for real_GDP: 0.5529484405162801      
+R^2 for employment: 0.0019137247445131234      
+R^2 for revenue: 0.6149010419836605       
+R^2 for wages_and_salaries: 0.24519121848207018       
+R^2 for consumption_taxes: 0.03556594395098145        
+
+The coefficients are only significant for the relationships between real_GDP/tourism and revenue/tourism. Thus, tourism does not appear to have a significant impact on employment, salaries, or taxes, even within the tourism sector.     
+
+<font size="3"><b> Conclusion: </b></font>       
+There is some evidence that there is an increase in tourism following the 2010 Olympic games. However, there is not strong evidence that these sustained increases in tourism contributed to substantial economic benefits for Vancouver, British Columbia, or Canada. Based on regional and national economic data, it appears that although there were increases in variables such as employment and wages, improvements in the tourism sector and in regions closest to where the Olympics were held were not larger than improvements in other sectors or areas. Future areas of investigation should be to determine whether the post-2010 increase in total (not only international) tourism to Vancouver exceeded that of other regions of Canada and likewise for economic indicators in the tourism sector. 
+
 
