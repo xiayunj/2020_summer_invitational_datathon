@@ -2,7 +2,7 @@
 <font size="6"><b> Analysis of Regional Economic Impacts of Hosting Olympics on the United Kingdom </b></font>   
 
 <font size="4"><b> Introduction </b></font>      
-In this part of our report, we discuss the impact of the 2012 London Olympics on the UK as a whole, as well as its constituent subregions. We focused on UK GDP, weekly pay and international tourism. The 2012 Olympic Games took place at London. London was awarded to host the games in 2005.    
+In this part of our report, we discuss the impact of the 2012 London Olympics on the UK as a whole, as well as its constituent subregions. We focus on UK GDP, weekly pay and international tourism. The 2012 Olympic Games took place at London. London was awarded to host the games in 2005.    
 
 <font size="4"><b> Region Description </b></font>    
 We divide the UK into 12 regions, with London, which hosted the Olympics, being one of them. The regions consist of the normal division of England as well as separate regions for Scotland, Wales, and Northern Ireland.    
@@ -166,7 +166,7 @@ Together, the plots suggest that though there may be a slight difference in regi
 
 ## UK Weekly Pay     
    
-To more deeply understand whether or not the Olympics had any impact on the UK, we can examine the changes in the weekly pay of workers in each of our regions of interest over time. We begin this analysis by creating a boxplot for the pay of workers in all of the UK over the years 2002 to 2019. This boxplot will show us general trends in pay as well as whether there are any outliers we need to account for.     
+To more deeply understand whether or not the Olympics had any impact on the UK, we examine the changes in the weekly pay of workers in each of our regions of interest over time. We begin this analysis by creating a boxplot for the pay of workers in all of the UK over the years 2002 to 2019. This boxplot will show us general trends in pay as well as whether there are any outliers we need to account for.     
 
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
 knitr::include_graphics('extra_plots/uk_box.png', dpi = NA)
@@ -247,7 +247,7 @@ grid.arrange(regional_pay_plots$`South West`, regional_pay_plots$Wales,
              nrow = 4, ncol = 3)
 ```
     
-Through inspection, we can conclude that these plots as well support the conclusion that the 2012 Olympics had no impact on the distribution of pay in any region. In fact, the near uniformity of the distributions calls into question whether any meaningful regional distinctions among worker pay are to be had in the UK.      
+Through inspection, we conclude that these plots as well support the conclusion that the 2012 Olympics had no impact on the distribution of pay in any region. In fact, the near uniformity of the distributions calls into question whether any meaningful regional distinctions among worker pay are to be had in the UK.      
 
 
 <font size="5"><b> Regional Average Weekly Pay </b></font>     
@@ -271,11 +271,11 @@ The multiple time series plot shows that there is no significant increase in ave
 
 To further examine our theory that no meaningful impact was had by the London 2012 Olympics on the regional level, we can explore another metric of regional and country success: tourism. An initial analysis can be obtained by plotting the total number of tourists.    
 
-```{r fig.align='center', out.height = "70%", echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
 knitr::include_graphics('extra_plots/UK_tourists.png', dpi = NA)
 ```
 
-This plot does show a high degree of variance in the number of tourists over time, especially when we consider seasonality, however little within it seems to support the 2012 Olympics being responsible for the uptick in visitation that occurred post 2008.     
+This plot does show a high degree of variance in the number of tourists over time, especially when we consider seasonality. However, if inspected more closely, it supports that the 2012 Olympics is responsible for the uptick in visitation that occurred post 2008.     
      
 We again analyze this conclusion on a regional level, both through the number of visits to each of the regions as well as through data on the spending and number of nights stayed in each region.     
      
@@ -293,7 +293,7 @@ knitr::include_graphics('extra_plots/UK_regional_nights.png', dpi = NA)
 ```
 
   
-The red line in the above plots indicates the London 2012 Olympics. Although we do not see the same constancy as in the regional pay distribution plots, we can see that changes after the London 2012 Olympics seem to have already been in progress across all three of these metrics. Because it is difficult to compare regions, especially those with lower metrics, in the above plots, we show individual plots on a per-region level below.    
+The red line in the above plots indicates the London 2012 Olympics. Although we do not see the same constancy as in the regional pay distribution plots, we find that changes after the London 2012 Olympics have already been in progress across all three of these metrics. Because it is difficult to compare regions, especially those with lower metrics, in the above plots, we show individual plots on a per-region level below.    
 
 
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}

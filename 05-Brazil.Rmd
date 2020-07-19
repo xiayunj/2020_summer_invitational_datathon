@@ -27,10 +27,10 @@ br_un <- read.csv('/Users/xiayunj/Desktop/datathon/datasets_full/Rio/brazil_unem
 ```
   
 <font size="4"><b> Introduction </b></font>      
-In this section, we discussed the regional difference of economic impacts on Brazil by the 2016 Olympic Games. To find whether or not there were significant differences on a regional level, we analyzed Brazil GDP, monthly income, unemployment rate and tourism over years. The 2016 Olympic Games took place at Rio de Janeiro. Rio was awarded to host the games in 2009.      
+In this section, we discuss the regional difference of economic impacts on Brazil by the 2016 Olympic Games. To find whether or not there are significant differences on a regional level, we analyze Brazil GDP, monthly income, unemployment rate and tourism over years. The 2016 Olympic Games took place at Rio de Janeiro. Rio was awarded to host the games in 2009.      
     
 <font size="4"><b> Region Description </b></font>    
-We divided Brazil to 5 regions, where Rio de Janeiro, the city hosted Olympics, is in the South-East Region.     
+We divide Brazil to 5 regions, where Rio de Janeiro, the city hosted Olympics, is in the South-East Region.     
 1. North region: Acre, Amapá, Amazonas, Pará, Rondônia, Roraima and Tocantins.    
 2. Northeast region: Alagoas, Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte and Sergipe.    
 3. Midwest region: Goiás, Mato Grosso, Mato Grosso do Sul and Distrito Federal (Federal District).   
@@ -257,7 +257,7 @@ ggplot(br_mi1, aes(x = as.factor(year), y = value)) +
   scale_x_discrete(labels = c('2016'='2016 (Olympics)'))
 ```
 
-From the boxplots we find that the median of national monthly income shows an increasing pattern from 2012 to 2020. However, the plot does not show any significant increase in the median of monthly income after the Olympic year 2016 on national-level. The Interquartile Range also increases from 2012 to 2020.      
+From the boxplots we find that the median of national monthly income shows an increasing pattern from 2012 to 2020. However, the plot does not show any significant increase in the median of monthly income after the Olympic year 2016 on national level. The Interquartile Range also increases from 2012 to 2020.      
 
 Then we want to visualize the density distribution for the national monthly income, but by the boxplots, there are higher outliers for each year. If we keep those outliers, it will be hard to visualize the density plot, so we remove those higher outliers for better visualization.        
 
@@ -292,7 +292,7 @@ The ridgeline plot helps us to better understand the density estimation. From 20
      
 <font size="5"><b> Regional Monthly Income Distribution in the Olympics Year 2016 </b></font>    
 
-Next, we want to focus on the regional-level. We pick data of the Olympic year 2016 and plot a set of histograms grouped by regions. We want to first check whether there are any significant difference in the distributions of regional monthly income. If hosting the Olympics may result in different regional impact, there may be difference in the regional distribution of monthly income in 2016.     
+Next, we want to focus on the regional level. We pick data of the Olympic year 2016 and plot a set of histograms grouped by regions. We want to first check whether there are any significant difference in the distributions of regional monthly income. If hosting the Olympics may result in different regional impact, there may be difference in the regional distribution of monthly income in 2016.     
 
 ```{r echo=FALSE, fig.height=7, fig.width=10}
 ggplot(br_mi1[which(br_mi1$year == 2016),], aes(x = value, y = ..density..)) + 
@@ -491,7 +491,7 @@ The stacked bar chart shows that year 2017 has the highest unemployment rate, wh
 
 <font size="5"><b> Unemployment Rate by Regions </b></font>      
 
-Now let's move to the regional-level. We want to check whether the 5 regions follow a same pattern as the national unemployment rate.    
+Now let's move to the regional level. We want to check whether the 5 regions follow a same pattern as the national unemployment rate.    
 
 ```{r include=FALSE}
 #Calculate unemployment rate and work force for each quarter of each year (by region)  

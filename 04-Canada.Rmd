@@ -19,15 +19,16 @@ ca_in_un_raw <- read.csv('/Users/xiayunj/Desktop/datathon/supplementary_data/can
 ```
 
 <font size="4"><b> Introduction </b></font>      
-In this section, we discussed the regional difference of economic impacts on Brazil by the 2016 Olympic Games. To find whether or not there were significant differences on a regional level, we analyzed Brazil GDP, monthly income, unemployment rate and tourism over years. The 2016 Olympic Games took place at Rio de Janeiro. Rio was awarded to host the games in 2009.      
+In this section, we analyze the regional economic impacts on Canada by the 2010 Winter Olympic Games, through Canada GDP, household income per capita, unemployment rate and tourism over years. In addition, we also focus on Vancouver tourism over years to better understand the impacts on tourism by the Olympics. The 2010 Winter Olympic Games took place at Vancouver. Vancouver was awarded to host the games in 2003.      
 
 <font size="4"><b> Region Description </b></font>     
-We can divide Canada to 5 regions, where Vancouver is in the West Coast region.   
+We divided Canada to 5 regions, where Vancouver is in the West Coast region.   
 1. The Atlantic Provinces: Newfoundland and Labrador, Prince Edward Island, Nova Scotia, New Brunswick   
 2. Central Canada: Quebec, Ontario    
 3. The Prairie Provinces: Manitoba, Alberta, Saskatchewan    
 4. The West Coast: British Columbia   
 5. The Northern Territories: Nunavut, Northwest Territories, Yukon Territories    
+
 Reference: https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html      
 
 
@@ -478,7 +479,7 @@ There does not appear to be a substantial deviation in trends after the Olympics
 We plot employment in different sectors within British Columbia over time:      
 
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
-knitr::include_graphics('extra_plots/ca789.png', dpi = NA)
+knitr::include_graphics('extra_plots/ca789.jpeg', dpi = NA)
 ```
 
 We consider changes in employment in various industries: the faster increase in the tourism sector does not appear to deviate substantially from the also faster increases in employment in the good-producing and services sectors.    
@@ -489,13 +490,13 @@ We finally compare changes in tourism to changes in economic variables (specific
 knitr::include_graphics('extra_plots/ca9.png', dpi = NA)
 ```
  
-The clearest trends appear in the relationship between real GDP (from the tourism sector) and annual tourism and the relationship between revenue and tourism. Running linear regressions on the relationships, we get the following R2 values:      
+The clearest trends appear in the relationship between real GDP (from the tourism sector) and annual tourism and the relationship between revenue and tourism. Running linear regressions on the relationships, we get the following R2 values (rounded in four decimals):      
 
-R^2 for real_GDP: 0.5529484405162801      
-R^2 for employment: 0.0019137247445131234      
-R^2 for revenue: 0.6149010419836605       
-R^2 for wages_and_salaries: 0.24519121848207018       
-R^2 for consumption_taxes: 0.03556594395098145        
+R^2 for real_GDP: 0.5529     
+R^2 for employment: 0.0019     
+R^2 for revenue: 0.6149      
+R^2 for wages_and_salaries: 0.2452       
+R^2 for consumption_taxes: 0.0356        
 
 The coefficients are only significant for the relationships between real_GDP/tourism and revenue/tourism. Thus, tourism does not appear to have a significant impact on employment, salaries, or taxes, even within the tourism sector.     
 
