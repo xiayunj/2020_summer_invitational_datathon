@@ -283,7 +283,7 @@ To further examine our theory that no meaningful impact was had by the London 20
 knitr::include_graphics('extra_plots/UK_tourists.png', dpi = NA)
 ```
 
-This plot does show a high degree of variance in the number of tourists over time, especially when we consider seasonality. However, if inspected more closely, it supports that the 2012 Olympics is responsible for the uptick in visitation that occurred post 2008.     
+This plot does show a high degree of variance in the number of tourists over time, especially when we consider seasonality. However, if inspected more closely, it supports that the 2012 Olympics is not responsible for the uptick in visitation that occurred post 2008.     
      
 We again analyze this conclusion on a regional level, both through the number of visits to each of the regions as well as through data on the spending and number of nights stayed in each region.     
      

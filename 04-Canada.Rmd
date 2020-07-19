@@ -83,7 +83,7 @@ ggplot(ca_gdp1, aes(REF_DATE, gdp, color=larger_region)) +
   theme_gray(13)
 ```
   
-The plot shows that there is a slight decreasing for Central Canada and the Prairie provinces between 2008 and 2009, following by a slight increasing pattern after 2009. For the other three regions, the lines of GDP stay quite stable. The 2010 Olympics does not impact regional GDP growth significantly. GDP on the West Coast (British Columbia) appears to improve after 2010 (when the Olympics were held), but as indicated in the table below, the improvement did not outpace that of other regions after the Olympics.    
+The plot shows that there is a slight decrease in GDP for Central Canada and the Prairie provinces between 2008 and 2009, following by a slight increase in GDP after 2009. For the other three regions, the lines of GDP stay quite stable. The 2010 Olympics does not impact regional GDP growth significantly. GDP on the West Coast (British Columbia) appears to improve after 2010 (when the Olympics were held), but as indicated in the table below, the improvement did not outpace that of other regions after the Olympics.    
   
 <font size="5"><b> Canada Regional GDP Increasing Rate from 2001 to 2019 </b></font>    
 ```{r include=FALSE}
@@ -187,7 +187,7 @@ ggplot(ca_in1, aes(REF_DATE, income, color=larger_region)) +
   theme_gray(13)
 ```
 
-The plot shows that household income per capita in the West Coast increases fast between 2006 and 2007. It decreases from 2008 to 2010, then starts to increase after 2010. The Prairie provinces follows a same pattern as the West Coast. Also, the Northern territories increases fast between 2012 and 2013. After 2013, household income per capita in the Northern territories exceeds that in the Prairie provinces. Similar to our observation about GDP, although the West Coast grows after the Olympics, its growth rate did not exceed that of the rest of Canada. To make our conclusion more precise, we calculate the household income per capita increasing rate as shown in the following table.     
+The plot shows that household income per capita in the West Coast increases fast between 2006 and 2007. It decreases from 2008 to 2010, then starts to increase after 2010. The Prairie provinces follows the same pattern as the West Coast. Also, the Northern territories increases fast between 2012 and 2013. After 2013, household income per capita in the Northern territories exceeds that in the Prairie provinces. Similar to our observation about GDP, although the West Coast grows after the Olympics, its growth rate did not exceed that of the rest of Canada. To make our conclusion more precise, we calculate the household income per capita increasing rate as shown in the following table.     
 
 <font size="5"><b> Canada Regional Household Income Per Capita Increasing Rate from 2001 to 2016 </b></font>    
 ```{r echo=FALSE}
@@ -248,7 +248,7 @@ The table shows that the highest household income per capita growth rate appears
 
 ## Canada Unemployment Rate    
 
-Next, we consider possible gains in employment resulting from the Olympic games by visualizating the overall unemployment rate in Canada over years. This helps us to better understand the national unemployment rate pattern.      
+Next, we consider possible gains in employment resulting from the Olympic games by visualizing the overall unemployment rate in Canada over years. This helps us to better understand the national unemployment rate pattern.      
 
 ```{r include=FALSE}
 ca_un <- ca_in_un[which(ca_in_un$Long.run.variables == 'Unemployment rate' & 
@@ -295,7 +295,7 @@ ggplot(ca_un_temp, aes(x = as.factor(REF_DATE), y = rate, fill = forcats::fct_re
   scale_x_discrete(labels = c('2010'='2010 \n (Olympics)'))
 ```
 
-From the stacked bar chart, we find that the lowest unemployment rate appears in 2007 whereas the highest rate appears in the Olympic year 2010. Unemployment appears to increase slight from 20018 to 2010 and remains steady (but not decrease) after the Olympics.    
+From the stacked bar chart, we find that the lowest unemployment rate appears in 2007 whereas the highest rate appears in the Olympic year 2010. Unemployment appears to increase slightly from 2008 to 2010 and remains steady (but not decrease) after the Olympics.    
 
 <font size="5"><b> Unemployment Rate by Regions </b></font>    
 

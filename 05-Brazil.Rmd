@@ -213,7 +213,7 @@ From the summary table, we find that the p-value is 0.881, which shows that we f
        
 For both tests, we fail to reject the null hypothesis. Therefore, the year 2009 does not bring a different regional GDP growth rate impact on Brazil. This conclusion is not consistent with our initial hypothesis from the multiple time series plot.     
 
-In conclusion, for Brazil regional GDP analysis, the data does not show that the Olympic games results in any significant difference in GDP growth across the regions in Brazil.    
+In conclusion, for Brazil regional GDP analysis, the data does not show that the Olympic games result in any significant difference in GDP growth across the regions in Brazil.          
 
 
 ## Brazil Monthly Income   
@@ -259,7 +259,7 @@ ggplot(br_mi1, aes(x = as.factor(year), y = value)) +
 
 From the boxplots we find that the median of national monthly income shows an increasing pattern from 2012 to 2020. However, the plot does not show any significant increase in the median of monthly income after the Olympic year 2016 on national level. The Interquartile Range also increases from 2012 to 2020.      
 
-Then we want to visualize the density distribution for the national monthly income, but by the boxplots, there are higher outliers for each year. If we keep those outliers, it will be hard to visualize the density plot, so we remove those higher outliers for better visualization.        
+Then we want to visualize the density distribution for the national monthly income, but by the boxplots, there are higher outliers for each year. If we keep those outliers, it will be hard to visualize the density plot, so we remove those outliers for better visualization.        
 
 Note: Higher Outlier definition: points above $Q_3 + (1.5\times \text{IQR})$, where $Q_3$ is the upper quartile and IQR is the Interquatile Range.    
 
@@ -486,7 +486,7 @@ ggplot(br_un_bar, aes(x = as.factor(year), y = avg_rate, fill = category)) +
   scale_x_discrete(labels = c('2016'='2016 \n (Olympics)'))
 ```
       
-The stacked bar chart shows that year 2017 has the highest unemployment rate, whereas year 2014 has the lowest unemployment rate. Also, the unemployment rate keeps increasing from 2015 to 2017. The above plot confirms our conclusion that the 2016 Rio Olympics did not appreciably benefit Brazil as measured through the unemployment rate. In fact, during the years that follow the Olympics the unemployment rate seems to increase, not decrease, which suggest a possible negative effect that could be the subject of future exploration.    
+The stacked bar chart shows that year 2017 has the highest unemployment rate, whereas year 2014 has the lowest unemployment rate. Also, the unemployment rate keeps increasing from 2015 to 2017. The above plot confirms our conclusion that the 2016 Rio Olympics did not appreciably benefit Brazil as measured through the unemployment rate. In fact, during the years that follow the Olympics the unemployment rate seems to increase, not decrease, which suggests a possible negative effect that could be the subject of future exploration.         
       
 
 <font size="5"><b> Unemployment Rate by Regions </b></font>      
@@ -645,7 +645,7 @@ ggplot(df_tj, aes(year, avg_jobs, color=larger_region)) +
   geom_vline(xintercept = 2009, linetype="dashed", color = "red", size=1.5)
 ```
 
-From the multiple time series plot, we find that from 2006 to 2018, South East region alwasys has a much higher number of tourism jobs than the other regions. After 2009, the final selection year, all of the 5 regions seems to increase faster than before in the number of tourism jobs. However, from 2015 to 2017, South East region seems to decreases slightly. This shows that the Olympics does not necessarily increase the number of tourism jobs for South East region. The decreasing in number of tourism jobs in South East region complies with the pattern of Brazil unemployment rate.      
+From the multiple time series plot, we find that from 2006 to 2018, South East region always has a much higher number of tourism jobs than the other regions. After 2009, the final selection year, all of the 5 regions seems to increase faster than before in the number of tourism jobs. However, from 2015 to 2017, South East region seems to decreases slightly. This shows that the Olympics does not necessarily increase the number of tourism jobs for South East region. The decreasing in number of tourism jobs in South East region complies with the pattern of Brazil unemployment rate.      
    
    
 ## Brazil Conclusion    
