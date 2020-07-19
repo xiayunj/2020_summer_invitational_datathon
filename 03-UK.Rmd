@@ -1,9 +1,31 @@
 # UK - 2012 London Olympics    
-<font size="6"><b> Analysis of Regional Economic Impacts of Hosting Olympics on the United Kingdom </b></font> 
+<font size="6"><b> Analysis of Regional Economic Impacts of Hosting Olympics on the United Kingdom </b></font>   
 
-## UK GDP   
-Source Data:    
+<font size="4"><b> Introduction </b></font>      
+In this part of our report, we discuss the impact of the 2012 London Olympics on the UK as a whole, as well as its constituent subregions.     
 
+<font size="4"><b> Region Description </b></font>    
+We divide the UK into 12 regions, with London, which hosted the Olympics, being one of them. The regions consist of the normal division of England as well as separate regions for Scotland, Wales, and Northern Ireland.    
+These regions are:   
+1.	South West   
+2.	Wales  
+3.	East  
+4.	North East  
+5.	Northern Ireland  
+6.	North West  
+7.	West Midlands  
+8.	East Midlands  
+9.	South East  
+10.	Scotland  
+11.	London  
+12.	Yorkshire and The Humber   
+ 
+Reference: https://en.wikipedia.org/wiki/Regions_of_England   
+
+
+## UK GDP     
+    
+In order to understand the economic impact of the Olympics on the UK and its subregions, we first detail its total effect on the GDP of the UK in totality by graphing its changes over the time period from 1998 to 2018. This figure depicts the general growth of the nationwide GDP, with the exception of a brief drop during the period of the 2008 Great Recession.       
 
 ```{r include=FALSE}
 library(ggplot2)
@@ -57,6 +79,11 @@ ggplot(uk_gdp_clean[which(uk_gdp_clean$Region == 'United Kingdom'),],
   theme_gray(13)
 ```
 
+Through the image, we observe a consistent upwards trend from the beginning of the time series, with no particular growth rate change either in the time period following final selection or the Olympic Games.     
+
+We further break down the GDP growth into the aforementioned 12 regions and analyze GDP growth by region to assess its potential effects on a smaller scale.     
+
+<font size="5"><b> UK Regional GDP </b></font>     
 ```{r echo=FALSE, fig.height=5, fig.width=10}
 ggplot(uk_gdp_clean[which(uk_gdp_clean$Region != 'England' & uk_gdp_clean$Region != 'United Kingdom'),], 
        aes(Year, GDP, color=Region)) + 
@@ -70,7 +97,12 @@ ggplot(uk_gdp_clean[which(uk_gdp_clean$Region != 'England' & uk_gdp_clean$Region
   scale_x_continuous(breaks = seq(1998, 2018, 2)) +
   theme_gray(13)
 ```
+   
+One of the first aspects to note is the dominance of the South East and London regions in GDP size. The other regions are relatively comparable both in total GDP and growth rate, while the two regions mentioned above are both larger and exhibit more rapid growth in the time period pictured. In particular, the graph preliminarily seems to suggest that London received the bulk of the economic benefits of hosting the Olympics as the largest GDP region and its rapid growth observed during the preparation season and continuing afterward.      
+ 
+The following table breaks displays the growth rates of each region in more detail, with darker colors representing more rapid growth. Most notably, London boasted a high growth rate during the intermediate years between selection and the games, while the other regions have far lower maximum growth rates.     
 
+ 
 <font size="5"><b> UK Regional GDP Increasing Rate from 1999 to 2018 </b></font>    
 ```{r include=FALSE}
 uk_gdp_rate_temp <- uk_gdp_clean[43:294,]
@@ -128,20 +160,51 @@ reactable(
 )
 ```
 
-## UK Unemployment Rate    
- 
-```{r include=FALSE}
-#uk_un <- read_excel('/Users/xiayunj/Desktop/datathon/supplementary_data/uk_un.xlsx')
+Together, the plots suggest that though there may be a slight difference in regional impact and its affect on GDP, the growth rates are similar enough across all parties that we are unable to statistically verify the significance of this difference.       
+
+
+## UK Weekly Pay     
+   
+To more deeply understand whether or not the Olympics had any impact on the UK, we can examine the changes in the weekly pay of workers in each of our regions of interest over time. We begin this analysis by creating a boxplot for the pay of workers in all of the UK over the years 2002 to 2019. This boxplot will show us general trends in pay as well as whether there are any outliers we need to account for.     
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/uk_box.png', dpi = NA)
 ```
- 
+  
+This boxplots above lead to two important conclusion:     
+1) There are no special outliers in pay we have to account for.  
+2) The median weekly pay of workers seems to grow only slightly over time, leading to an initial conclusion that the 2012 olympics may not have had a significant effect.     
+     
+We can further analyze this second conclusion by viewing the distribution of pay over time using a Joyplot.      
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/uk_joy.png', dpi = NA)
+```  
+
+Although this plot does admit some changes in the distribution of weekly pay from 2002 to 2019, it reinforces the conclusion that the 2012 Olympic Games were not the cause of this change. Instead, we conclude through inspection that this shift begins around 2004 and and is nearly complete by 2008. All the years after 2008 appear to have nearly identical distributions, including 2012 and beyond.       
+    
+The above conclusion can be analyzed on the regional level by plotting similar Joyplots of distribution of pay for each of our regions of interest.    
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
+knitr::include_graphics('extra_plots/uk_regional_pay.png', dpi = NA)
+``` 
+    
+Through inspection, we can conclude that these plots as well support the conclusion that the 2012 Olympics had no impact on the distribution of pay in any region. In fact, the near uniformity of the distributions calls into question whether any meaningful regional distinctions among worker pay are to be had in the UK.      
+
 
 
 ## UK International Tourism    
+
+To further examine our theory that no meaningful impact was had by the London 2012 Olympics on the regional level, we can explore another metric of regional and country success: tourism. An initial analysis can be obtained by plotting the total number of tourists.    
 
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
 knitr::include_graphics('extra_plots/UK_tourists.png', dpi = NA)
 ```
 
+This plot does show a high degree of variance in the number of tourists over time, especially when we consider seasonality, however little within it seems to support the 2012 Olympics being responsible for the uptick in visitation that occurred post 2008.     
+     
+We again analyze this conclusion on a regional level, both through the number of visits to each of the regions as well as through data on the spending and number of nights stayed in each region.     
+     
 
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
 knitr::include_graphics('extra_plots/UK_regional_visits.png', dpi = NA)
@@ -155,7 +218,11 @@ knitr::include_graphics('extra_plots/UK_regional_spend.png', dpi = NA)
 knitr::include_graphics('extra_plots/UK_regional_nights.png', dpi = NA)
 ```
 
+  
+The red line in the above plots indicates the London 2012 Olympics. Although we do not see the same constancy as in the regional pay distribution plots, we can see that changes after the London 2012 Olympics seem to have already been in progress across all three of these metrics. Because it is difficult to compare regions, especially those with lower metrics, in the above plots, we show individual plots on a per-region level below.    
+
+
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://github.com/xiayunj/2020_summer_invitational_datathon'}
 knitr::include_graphics('extra_plots/UK_paired_tourists.jpeg', dpi = NA)
 ```
-
+  

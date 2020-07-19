@@ -287,11 +287,13 @@ ggplot(br_mi1, aes(x = value, y = as.factor(year), fill = year))+
   scale_fill_viridis()
 ```
 
-The ridgeline plot helps us to better understand the density estimation. From 2012 to 2020, the peak of density curves increases from 1000 to 1500 approximately. Also, the tail of the density curves becomes much heavier from 2012 to 2020. These observations shows that the monthly income has an increasing pattern over years. However, between 2015 and 2017, the density curves do not show a more significant increasing pattern.  
+The ridgeline plot helps us to better understand the density estimation. From 2012 to 2020, the peak of density curves increases from 1000 to 1500 approximately. Also, the tail of the density curves becomes much heavier from 2012 to 2020. These observations shows that the monthly income has an increasing pattern over years. However, between 2015 and 2017, the density curves do not show a more significant increasing pattern.   
 
-Next, we want to focus on the regional-level. We pick data of the Olympic year 2016 and plot a set of histograms grouped by regions. We want to first check whether there are any significant difference in the distributions of regional monthly income. If hosting the Olympics may result in different regional impact, there may be difference in the regional distribution of monthly income in 2016.        
      
 <font size="5"><b> Regional Monthly Income Distribution in the Olympics Year 2016 </b></font>    
+
+Next, we want to focus on the regional-level. We pick data of the Olympic year 2016 and plot a set of histograms grouped by regions. We want to first check whether there are any significant difference in the distributions of regional monthly income. If hosting the Olympics may result in different regional impact, there may be difference in the regional distribution of monthly income in 2016.     
+
 ```{r echo=FALSE, fig.height=7, fig.width=10}
 ggplot(br_mi1[which(br_mi1$year == 2016),], aes(x = value, y = ..density..)) + 
   geom_histogram(bins = 20, colour = "#80593D", fill = "#9FC29F", boundary = 0) +
@@ -332,6 +334,7 @@ ggplot(df_mi, aes(year, monthly_income, color=larger_region)) +
   theme_gray(13)
 ```
 
+The plot shows an overall increasing pattern in monthly income for all of the 5 regions, where the income of Mid West region increases most fast from 2017 to 2018, but decreases from 2019 to 2020. The plot does not show a more significant increasing after 2016 than before. Also the patterns for all of the 5 regions do not appear to have significant difference.      
 
 ```{r echo=FALSE}
 mi_rate_temp <- df_mi
@@ -388,12 +391,14 @@ reactable(
 )
 ```  
 
-<font size="4"><b> Observation: </b></font>      
-1. Seems no significant difference of increasing rate between the 5 regions around year 2016.    
-2. For South East Region, the increasing rate in 2016 is lower than that in 2015. (Why?)   
+From the income increasing rate table, we find that the highest rate (11.55%) takes place at Mid West region in 2018, whereas the lowest one (-3.22%) takes place at Mid West region in 2020. For South East Region, the increasing rate in 2016 is lower than that in 2015. Together with the multiple time series plot, we find that the regional monthly income increases after the Olympic year, but the increasing rates do not become much more significant comparing with previous ones before 2016.        
 
 
-<font size="5"><b> Relationship between Brazil GDP in Trillions of Reals and Monthly Income </b></font>   
+
+<font size="5"><b> Relationship between Brazil GDP and Monthly Income </b></font>    
+
+Then we create an animated scatter plot to visualize the relationship between GDP and month income by regions over years.   
+
 ```{r include=FALSE}
 Ag <- br_gdp[which(br_gdp$year >= 2012 & br_gdp$year <= 2017),] %>%
   group_by(year, state, larger_region) %>%
@@ -421,6 +426,9 @@ animate(
 
 ```
    
+From this plot, we find that the points are moving up and right. Each of these point represents a state in Brazil and the color shows its region. One state in Mid West region has the highest GDP and monthly income over years. Also, two states in South East region have higher GDP than the majority of states.  
+    
+    
 ## Brazil Unemployment Rate     
  
 ```{r include=FALSE}
@@ -465,6 +473,7 @@ br_un_bar <- br_un_bar %>%
   summarize(avg_rate = mean(rate)) 
 ```
 
+Another way we can analyze the potential impact of the Olympic Games on Brazil is through analyzing the unemployment rate over time. First we make a stacked bar chart to visualization the national unemployment rate from 2012 to 2019.     
 
 ```{r echo=FALSE, fig.height=6, fig.width=10, message=FALSE, warning=FALSE}
 ggplot(br_un_bar, aes(x = as.factor(year), y = avg_rate, fill = category)) +
@@ -477,10 +486,13 @@ ggplot(br_un_bar, aes(x = as.factor(year), y = avg_rate, fill = category)) +
   scale_x_discrete(labels = c('2016'='2016 \n (Olympics)'))
 ```
       
-From this plot we find that year 2017 has the highest average unemployment rate. Also, the average unemployment rate keeps increasing from 2015 to 2017.      
+The stacked bar chart shows that year 2017 has the highest unemployment rate, whereas year 2014 has the lowest unemployment rate. Also, the unemployment rate keeps increasing from 2015 to 2017. The above plot confirms our conclusion that the 2016 Rio Olympics did not appreciably benefit Brazil as measured through the unemployment rate. In fact, during the years that follow the Olympics the unemployment rate seems to increase, not decrease, which suggest a possible negative effect that could be the subject of future exploration.    
       
 
 <font size="5"><b> Unemployment Rate by Regions </b></font>      
+
+Now let's move to the regional-level. We want to check whether the 5 regions follow a same pattern as the national unemployment rate.    
+
 ```{r include=FALSE}
 #Calculate unemployment rate and work force for each quarter of each year (by region)  
 df_un <- br_un[which(br_un$category != 'Outside the workforce'),
@@ -527,6 +539,10 @@ ggplot(df_un1[1:40,], aes(year, avg_un_rate, color=larger_region)) +
   geom_vline(xintercept = 2016, linetype="dashed", color = "red", size=1.5) +
   geom_text(aes(x = 2016, label = 'Rio Olympics', y = 0.06), colour = 'black', size = 4)
 ```
+
+From 2012 to 2014, the unemployment rate decreases for the 5 regions. However, during the period between 2014 and 2017, the unemployment rate increases for the 5 regions. The unemployment rate starts to decrease after 2017. The regions follow the same pattern as the national pattern, except Mid West region has an increasing unemployment rate from 2018 to 2019.   
+
+For more precise conclusion, we also calculate the exact regional unemployment rate increasing rate.   
 
 <font size="5"><b> Unemployment Rate Increasing Rate by Regions from 2013 to 2019 </b></font>    
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -583,12 +599,14 @@ reactable(
 )
 ```  
 
-<font size="4"><b> Obserevation: </b></font>      
-Since 2014, the average unemployment rate keeps increasing for all of the 5 regions until 2017. The highest increasing rate appears at year 2016 which is the Olympics year for all of the 5 regions.    
+   
+Since 2014, the average unemployment rate keeps increasing for all of the 5 regions until 2017. The highest increasing rate appears at year 2016 which is the Olympics year for all of the 5 regions. The unemployment rate drops starting from 2018. Therefore, the 2016 Rio Olympic games did not benifit Brazil's unemployment rate. There are no significant difference in regional unemployment pattern observed as well.     
 
        
-## Brazil Tourism   
-Source Data: `brazil_tourism_jobs.csv`    
+## Brazil Tourism    
+   
+Now we want to analyze Brazil tourism to check whether the Olympics benifits the tourism, especially for the South East region.     
+
 ```{r include=FALSE}
 for (i in 1:nrow(br_tj)){
   if (br_tj[i,'state'] %in% north){
@@ -613,6 +631,7 @@ df_tj <- br_tj %>%
   summarise(avg_jobs = mean(total_jobs)/1000)
 ```
 
+
 ```{r echo=FALSE, fig.height=5, fig.width=10}
 ggplot(df_tj, aes(year, avg_jobs, color=larger_region)) + 
   geom_line() +
@@ -622,31 +641,14 @@ ggplot(df_tj, aes(year, avg_jobs, color=larger_region)) +
   scale_x_continuous(breaks = seq(2006, 2018, 1)) +
   theme_gray(13) +
   geom_vline(xintercept = 2016, linetype="dashed", color = "red", size=1.5) +
-  geom_text(aes(x = 2016, label = 'Rio Olympics', y = 300), colour = 'black', size = 4)
+  geom_text(aes(x = 2016, label = 'Rio Olympics', y = 300), colour = 'black', size = 4) +
+  geom_vline(xintercept = 2009, linetype="dashed", color = "red", size=1.5)
 ```
 
-<font size="5"><b> Brazil International Tourists </b></font>  
-```{r include=FALSE}
-df_ia <- br_ia %>%
-  replace_with_na(replace = list(value = '')) %>%
-  drop_na() %>%
-  mutate(value = as.numeric(as.character(gsub(',','',value)))) %>%
-  group_by(year, month) %>%
-  summarize(value = sum(value)/1000)
-```
+From the multiple time series plot, we find that from 2006 to 2018, South East region alwasys has a much higher number of tourism jobs than the other regions. After 2009, the final selection year, all of the 5 regions seems to increase faster than before in the number of tourism jobs. However, from 2015 to 2017, South East region seems to decreases slightly. This shows that the Olympics does not necessarily increase the number of tourism jobs for South East region. The decreasing in number of tourism jobs in South East region complies with the pattern of Brazil unemployment rate.      
 
-```{r include=FALSE}
-df_ia$Date <- as.yearmon(paste(df_ia$year, df_ia$month), "%Y %m")
-```
 
-```{r echo=FALSE, fig.height=5, fig.width=10}
-ggplot(df_ia, aes(Date, value)) + 
-  geom_line() +
-  ggtitle('Brazil International Tourists from 1989 to 2018') +
-  labs(x = 'Year', y = 'International Tourists in Thousands') +
-  scale_x_continuous(breaks = seq(1989, 2018, 2)) +
-  theme_gray(13)
-```
+
 
 
    

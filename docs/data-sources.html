@@ -86,7 +86,7 @@
 </ul></li>
 <li class="chapter" data-level="3" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html"><i class="fa fa-check"></i><b>3</b> UK - 2012 London Olympics</a><ul>
 <li class="chapter" data-level="3.1" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html#uk-gdp"><i class="fa fa-check"></i><b>3.1</b> UK GDP</a></li>
-<li class="chapter" data-level="3.2" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html#uk-unemployment-rate"><i class="fa fa-check"></i><b>3.2</b> UK Unemployment Rate</a></li>
+<li class="chapter" data-level="3.2" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html#uk-weekly-pay"><i class="fa fa-check"></i><b>3.2</b> UK Weekly Pay</a></li>
 <li class="chapter" data-level="3.3" data-path="uk-2012-london-olympics.html"><a href="uk-2012-london-olympics.html#uk-international-tourism"><i class="fa fa-check"></i><b>3.3</b> UK International Tourism</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="canada-2010-vancouver-winter-olympics.html"><a href="canada-2010-vancouver-winter-olympics.html"><i class="fa fa-check"></i><b>4</b> Canada - 2010 Vancouver Winter Olympics</a><ul>
@@ -101,6 +101,7 @@
 <li class="chapter" data-level="5.3" data-path="brazil-2016-rio-olympics.html"><a href="brazil-2016-rio-olympics.html#brazil-unemployment-rate"><i class="fa fa-check"></i><b>5.3</b> Brazil Unemployment Rate</a></li>
 <li class="chapter" data-level="5.4" data-path="brazil-2016-rio-olympics.html"><a href="brazil-2016-rio-olympics.html#brazil-tourism"><i class="fa fa-check"></i><b>5.4</b> Brazil Tourism</a></li>
 </ul></li>
+<li class="chapter" data-level="6" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>6</b> Conclusion</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -123,8 +124,19 @@
 <div id="data-sources" class="section level1">
 <h1><span class="header-section-number">Chapter 2</span> Data Sources</h1>
 <p><font size="6"><b> Data Sources Description and Data Manipulation </b></font></p>
+<p>All data files are stored in: <a href="https://github.com/xiayunj/2020_summer_invitational_datathon" class="uri">https://github.com/xiayunj/2020_summer_invitational_datathon</a></p>
 <div id="data-for-analysis-of-uk" class="section level2">
 <h2><span class="header-section-number">2.1</span> Data for Analysis of UK</h2>
+<p><font size="4"><b> regionalgrossdomesticproductgdpallnutslevelregions.xlsx </b></font><br />
+Description: This dataset is one of our supplementary datasets found on ons.gov.uk. The raw data is an xlsx file with 13 tables about UK GDP. We make use of table 5 which is UK’s Gross domestic product at current market prices.<br />
+Website: <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/datasets/regionalgrossdomesticproductallnutslevelregions" class="uri">https://www.ons.gov.uk/economy/grossdomesticproductgdp/datasets/regionalgrossdomesticproductallnutslevelregions</a><br />
+Manipulation: We use excel to extract only the regional GDP over years and output the new data table as a csv file with name uk_gdp.csv.</p>
+<p><font size="4"><b> london_earnings_by_borough.csv </b></font><br />
+Description: This dataset is from the Datathon materials and details information on the pay of workers in various regions of the UK from 2002 to 2019. The dataset has 6 variables, of which we make use of <code>year</code>, <code>area</code>, and <code>pay</code> variables. Year details the year of the datapoint’s collection. Area details the area in the UK of the worker for whom the datapoint was collected. Pay details the pay in hours or weekly.<br />
+Manipulation: We convert hourly pay to weekly pay by dropping any rows that have either no pay_type or no pay, and then multiplying all hourly pay by 40 to get weekly pay under the assumption of a 40 hour work week.</p>
+<p><font size="4"><b> UK_international-visits.csv </b></font><br />
+Description: This dataset, also from the provided Datathon materials, details the activity of various groups of international visitors to regions of the UK from the years 2002 to 2019. The dataset has 11 variables, and we make use of the <code>year</code>, <code>quarter</code>, <code>area</code>, <code>visits</code>, <code>spend</code>, and <code>nights</code> variables among these. Year details the year of the visit, and quarter details its quarter.<br />
+Manipulation: We can combine these two variables together to produce a year + quarter variable with entries of the form 2XXXQY (e.g. 2015Q3 would be quarter 3 of 2015). Area details the region the visitors visited. Visits, spend, and nights are the number of visits made by the group samples, the amount spent by the group sampled (in millions of £), and the total number of nights spent in the area detailed by the group sampled respectively.</p>
 </div>
 <div id="data-for-analysis-of-canada" class="section level2">
 <h2><span class="header-section-number">2.2</span> Data for Analysis of Canada</h2>
@@ -133,11 +145,16 @@
 <h2><span class="header-section-number">2.3</span> Data for Analysis of Brazil</h2>
 <p><font size="4"><b> brazil_gdp.csv </b></font><br />
 Description: This dataset is from Datathon Materials which has 4 variables: <code>state</code>, <code>region</code>, <code>year</code>, <code>value</code>. The variable <code>region</code> is a smaller region in <code>state</code>. It covers Brazil GDP from year 2002 to 2017.<br />
-Manipulation: Since the raw data is on a state-level of Brazil GDP over years, we add an additional variable <code>larger_region</code> to indicate which of the 5 regions a row belongs to. The regional division criteria is in section 5. The raw data has GDP values in thousands of Reals. For better visualization, we modify the unit to trillions of Reals. For regional GDP calculation, we simply add the GDP value of all states within one larger region to get the result. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate.</p>
+Manipulation: Since the raw data is on a state-level of Brazil GDP over years, we add an additional variable <code>larger_region</code> to indicate which of the 5 regions a row belongs to. The regional division criteria is in section 5. The raw data has GDP values in thousands of Reals. For better visualization, we modify the unit to trillions of Reals. For regional GDP calculation, we simply add the GDP value of all states within one larger region to get the result. For regional GDP growth rate calculation, we use the formula: (value of this year - value of last year)/value of last year, and keep two decimals for the percentage of growth rate. For increasing rate calculation by using other tables in section 5, we use the same formula.</p>
 <p><font size="4"><b> brazil_monthly_income.csv </b></font><br />
 Description: This dataset is from Datathon Materials which has 5 variables: <code>year</code>, <code>quarter</code>, <code>job_type</code>, <code>state</code>, <code>value</code>. It covers Brazil monthly income from year 2012 to 2020.<br />
-Manipulation: We also add an additional variable <code>larger_region</code> to indicate Brazil’s 5 regions. This data has missing values, we choose to drop all missing values. Also, for the ridgeline plot and histograms in section 5.2, we remove higher outliers by using the criteria: <span class="math inline">\(Q_3 + (1.5\times \text{IQR})\)</span>, where <span class="math inline">\(Q_3\)</span> is the upper quartile and IQR is the Interquatile Range. Points above the criteria are defined to be higher outliers. For each region’s average monthly income, we take the mean of all data points within one region.</p>
-<p><font size="4"><b> brazil_unemployment.csv </b></font></p>
+Manipulation: We add an additional variable <code>larger_region</code> to indicate Brazil’s 5 regions. This data has missing values, we choose to drop all missing values. Also, for the ridgeline plot and histograms in section 5.2, we remove higher outliers by using the criteria: <span class="math inline">\(Q_3 + (1.5\times \text{IQR})\)</span>, where <span class="math inline">\(Q_3\)</span> is the upper quartile and IQR is the Interquatile Range. Points above the criteria are defined to be higher outliers. For each region’s average monthly income, we take the mean of all data points within one region.</p>
+<p><font size="4"><b> brazil_unemployment.csv </b></font><br />
+Description: This dataset is from Datathon Materials which has 5 variables: <code>year</code>, <code>quarter</code>, <code>category</code>, <code>state</code>, <code>value</code>. It covers Brazil unemployment from year 2012 to 2019.<br />
+Manipulation: We add an additional variable <code>larger_region</code> to indicate Brazil’s 5 regions. For unemployment rate calculation, we first calculate the total workforce. Then use the formula: Unemployment Rate = Number of Unemployment/Workforce, where Workforce = Number of Unemployment + Number of Employment. Then we take the mean to get the average yearly unemployment rate.</p>
+<p><font size="4"><b> brazil_tourism_jobs.csv </b></font><br />
+Description: This dataset is from Datathon Materials which has 6 variables: <code>year</code>, <code>month</code>, <code>region</code>, <code>state</code>, <code>job_type</code>,<code>jobs</code>. It covers Brazil tourism jobs from year 2006 to 2018.<br />
+Manipulation: We add an additional variable <code>larger_region</code> to indicate Brazil’s 5 regions. To calculate the average number of tourism jobs for each region and each year. We first calculate the number of total tourism jobs for each region in each month. Then we calculate the yearly average by taking the mean of 12 months within 1 year. We also change the unit of number of jobs in thousands for better visualization.</p>
 
 </div>
 </div>

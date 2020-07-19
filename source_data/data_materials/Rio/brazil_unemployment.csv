@@ -1,0 +1,2674 @@
+year,quarter,category,state,value
+2012,Q1,Workforce - Employed,Rondônia,701
+2012,Q1,Workforce - Employed,Acre,286
+2012,Q1,Workforce - Employed,Amazonas,1392
+2012,Q1,Workforce - Employed,Roraima,170
+2012,Q1,Workforce - Employed,Pará,3123
+2012,Q1,Workforce - Employed,Amapá,279
+2012,Q1,Workforce - Employed,Tocantins,597
+2012,Q1,Workforce - Employed,Maranhão,2505
+2012,Q1,Workforce - Employed,Piauí,1314
+2012,Q1,Workforce - Employed,Ceará,3475
+2012,Q1,Workforce - Employed,Rio Grande do Norte,1205
+2012,Q1,Workforce - Employed,Paraíba,1499
+2012,Q1,Workforce - Employed,Pernambuco,3537
+2012,Q1,Workforce - Employed,Alagoas,1033
+2012,Q1,Workforce - Employed,Sergipe,848
+2012,Q1,Workforce - Employed,Bahia,6074
+2012,Q1,Workforce - Employed,Minas Gerais,9282
+2012,Q1,Workforce - Employed,Espírito Santo,1715
+2012,Q1,Workforce - Employed,Rio de Janeiro,7330
+2012,Q1,Workforce - Employed,São Paulo,20541
+2012,Q1,Workforce - Employed,Paraná,5196
+2012,Q1,Workforce - Employed,Santa Catarina,3254
+2012,Q1,Workforce - Employed,Rio Grande do Sul,5396
+2012,Q1,Workforce - Employed,Mato Grosso do Sul,1124
+2012,Q1,Workforce - Employed,Mato Grosso,1460
+2012,Q1,Workforce - Employed,Goiás,3004
+2012,Q1,Workforce - Employed,Distrito Federal,1292
+2012,Q1,Workforce - Unemployed,Rondônia,61
+2012,Q1,Workforce - Unemployed,Acre,28
+2012,Q1,Workforce - Unemployed,Amazonas,172
+2012,Q1,Workforce - Unemployed,Roraima,16
+2012,Q1,Workforce - Unemployed,Pará,268
+2012,Q1,Workforce - Unemployed,Amapá,40
+2012,Q1,Workforce - Unemployed,Tocantins,55
+2012,Q1,Workforce - Unemployed,Maranhão,215
+2012,Q1,Workforce - Unemployed,Piauí,109
+2012,Q1,Workforce - Unemployed,Ceará,271
+2012,Q1,Workforce - Unemployed,Rio Grande do Norte,156
+2012,Q1,Workforce - Unemployed,Paraíba,164
+2012,Q1,Workforce - Unemployed,Pernambuco,374
+2012,Q1,Workforce - Unemployed,Alagoas,131
+2012,Q1,Workforce - Unemployed,Sergipe,97
+2012,Q1,Workforce - Unemployed,Bahia,790
+2012,Q1,Workforce - Unemployed,Minas Gerais,787
+2012,Q1,Workforce - Unemployed,Espírito Santo,142
+2012,Q1,Workforce - Unemployed,Rio de Janeiro,681
+2012,Q1,Workforce - Unemployed,São Paulo,1736
+2012,Q1,Workforce - Unemployed,Paraná,306
+2012,Q1,Workforce - Unemployed,Santa Catarina,140
+2012,Q1,Workforce - Unemployed,Rio Grande do Sul,303
+2012,Q1,Workforce - Unemployed,Mato Grosso do Sul,91
+2012,Q1,Workforce - Unemployed,Mato Grosso,103
+2012,Q1,Workforce - Unemployed,Goiás,202
+2012,Q1,Workforce - Unemployed,Distrito Federal,124
+2012,Q1,Outside the workforce,Rondônia,464
+2012,Q1,Outside the workforce,Acre,226
+2012,Q1,Outside the workforce,Amazonas,933
+2012,Q1,Outside the workforce,Roraima,114
+2012,Q1,Outside the workforce,Pará,2261
+2012,Q1,Outside the workforce,Amapá,174
+2012,Q1,Outside the workforce,Tocantins,405
+2012,Q1,Outside the workforce,Maranhão,2171
+2012,Q1,Outside the workforce,Piauí,1037
+2012,Q1,Outside the workforce,Ceará,3021
+2012,Q1,Outside the workforce,Rio Grande do Norte,1211
+2012,Q1,Outside the workforce,Paraíba,1334
+2012,Q1,Outside the workforce,Pernambuco,3123
+2012,Q1,Outside the workforce,Alagoas,1254
+2012,Q1,Outside the workforce,Sergipe,672
+2012,Q1,Outside the workforce,Bahia,4268
+2012,Q1,Outside the workforce,Minas Gerais,6131
+2012,Q1,Outside the workforce,Espírito Santo,1067
+2012,Q1,Outside the workforce,Rio de Janeiro,5459
+2012,Q1,Outside the workforce,São Paulo,12883
+2012,Q1,Outside the workforce,Paraná,3103
+2012,Q1,Outside the workforce,Santa Catarina,1869
+2012,Q1,Outside the workforce,Rio Grande do Sul,3296
+2012,Q1,Outside the workforce,Mato Grosso do Sul,701
+2012,Q1,Outside the workforce,Mato Grosso,852
+2012,Q1,Outside the workforce,Goiás,1720
+2012,Q1,Outside the workforce,Distrito Federal,729
+2012,Q2,Workforce - Employed,Rondônia,732
+2012,Q2,Workforce - Employed,Acre,299
+2012,Q2,Workforce - Employed,Amazonas,1417
+2012,Q2,Workforce - Employed,Roraima,176
+2012,Q2,Workforce - Employed,Pará,3294
+2012,Q2,Workforce - Employed,Amapá,270
+2012,Q2,Workforce - Employed,Tocantins,602
+2012,Q2,Workforce - Employed,Maranhão,2494
+2012,Q2,Workforce - Employed,Piauí,1324
+2012,Q2,Workforce - Employed,Ceará,3420
+2012,Q2,Workforce - Employed,Rio Grande do Norte,1279
+2012,Q2,Workforce - Employed,Paraíba,1521
+2012,Q2,Workforce - Employed,Pernambuco,3512
+2012,Q2,Workforce - Employed,Alagoas,1016
+2012,Q2,Workforce - Employed,Sergipe,858
+2012,Q2,Workforce - Employed,Bahia,6107
+2012,Q2,Workforce - Employed,Minas Gerais,9631
+2012,Q2,Workforce - Employed,Espírito Santo,1768
+2012,Q2,Workforce - Employed,Rio de Janeiro,7481
+2012,Q2,Workforce - Employed,São Paulo,20814
+2012,Q2,Workforce - Employed,Paraná,5304
+2012,Q2,Workforce - Employed,Santa Catarina,3326
+2012,Q2,Workforce - Employed,Rio Grande do Sul,5457
+2012,Q2,Workforce - Employed,Mato Grosso do Sul,1166
+2012,Q2,Workforce - Employed,Mato Grosso,1483
+2012,Q2,Workforce - Employed,Goiás,3090
+2012,Q2,Workforce - Employed,Distrito Federal,1288
+2012,Q2,Workforce - Unemployed,Rondônia,49
+2012,Q2,Workforce - Unemployed,Acre,29
+2012,Q2,Workforce - Unemployed,Amazonas,142
+2012,Q2,Workforce - Unemployed,Roraima,11
+2012,Q2,Workforce - Unemployed,Pará,276
+2012,Q2,Workforce - Unemployed,Amapá,46
+2012,Q2,Workforce - Unemployed,Tocantins,50
+2012,Q2,Workforce - Unemployed,Maranhão,249
+2012,Q2,Workforce - Unemployed,Piauí,99
+2012,Q2,Workforce - Unemployed,Ceará,303
+2012,Q2,Workforce - Unemployed,Rio Grande do Norte,162
+2012,Q2,Workforce - Unemployed,Paraíba,156
+2012,Q2,Workforce - Unemployed,Pernambuco,313
+2012,Q2,Workforce - Unemployed,Alagoas,135
+2012,Q2,Workforce - Unemployed,Sergipe,104
+2012,Q2,Workforce - Unemployed,Bahia,771
+2012,Q2,Workforce - Unemployed,Minas Gerais,740
+2012,Q2,Workforce - Unemployed,Espírito Santo,138
+2012,Q2,Workforce - Unemployed,Rio de Janeiro,600
+2012,Q2,Workforce - Unemployed,São Paulo,1694
+2012,Q2,Workforce - Unemployed,Paraná,298
+2012,Q2,Workforce - Unemployed,Santa Catarina,128
+2012,Q2,Workforce - Unemployed,Rio Grande do Sul,287
+2012,Q2,Workforce - Unemployed,Mato Grosso do Sul,88
+2012,Q2,Workforce - Unemployed,Mato Grosso,90
+2012,Q2,Workforce - Unemployed,Goiás,170
+2012,Q2,Workforce - Unemployed,Distrito Federal,119
+2012,Q2,Outside the workforce,Rondônia,451
+2012,Q2,Outside the workforce,Acre,215
+2012,Q2,Outside the workforce,Amazonas,950
+2012,Q2,Outside the workforce,Roraima,116
+2012,Q2,Outside the workforce,Pará,2119
+2012,Q2,Outside the workforce,Amapá,186
+2012,Q2,Outside the workforce,Tocantins,415
+2012,Q2,Outside the workforce,Maranhão,2165
+2012,Q2,Outside the workforce,Piauí,1059
+2012,Q2,Outside the workforce,Ceará,3039
+2012,Q2,Outside the workforce,Rio Grande do Norte,1133
+2012,Q2,Outside the workforce,Paraíba,1308
+2012,Q2,Outside the workforce,Pernambuco,3207
+2012,Q2,Outside the workforce,Alagoas,1261
+2012,Q2,Outside the workforce,Sergipe,678
+2012,Q2,Outside the workforce,Bahia,4256
+2012,Q2,Outside the workforce,Minas Gerais,5929
+2012,Q2,Outside the workforce,Espírito Santo,1017
+2012,Q2,Outside the workforce,Rio de Janeiro,5445
+2012,Q2,Outside the workforce,São Paulo,12728
+2012,Q2,Outside the workforce,Paraná,3059
+2012,Q2,Outside the workforce,Santa Catarina,1811
+2012,Q2,Outside the workforce,Rio Grande do Sul,3278
+2012,Q2,Outside the workforce,Mato Grosso do Sul,674
+2012,Q2,Outside the workforce,Mato Grosso,864
+2012,Q2,Outside the workforce,Goiás,1721
+2012,Q2,Outside the workforce,Distrito Federal,757
+2012,Q3,Workforce - Employed,Rondônia,737
+2012,Q3,Workforce - Employed,Acre,300
+2012,Q3,Workforce - Employed,Amazonas,1421
+2012,Q3,Workforce - Employed,Roraima,178
+2012,Q3,Workforce - Employed,Pará,3255
+2012,Q3,Workforce - Employed,Amapá,283
+2012,Q3,Workforce - Employed,Tocantins,603
+2012,Q3,Workforce - Employed,Maranhão,2536
+2012,Q3,Workforce - Employed,Piauí,1352
+2012,Q3,Workforce - Employed,Ceará,3371
+2012,Q3,Workforce - Employed,Rio Grande do Norte,1281
+2012,Q3,Workforce - Employed,Paraíba,1516
+2012,Q3,Workforce - Employed,Pernambuco,3575
+2012,Q3,Workforce - Employed,Alagoas,1061
+2012,Q3,Workforce - Employed,Sergipe,879
+2012,Q3,Workforce - Employed,Bahia,6175
+2012,Q3,Workforce - Employed,Minas Gerais,9659
+2012,Q3,Workforce - Employed,Espírito Santo,1787
+2012,Q3,Workforce - Employed,Rio de Janeiro,7431
+2012,Q3,Workforce - Employed,São Paulo,21054
+2012,Q3,Workforce - Employed,Paraná,5366
+2012,Q3,Workforce - Employed,Santa Catarina,3345
+2012,Q3,Workforce - Employed,Rio Grande do Sul,5434
+2012,Q3,Workforce - Employed,Mato Grosso do Sul,1177
+2012,Q3,Workforce - Employed,Mato Grosso,1494
+2012,Q3,Workforce - Employed,Goiás,3067
+2012,Q3,Workforce - Employed,Distrito Federal,1303
+2012,Q3,Workforce - Unemployed,Rondônia,46
+2012,Q3,Workforce - Unemployed,Acre,25
+2012,Q3,Workforce - Unemployed,Amazonas,148
+2012,Q3,Workforce - Unemployed,Roraima,14
+2012,Q3,Workforce - Unemployed,Pará,248
+2012,Q3,Workforce - Unemployed,Amapá,46
+2012,Q3,Workforce - Unemployed,Tocantins,47
+2012,Q3,Workforce - Unemployed,Maranhão,210
+2012,Q3,Workforce - Unemployed,Piauí,88
+2012,Q3,Workforce - Unemployed,Ceará,294
+2012,Q3,Workforce - Unemployed,Rio Grande do Norte,163
+2012,Q3,Workforce - Unemployed,Paraíba,140
+2012,Q3,Workforce - Unemployed,Pernambuco,365
+2012,Q3,Workforce - Unemployed,Alagoas,137
+2012,Q3,Workforce - Unemployed,Sergipe,102
+2012,Q3,Workforce - Unemployed,Bahia,740
+2012,Q3,Workforce - Unemployed,Minas Gerais,661
+2012,Q3,Workforce - Unemployed,Espírito Santo,133
+2012,Q3,Workforce - Unemployed,Rio de Janeiro,594
+2012,Q3,Workforce - Unemployed,São Paulo,1558
+2012,Q3,Workforce - Unemployed,Paraná,260
+2012,Q3,Workforce - Unemployed,Santa Catarina,110
+2012,Q3,Workforce - Unemployed,Rio Grande do Sul,263
+2012,Q3,Workforce - Unemployed,Mato Grosso do Sul,61
+2012,Q3,Workforce - Unemployed,Mato Grosso,80
+2012,Q3,Workforce - Unemployed,Goiás,159
+2012,Q3,Workforce - Unemployed,Distrito Federal,123
+2012,Q3,Outside the workforce,Rondônia,459
+2012,Q3,Outside the workforce,Acre,220
+2012,Q3,Outside the workforce,Amazonas,959
+2012,Q3,Outside the workforce,Roraima,109
+2012,Q3,Outside the workforce,Pará,2200
+2012,Q3,Outside the workforce,Amapá,184
+2012,Q3,Outside the workforce,Tocantins,414
+2012,Q3,Outside the workforce,Maranhão,2165
+2012,Q3,Outside the workforce,Piauí,1055
+2012,Q3,Outside the workforce,Ceará,3104
+2012,Q3,Outside the workforce,Rio Grande do Norte,1130
+2012,Q3,Outside the workforce,Paraíba,1318
+2012,Q3,Outside the workforce,Pernambuco,3136
+2012,Q3,Outside the workforce,Alagoas,1241
+2012,Q3,Outside the workforce,Sergipe,666
+2012,Q3,Outside the workforce,Bahia,4300
+2012,Q3,Outside the workforce,Minas Gerais,6001
+2012,Q3,Outside the workforce,Espírito Santo,1019
+2012,Q3,Outside the workforce,Rio de Janeiro,5559
+2012,Q3,Outside the workforce,São Paulo,12756
+2012,Q3,Outside the workforce,Paraná,3056
+2012,Q3,Outside the workforce,Santa Catarina,1854
+2012,Q3,Outside the workforce,Rio Grande do Sul,3354
+2012,Q3,Outside the workforce,Mato Grosso do Sul,699
+2012,Q3,Outside the workforce,Mato Grosso,876
+2012,Q3,Outside the workforce,Goiás,1746
+2012,Q3,Outside the workforce,Distrito Federal,740
+2012,Q4,Workforce - Employed,Rondônia,761
+2012,Q4,Workforce - Employed,Acre,306
+2012,Q4,Workforce - Employed,Amazonas,1472
+2012,Q4,Workforce - Employed,Roraima,179
+2012,Q4,Workforce - Employed,Pará,3328
+2012,Q4,Workforce - Employed,Amapá,289
+2012,Q4,Workforce - Employed,Tocantins,620
+2012,Q4,Workforce - Employed,Maranhão,2507
+2012,Q4,Workforce - Employed,Piauí,1347
+2012,Q4,Workforce - Employed,Ceará,3340
+2012,Q4,Workforce - Employed,Rio Grande do Norte,1268
+2012,Q4,Workforce - Employed,Paraíba,1492
+2012,Q4,Workforce - Employed,Pernambuco,3517
+2012,Q4,Workforce - Employed,Alagoas,1097
+2012,Q4,Workforce - Employed,Sergipe,920
+2012,Q4,Workforce - Employed,Bahia,6089
+2012,Q4,Workforce - Employed,Minas Gerais,9607
+2012,Q4,Workforce - Employed,Espírito Santo,1805
+2012,Q4,Workforce - Employed,Rio de Janeiro,7498
+2012,Q4,Workforce - Employed,São Paulo,21079
+2012,Q4,Workforce - Employed,Paraná,5380
+2012,Q4,Workforce - Employed,Santa Catarina,3351
+2012,Q4,Workforce - Employed,Rio Grande do Sul,5506
+2012,Q4,Workforce - Employed,Mato Grosso do Sul,1193
+2012,Q4,Workforce - Employed,Mato Grosso,1509
+2012,Q4,Workforce - Employed,Goiás,3076
+2012,Q4,Workforce - Employed,Distrito Federal,1319
+2012,Q4,Workforce - Unemployed,Rondônia,42
+2012,Q4,Workforce - Unemployed,Acre,27
+2012,Q4,Workforce - Unemployed,Amazonas,134
+2012,Q4,Workforce - Unemployed,Roraima,16
+2012,Q4,Workforce - Unemployed,Pará,242
+2012,Q4,Workforce - Unemployed,Amapá,39
+2012,Q4,Workforce - Unemployed,Tocantins,51
+2012,Q4,Workforce - Unemployed,Maranhão,203
+2012,Q4,Workforce - Unemployed,Piauí,100
+2012,Q4,Workforce - Unemployed,Ceará,270
+2012,Q4,Workforce - Unemployed,Rio Grande do Norte,165
+2012,Q4,Workforce - Unemployed,Paraíba,148
+2012,Q4,Workforce - Unemployed,Pernambuco,355
+2012,Q4,Workforce - Unemployed,Alagoas,135
+2012,Q4,Workforce - Unemployed,Sergipe,97
+2012,Q4,Workforce - Unemployed,Bahia,736
+2012,Q4,Workforce - Unemployed,Minas Gerais,637
+2012,Q4,Workforce - Unemployed,Espírito Santo,129
+2012,Q4,Workforce - Unemployed,Rio de Janeiro,543
+2012,Q4,Workforce - Unemployed,São Paulo,1527
+2012,Q4,Workforce - Unemployed,Paraná,245
+2012,Q4,Workforce - Unemployed,Santa Catarina,92
+2012,Q4,Workforce - Unemployed,Rio Grande do Sul,249
+2012,Q4,Workforce - Unemployed,Mato Grosso do Sul,62
+2012,Q4,Workforce - Unemployed,Mato Grosso,73
+2012,Q4,Workforce - Unemployed,Goiás,165
+2012,Q4,Workforce - Unemployed,Distrito Federal,127
+2012,Q4,Outside the workforce,Rondônia,434
+2012,Q4,Outside the workforce,Acre,217
+2012,Q4,Outside the workforce,Amazonas,936
+2012,Q4,Outside the workforce,Roraima,107
+2012,Q4,Outside the workforce,Pará,2192
+2012,Q4,Outside the workforce,Amapá,186
+2012,Q4,Outside the workforce,Tocantins,409
+2012,Q4,Outside the workforce,Maranhão,2229
+2012,Q4,Outside the workforce,Piauí,1061
+2012,Q4,Outside the workforce,Ceará,3185
+2012,Q4,Outside the workforce,Rio Grande do Norte,1146
+2012,Q4,Outside the workforce,Paraíba,1350
+2012,Q4,Outside the workforce,Pernambuco,3257
+2012,Q4,Outside the workforce,Alagoas,1224
+2012,Q4,Outside the workforce,Sergipe,654
+2012,Q4,Outside the workforce,Bahia,4382
+2012,Q4,Outside the workforce,Minas Gerais,6141
+2012,Q4,Outside the workforce,Espírito Santo,1032
+2012,Q4,Outside the workforce,Rio de Janeiro,5564
+2012,Q4,Outside the workforce,São Paulo,12827
+2012,Q4,Outside the workforce,Paraná,3120
+2012,Q4,Outside the workforce,Santa Catarina,1906
+2012,Q4,Outside the workforce,Rio Grande do Sul,3317
+2012,Q4,Outside the workforce,Mato Grosso do Sul,676
+2012,Q4,Outside the workforce,Mato Grosso,878
+2012,Q4,Outside the workforce,Goiás,1792
+2012,Q4,Outside the workforce,Distrito Federal,736
+2013,Q1,Workforce - Employed,Rondônia,741
+2013,Q1,Workforce - Employed,Acre,294
+2013,Q1,Workforce - Employed,Amazonas,1456
+2013,Q1,Workforce - Employed,Roraima,175
+2013,Q1,Workforce - Employed,Pará,3343
+2013,Q1,Workforce - Employed,Amapá,281
+2013,Q1,Workforce - Employed,Tocantins,593
+2013,Q1,Workforce - Employed,Maranhão,2468
+2013,Q1,Workforce - Employed,Piauí,1332
+2013,Q1,Workforce - Employed,Ceará,3311
+2013,Q1,Workforce - Employed,Rio Grande do Norte,1246
+2013,Q1,Workforce - Employed,Paraíba,1483
+2013,Q1,Workforce - Employed,Pernambuco,3419
+2013,Q1,Workforce - Employed,Alagoas,1086
+2013,Q1,Workforce - Employed,Sergipe,887
+2013,Q1,Workforce - Employed,Bahia,5869
+2013,Q1,Workforce - Employed,Minas Gerais,9424
+2013,Q1,Workforce - Employed,Espírito Santo,1780
+2013,Q1,Workforce - Employed,Rio de Janeiro,7474
+2013,Q1,Workforce - Employed,São Paulo,21017
+2013,Q1,Workforce - Employed,Paraná,5379
+2013,Q1,Workforce - Employed,Santa Catarina,3328
+2013,Q1,Workforce - Employed,Rio Grande do Sul,5526
+2013,Q1,Workforce - Employed,Mato Grosso do Sul,1180
+2013,Q1,Workforce - Employed,Mato Grosso,1516
+2013,Q1,Workforce - Employed,Goiás,3074
+2013,Q1,Workforce - Employed,Distrito Federal,1315
+2013,Q1,Workforce - Unemployed,Rondônia,48
+2013,Q1,Workforce - Unemployed,Acre,36
+2013,Q1,Workforce - Unemployed,Amazonas,166
+2013,Q1,Workforce - Unemployed,Roraima,17
+2013,Q1,Workforce - Unemployed,Pará,282
+2013,Q1,Workforce - Unemployed,Amapá,36
+2013,Q1,Workforce - Unemployed,Tocantins,61
+2013,Q1,Workforce - Unemployed,Maranhão,254
+2013,Q1,Workforce - Unemployed,Piauí,121
+2013,Q1,Workforce - Unemployed,Ceará,320
+2013,Q1,Workforce - Unemployed,Rio Grande do Norte,171
+2013,Q1,Workforce - Unemployed,Paraíba,154
+2013,Q1,Workforce - Unemployed,Pernambuco,405
+2013,Q1,Workforce - Unemployed,Alagoas,150
+2013,Q1,Workforce - Unemployed,Sergipe,115
+2013,Q1,Workforce - Unemployed,Bahia,894
+2013,Q1,Workforce - Unemployed,Minas Gerais,757
+2013,Q1,Workforce - Unemployed,Espírito Santo,150
+2013,Q1,Workforce - Unemployed,Rio de Janeiro,582
+2013,Q1,Workforce - Unemployed,São Paulo,1758
+2013,Q1,Workforce - Unemployed,Paraná,275
+2013,Q1,Workforce - Unemployed,Santa Catarina,125
+2013,Q1,Workforce - Unemployed,Rio Grande do Sul,312
+2013,Q1,Workforce - Unemployed,Mato Grosso do Sul,59
+2013,Q1,Workforce - Unemployed,Mato Grosso,92
+2013,Q1,Workforce - Unemployed,Goiás,223
+2013,Q1,Workforce - Unemployed,Distrito Federal,141
+2013,Q1,Outside the workforce,Rondônia,460
+2013,Q1,Outside the workforce,Acre,220
+2013,Q1,Outside the workforce,Amazonas,938
+2013,Q1,Outside the workforce,Roraima,115
+2013,Q1,Outside the workforce,Pará,2194
+2013,Q1,Outside the workforce,Amapá,208
+2013,Q1,Outside the workforce,Tocantins,428
+2013,Q1,Outside the workforce,Maranhão,2234
+2013,Q1,Outside the workforce,Piauí,1050
+2013,Q1,Outside the workforce,Ceará,3177
+2013,Q1,Outside the workforce,Rio Grande do Norte,1166
+2013,Q1,Outside the workforce,Paraíba,1367
+2013,Q1,Outside the workforce,Pernambuco,3295
+2013,Q1,Outside the workforce,Alagoas,1225
+2013,Q1,Outside the workforce,Sergipe,673
+2013,Q1,Outside the workforce,Bahia,4453
+2013,Q1,Outside the workforce,Minas Gerais,6239
+2013,Q1,Outside the workforce,Espírito Santo,1052
+2013,Q1,Outside the workforce,Rio de Janeiro,5610
+2013,Q1,Outside the workforce,São Paulo,12863
+2013,Q1,Outside the workforce,Paraná,3128
+2013,Q1,Outside the workforce,Santa Catarina,1910
+2013,Q1,Outside the workforce,Rio Grande do Sul,3284
+2013,Q1,Outside the workforce,Mato Grosso do Sul,706
+2013,Q1,Outside the workforce,Mato Grosso,875
+2013,Q1,Outside the workforce,Goiás,1746
+2013,Q1,Outside the workforce,Distrito Federal,753
+2013,Q2,Workforce - Employed,Rondônia,757
+2013,Q2,Workforce - Employed,Acre,296
+2013,Q2,Workforce - Employed,Amazonas,1465
+2013,Q2,Workforce - Employed,Roraima,182
+2013,Q2,Workforce - Employed,Pará,3329
+2013,Q2,Workforce - Employed,Amapá,278
+2013,Q2,Workforce - Employed,Tocantins,602
+2013,Q2,Workforce - Employed,Maranhão,2438
+2013,Q2,Workforce - Employed,Piauí,1358
+2013,Q2,Workforce - Employed,Ceará,3389
+2013,Q2,Workforce - Employed,Rio Grande do Norte,1266
+2013,Q2,Workforce - Employed,Paraíba,1527
+2013,Q2,Workforce - Employed,Pernambuco,3450
+2013,Q2,Workforce - Employed,Alagoas,1105
+2013,Q2,Workforce - Employed,Sergipe,890
+2013,Q2,Workforce - Employed,Bahia,5954
+2013,Q2,Workforce - Employed,Minas Gerais,9711
+2013,Q2,Workforce - Employed,Espírito Santo,1805
+2013,Q2,Workforce - Employed,Rio de Janeiro,7483
+2013,Q2,Workforce - Employed,São Paulo,21288
+2013,Q2,Workforce - Employed,Paraná,5447
+2013,Q2,Workforce - Employed,Santa Catarina,3333
+2013,Q2,Workforce - Employed,Rio Grande do Sul,5572
+2013,Q2,Workforce - Employed,Mato Grosso do Sul,1206
+2013,Q2,Workforce - Employed,Mato Grosso,1546
+2013,Q2,Workforce - Employed,Goiás,3080
+2013,Q2,Workforce - Employed,Distrito Federal,1340
+2013,Q2,Workforce - Unemployed,Rondônia,38
+2013,Q2,Workforce - Unemployed,Acre,31
+2013,Q2,Workforce - Unemployed,Amazonas,165
+2013,Q2,Workforce - Unemployed,Roraima,17
+2013,Q2,Workforce - Unemployed,Pará,273
+2013,Q2,Workforce - Unemployed,Amapá,46
+2013,Q2,Workforce - Unemployed,Tocantins,54
+2013,Q2,Workforce - Unemployed,Maranhão,248
+2013,Q2,Workforce - Unemployed,Piauí,110
+2013,Q2,Workforce - Unemployed,Ceará,310
+2013,Q2,Workforce - Unemployed,Rio Grande do Norte,152
+2013,Q2,Workforce - Unemployed,Paraíba,149
+2013,Q2,Workforce - Unemployed,Pernambuco,366
+2013,Q2,Workforce - Unemployed,Alagoas,131
+2013,Q2,Workforce - Unemployed,Sergipe,111
+2013,Q2,Workforce - Unemployed,Bahia,793
+2013,Q2,Workforce - Unemployed,Minas Gerais,726
+2013,Q2,Workforce - Unemployed,Espírito Santo,149
+2013,Q2,Workforce - Unemployed,Rio de Janeiro,555
+2013,Q2,Workforce - Unemployed,São Paulo,1702
+2013,Q2,Workforce - Unemployed,Paraná,257
+2013,Q2,Workforce - Unemployed,Santa Catarina,118
+2013,Q2,Workforce - Unemployed,Rio Grande do Sul,264
+2013,Q2,Workforce - Unemployed,Mato Grosso do Sul,63
+2013,Q2,Workforce - Unemployed,Mato Grosso,73
+2013,Q2,Workforce - Unemployed,Goiás,187
+2013,Q2,Workforce - Unemployed,Distrito Federal,135
+2013,Q2,Outside the workforce,Rondônia,460
+2013,Q2,Outside the workforce,Acre,229
+2013,Q2,Outside the workforce,Amazonas,932
+2013,Q2,Outside the workforce,Roraima,112
+2013,Q2,Outside the workforce,Pará,2234
+2013,Q2,Outside the workforce,Amapá,212
+2013,Q2,Outside the workforce,Tocantins,434
+2013,Q2,Outside the workforce,Maranhão,2263
+2013,Q2,Outside the workforce,Piauí,1047
+2013,Q2,Outside the workforce,Ceará,3131
+2013,Q2,Outside the workforce,Rio Grande do Norte,1172
+2013,Q2,Outside the workforce,Paraíba,1314
+2013,Q2,Outside the workforce,Pernambuco,3334
+2013,Q2,Outside the workforce,Alagoas,1219
+2013,Q2,Outside the workforce,Sergipe,685
+2013,Q2,Outside the workforce,Bahia,4468
+2013,Q2,Outside the workforce,Minas Gerais,6022
+2013,Q2,Outside the workforce,Espírito Santo,1044
+2013,Q2,Outside the workforce,Rio de Janeiro,5632
+2013,Q2,Outside the workforce,São Paulo,12636
+2013,Q2,Outside the workforce,Paraná,3063
+2013,Q2,Outside the workforce,Santa Catarina,1932
+2013,Q2,Outside the workforce,Rio Grande do Sul,3312
+2013,Q2,Outside the workforce,Mato Grosso do Sul,685
+2013,Q2,Outside the workforce,Mato Grosso,866
+2013,Q2,Outside the workforce,Goiás,1792
+2013,Q2,Outside the workforce,Distrito Federal,733
+2013,Q3,Workforce - Employed,Rondônia,744
+2013,Q3,Workforce - Employed,Acre,299
+2013,Q3,Workforce - Employed,Amazonas,1470
+2013,Q3,Workforce - Employed,Roraima,190
+2013,Q3,Workforce - Employed,Pará,3295
+2013,Q3,Workforce - Employed,Amapá,293
+2013,Q3,Workforce - Employed,Tocantins,607
+2013,Q3,Workforce - Employed,Maranhão,2461
+2013,Q3,Workforce - Employed,Piauí,1341
+2013,Q3,Workforce - Employed,Ceará,3423
+2013,Q3,Workforce - Employed,Rio Grande do Norte,1300
+2013,Q3,Workforce - Employed,Paraíba,1515
+2013,Q3,Workforce - Employed,Pernambuco,3548
+2013,Q3,Workforce - Employed,Alagoas,1117
+2013,Q3,Workforce - Employed,Sergipe,907
+2013,Q3,Workforce - Employed,Bahia,6059
+2013,Q3,Workforce - Employed,Minas Gerais,9746
+2013,Q3,Workforce - Employed,Espírito Santo,1838
+2013,Q3,Workforce - Employed,Rio de Janeiro,7523
+2013,Q3,Workforce - Employed,São Paulo,21335
+2013,Q3,Workforce - Employed,Paraná,5473
+2013,Q3,Workforce - Employed,Santa Catarina,3300
+2013,Q3,Workforce - Employed,Rio Grande do Sul,5613
+2013,Q3,Workforce - Employed,Mato Grosso do Sul,1223
+2013,Q3,Workforce - Employed,Mato Grosso,1575
+2013,Q3,Workforce - Employed,Goiás,3122
+2013,Q3,Workforce - Employed,Distrito Federal,1389
+2013,Q3,Workforce - Unemployed,Rondônia,35
+2013,Q3,Workforce - Unemployed,Acre,29
+2013,Q3,Workforce - Unemployed,Amazonas,134
+2013,Q3,Workforce - Unemployed,Roraima,16
+2013,Q3,Workforce - Unemployed,Pará,273
+2013,Q3,Workforce - Unemployed,Amapá,36
+2013,Q3,Workforce - Unemployed,Tocantins,40
+2013,Q3,Workforce - Unemployed,Maranhão,196
+2013,Q3,Workforce - Unemployed,Piauí,108
+2013,Q3,Workforce - Unemployed,Ceará,264
+2013,Q3,Workforce - Unemployed,Rio Grande do Norte,146
+2013,Q3,Workforce - Unemployed,Paraíba,140
+2013,Q3,Workforce - Unemployed,Pernambuco,325
+2013,Q3,Workforce - Unemployed,Alagoas,130
+2013,Q3,Workforce - Unemployed,Sergipe,101
+2013,Q3,Workforce - Unemployed,Bahia,718
+2013,Q3,Workforce - Unemployed,Minas Gerais,652
+2013,Q3,Workforce - Unemployed,Espírito Santo,142
+2013,Q3,Workforce - Unemployed,Rio de Janeiro,550
+2013,Q3,Workforce - Unemployed,São Paulo,1677
+2013,Q3,Workforce - Unemployed,Paraná,237
+2013,Q3,Workforce - Unemployed,Santa Catarina,95
+2013,Q3,Workforce - Unemployed,Rio Grande do Sul,283
+2013,Q3,Workforce - Unemployed,Mato Grosso do Sul,56
+2013,Q3,Workforce - Unemployed,Mato Grosso,63
+2013,Q3,Workforce - Unemployed,Goiás,170
+2013,Q3,Workforce - Unemployed,Distrito Federal,135
+2013,Q3,Outside the workforce,Rondônia,477
+2013,Q3,Outside the workforce,Acre,236
+2013,Q3,Outside the workforce,Amazonas,979
+2013,Q3,Outside the workforce,Roraima,106
+2013,Q3,Outside the workforce,Pará,2334
+2013,Q3,Outside the workforce,Amapá,206
+2013,Q3,Outside the workforce,Tocantins,440
+2013,Q3,Outside the workforce,Maranhão,2295
+2013,Q3,Outside the workforce,Piauí,1065
+2013,Q3,Outside the workforce,Ceará,3193
+2013,Q3,Outside the workforce,Rio Grande do Norte,1164
+2013,Q3,Outside the workforce,Paraíba,1355
+2013,Q3,Outside the workforce,Pernambuco,3308
+2013,Q3,Outside the workforce,Alagoas,1206
+2013,Q3,Outside the workforce,Sergipe,676
+2013,Q3,Outside the workforce,Bahia,4503
+2013,Q3,Outside the workforce,Minas Gerais,6103
+2013,Q3,Outside the workforce,Espírito Santo,1041
+2013,Q3,Outside the workforce,Rio de Janeiro,5639
+2013,Q3,Outside the workforce,São Paulo,12679
+2013,Q3,Outside the workforce,Paraná,3095
+2013,Q3,Outside the workforce,Santa Catarina,2008
+2013,Q3,Outside the workforce,Rio Grande do Sul,3268
+2013,Q3,Outside the workforce,Mato Grosso do Sul,685
+2013,Q3,Outside the workforce,Mato Grosso,854
+2013,Q3,Outside the workforce,Goiás,1800
+2013,Q3,Outside the workforce,Distrito Federal,697
+2013,Q4,Workforce - Employed,Rondônia,743
+2013,Q4,Workforce - Employed,Acre,304
+2013,Q4,Workforce - Employed,Amazonas,1508
+2013,Q4,Workforce - Employed,Roraima,188
+2013,Q4,Workforce - Employed,Pará,3372
+2013,Q4,Workforce - Employed,Amapá,304
+2013,Q4,Workforce - Employed,Tocantins,612
+2013,Q4,Workforce - Employed,Maranhão,2576
+2013,Q4,Workforce - Employed,Piauí,1375
+2013,Q4,Workforce - Employed,Ceará,3499
+2013,Q4,Workforce - Employed,Rio Grande do Norte,1334
+2013,Q4,Workforce - Employed,Paraíba,1540
+2013,Q4,Workforce - Employed,Pernambuco,3635
+2013,Q4,Workforce - Employed,Alagoas,1117
+2013,Q4,Workforce - Employed,Sergipe,908
+2013,Q4,Workforce - Employed,Bahia,6299
+2013,Q4,Workforce - Employed,Minas Gerais,9736
+2013,Q4,Workforce - Employed,Espírito Santo,1803
+2013,Q4,Workforce - Employed,Rio de Janeiro,7459
+2013,Q4,Workforce - Employed,São Paulo,21317
+2013,Q4,Workforce - Employed,Paraná,5490
+2013,Q4,Workforce - Employed,Santa Catarina,3324
+2013,Q4,Workforce - Employed,Rio Grande do Sul,5636
+2013,Q4,Workforce - Employed,Mato Grosso do Sul,1214
+2013,Q4,Workforce - Employed,Mato Grosso,1562
+2013,Q4,Workforce - Employed,Goiás,3174
+2013,Q4,Workforce - Employed,Distrito Federal,1373
+2013,Q4,Workforce - Unemployed,Rondônia,38
+2013,Q4,Workforce - Unemployed,Acre,23
+2013,Q4,Workforce - Unemployed,Amazonas,124
+2013,Q4,Workforce - Unemployed,Roraima,13
+2013,Q4,Workforce - Unemployed,Pará,215
+2013,Q4,Workforce - Unemployed,Amapá,31
+2013,Q4,Workforce - Unemployed,Tocantins,42
+2013,Q4,Workforce - Unemployed,Maranhão,150
+2013,Q4,Workforce - Unemployed,Piauí,103
+2013,Q4,Workforce - Unemployed,Ceará,257
+2013,Q4,Workforce - Unemployed,Rio Grande do Norte,144
+2013,Q4,Workforce - Unemployed,Paraíba,141
+2013,Q4,Workforce - Unemployed,Pernambuco,287
+2013,Q4,Workforce - Unemployed,Alagoas,115
+2013,Q4,Workforce - Unemployed,Sergipe,86
+2013,Q4,Workforce - Unemployed,Bahia,620
+2013,Q4,Workforce - Unemployed,Minas Gerais,590
+2013,Q4,Workforce - Unemployed,Espírito Santo,113
+2013,Q4,Workforce - Unemployed,Rio de Janeiro,489
+2013,Q4,Workforce - Unemployed,São Paulo,1483
+2013,Q4,Workforce - Unemployed,Paraná,214
+2013,Q4,Workforce - Unemployed,Santa Catarina,86
+2013,Q4,Workforce - Unemployed,Rio Grande do Sul,274
+2013,Q4,Workforce - Unemployed,Mato Grosso do Sul,57
+2013,Q4,Workforce - Unemployed,Mato Grosso,60
+2013,Q4,Workforce - Unemployed,Goiás,131
+2013,Q4,Workforce - Unemployed,Distrito Federal,127
+2013,Q4,Outside the workforce,Rondônia,492
+2013,Q4,Outside the workforce,Acre,241
+2013,Q4,Outside the workforce,Amazonas,960
+2013,Q4,Outside the workforce,Roraima,113
+2013,Q4,Outside the workforce,Pará,2325
+2013,Q4,Outside the workforce,Amapá,212
+2013,Q4,Outside the workforce,Tocantins,446
+2013,Q4,Outside the workforce,Maranhão,2263
+2013,Q4,Outside the workforce,Piauí,1039
+2013,Q4,Outside the workforce,Ceará,3160
+2013,Q4,Outside the workforce,Rio Grande do Norte,1146
+2013,Q4,Outside the workforce,Paraíba,1328
+2013,Q4,Outside the workforce,Pernambuco,3296
+2013,Q4,Outside the workforce,Alagoas,1226
+2013,Q4,Outside the workforce,Sergipe,690
+2013,Q4,Outside the workforce,Bahia,4405
+2013,Q4,Outside the workforce,Minas Gerais,6275
+2013,Q4,Outside the workforce,Espírito Santo,1116
+2013,Q4,Outside the workforce,Rio de Janeiro,5805
+2013,Q4,Outside the workforce,São Paulo,13041
+2013,Q4,Outside the workforce,Paraná,3111
+2013,Q4,Outside the workforce,Santa Catarina,2028
+2013,Q4,Outside the workforce,Rio Grande do Sul,3284
+2013,Q4,Outside the workforce,Mato Grosso do Sul,691
+2013,Q4,Outside the workforce,Mato Grosso,900
+2013,Q4,Outside the workforce,Goiás,1832
+2013,Q4,Outside the workforce,Distrito Federal,745
+2014,Q1,Workforce - Employed,Rondônia,749
+2014,Q1,Workforce - Employed,Acre,304
+2014,Q1,Workforce - Employed,Amazonas,1457
+2014,Q1,Workforce - Employed,Roraima,195
+2014,Q1,Workforce - Employed,Pará,3369
+2014,Q1,Workforce - Employed,Amapá,300
+2014,Q1,Workforce - Employed,Tocantins,616
+2014,Q1,Workforce - Employed,Maranhão,2610
+2014,Q1,Workforce - Employed,Piauí,1412
+2014,Q1,Workforce - Employed,Ceará,3481
+2014,Q1,Workforce - Employed,Rio Grande do Norte,1322
+2014,Q1,Workforce - Employed,Paraíba,1534
+2014,Q1,Workforce - Employed,Pernambuco,3535
+2014,Q1,Workforce - Employed,Alagoas,1108
+2014,Q1,Workforce - Employed,Sergipe,906
+2014,Q1,Workforce - Employed,Bahia,6181
+2014,Q1,Workforce - Employed,Minas Gerais,9607
+2014,Q1,Workforce - Employed,Espírito Santo,1799
+2014,Q1,Workforce - Employed,Rio de Janeiro,7512
+2014,Q1,Workforce - Employed,São Paulo,21150
+2014,Q1,Workforce - Employed,Paraná,5473
+2014,Q1,Workforce - Employed,Santa Catarina,3346
+2014,Q1,Workforce - Employed,Rio Grande do Sul,5572
+2014,Q1,Workforce - Employed,Mato Grosso do Sul,1200
+2014,Q1,Workforce - Employed,Mato Grosso,1571
+2014,Q1,Workforce - Employed,Goiás,3121
+2014,Q1,Workforce - Employed,Distrito Federal,1353
+2014,Q1,Workforce - Unemployed,Rondônia,39
+2014,Q1,Workforce - Unemployed,Acre,26
+2014,Q1,Workforce - Unemployed,Amazonas,131
+2014,Q1,Workforce - Unemployed,Roraima,16
+2014,Q1,Workforce - Unemployed,Pará,278
+2014,Q1,Workforce - Unemployed,Amapá,38
+2014,Q1,Workforce - Unemployed,Tocantins,57
+2014,Q1,Workforce - Unemployed,Maranhão,177
+2014,Q1,Workforce - Unemployed,Piauí,107
+2014,Q1,Workforce - Unemployed,Ceará,297
+2014,Q1,Workforce - Unemployed,Rio Grande do Norte,175
+2014,Q1,Workforce - Unemployed,Paraíba,157
+2014,Q1,Workforce - Unemployed,Pernambuco,340
+2014,Q1,Workforce - Unemployed,Alagoas,119
+2014,Q1,Workforce - Unemployed,Sergipe,94
+2014,Q1,Workforce - Unemployed,Bahia,801
+2014,Q1,Workforce - Unemployed,Minas Gerais,730
+2014,Q1,Workforce - Unemployed,Espírito Santo,121
+2014,Q1,Workforce - Unemployed,Rio de Janeiro,537
+2014,Q1,Workforce - Unemployed,São Paulo,1651
+2014,Q1,Workforce - Unemployed,Paraná,235
+2014,Q1,Workforce - Unemployed,Santa Catarina,106
+2014,Q1,Workforce - Unemployed,Rio Grande do Sul,315
+2014,Q1,Workforce - Unemployed,Mato Grosso do Sul,59
+2014,Q1,Workforce - Unemployed,Mato Grosso,72
+2014,Q1,Workforce - Unemployed,Goiás,188
+2014,Q1,Workforce - Unemployed,Distrito Federal,134
+2014,Q1,Outside the workforce,Rondônia,499
+2014,Q1,Outside the workforce,Acre,235
+2014,Q1,Outside the workforce,Amazonas,1014
+2014,Q1,Outside the workforce,Roraima,109
+2014,Q1,Outside the workforce,Pará,2301
+2014,Q1,Outside the workforce,Amapá,213
+2014,Q1,Outside the workforce,Tocantins,431
+2014,Q1,Outside the workforce,Maranhão,2244
+2014,Q1,Outside the workforce,Piauí,982
+2014,Q1,Outside the workforce,Ceará,3168
+2014,Q1,Outside the workforce,Rio Grande do Norte,1160
+2014,Q1,Outside the workforce,Paraíba,1320
+2014,Q1,Outside the workforce,Pernambuco,3345
+2014,Q1,Outside the workforce,Alagoas,1238
+2014,Q1,Outside the workforce,Sergipe,685
+2014,Q1,Outside the workforce,Bahia,4326
+2014,Q1,Outside the workforce,Minas Gerais,6292
+2014,Q1,Outside the workforce,Espírito Santo,1115
+2014,Q1,Outside the workforce,Rio de Janeiro,5740
+2014,Q1,Outside the workforce,São Paulo,13185
+2014,Q1,Outside the workforce,Paraná,3111
+2014,Q1,Outside the workforce,Santa Catarina,1998
+2014,Q1,Outside the workforce,Rio Grande do Sul,3289
+2014,Q1,Outside the workforce,Mato Grosso do Sul,716
+2014,Q1,Outside the workforce,Mato Grosso,889
+2014,Q1,Outside the workforce,Goiás,1818
+2014,Q1,Outside the workforce,Distrito Federal,753
+2014,Q2,Workforce - Employed,Rondônia,744
+2014,Q2,Workforce - Employed,Acre,301
+2014,Q2,Workforce - Employed,Amazonas,1494
+2014,Q2,Workforce - Employed,Roraima,203
+2014,Q2,Workforce - Employed,Pará,3395
+2014,Q2,Workforce - Employed,Amapá,309
+2014,Q2,Workforce - Employed,Tocantins,626
+2014,Q2,Workforce - Employed,Maranhão,2609
+2014,Q2,Workforce - Employed,Piauí,1406
+2014,Q2,Workforce - Employed,Ceará,3546
+2014,Q2,Workforce - Employed,Rio Grande do Norte,1321
+2014,Q2,Workforce - Employed,Paraíba,1554
+2014,Q2,Workforce - Employed,Pernambuco,3613
+2014,Q2,Workforce - Employed,Alagoas,1109
+2014,Q2,Workforce - Employed,Sergipe,901
+2014,Q2,Workforce - Employed,Bahia,6278
+2014,Q2,Workforce - Employed,Minas Gerais,9682
+2014,Q2,Workforce - Employed,Espírito Santo,1813
+2014,Q2,Workforce - Employed,Rio de Janeiro,7501
+2014,Q2,Workforce - Employed,São Paulo,21398
+2014,Q2,Workforce - Employed,Paraná,5504
+2014,Q2,Workforce - Employed,Santa Catarina,3358
+2014,Q2,Workforce - Employed,Rio Grande do Sul,5566
+2014,Q2,Workforce - Employed,Mato Grosso do Sul,1232
+2014,Q2,Workforce - Employed,Mato Grosso,1585
+2014,Q2,Workforce - Employed,Goiás,3169
+2014,Q2,Workforce - Employed,Distrito Federal,1360
+2014,Q2,Workforce - Unemployed,Rondônia,32
+2014,Q2,Workforce - Unemployed,Acre,32
+2014,Q2,Workforce - Unemployed,Amazonas,135
+2014,Q2,Workforce - Unemployed,Roraima,11
+2014,Q2,Workforce - Unemployed,Pará,257
+2014,Q2,Workforce - Unemployed,Amapá,34
+2014,Q2,Workforce - Unemployed,Tocantins,52
+2014,Q2,Workforce - Unemployed,Maranhão,201
+2014,Q2,Workforce - Unemployed,Piauí,106
+2014,Q2,Workforce - Unemployed,Ceará,287
+2014,Q2,Workforce - Unemployed,Rio Grande do Norte,172
+2014,Q2,Workforce - Unemployed,Paraíba,149
+2014,Q2,Workforce - Unemployed,Pernambuco,311
+2014,Q2,Workforce - Unemployed,Alagoas,119
+2014,Q2,Workforce - Unemployed,Sergipe,95
+2014,Q2,Workforce - Unemployed,Bahia,705
+2014,Q2,Workforce - Unemployed,Minas Gerais,709
+2014,Q2,Workforce - Unemployed,Espírito Santo,126
+2014,Q2,Workforce - Unemployed,Rio de Janeiro,516
+2014,Q2,Workforce - Unemployed,São Paulo,1620
+2014,Q2,Workforce - Unemployed,Paraná,238
+2014,Q2,Workforce - Unemployed,Santa Catarina,96
+2014,Q2,Workforce - Unemployed,Rio Grande do Sul,287
+2014,Q2,Workforce - Unemployed,Mato Grosso do Sul,50
+2014,Q2,Workforce - Unemployed,Mato Grosso,65
+2014,Q2,Workforce - Unemployed,Goiás,181
+2014,Q2,Workforce - Unemployed,Distrito Federal,138
+2014,Q2,Outside the workforce,Rondônia,517
+2014,Q2,Outside the workforce,Acre,236
+2014,Q2,Outside the workforce,Amazonas,996
+2014,Q2,Outside the workforce,Roraima,112
+2014,Q2,Outside the workforce,Pará,2316
+2014,Q2,Outside the workforce,Amapá,201
+2014,Q2,Outside the workforce,Tocantins,438
+2014,Q2,Outside the workforce,Maranhão,2214
+2014,Q2,Outside the workforce,Piauí,1011
+2014,Q2,Outside the workforce,Ceará,3149
+2014,Q2,Outside the workforce,Rio Grande do Norte,1187
+2014,Q2,Outside the workforce,Paraíba,1325
+2014,Q2,Outside the workforce,Pernambuco,3327
+2014,Q2,Outside the workforce,Alagoas,1244
+2014,Q2,Outside the workforce,Sergipe,702
+2014,Q2,Outside the workforce,Bahia,4397
+2014,Q2,Outside the workforce,Minas Gerais,6326
+2014,Q2,Outside the workforce,Espírito Santo,1105
+2014,Q2,Outside the workforce,Rio de Janeiro,5869
+2014,Q2,Outside the workforce,São Paulo,13223
+2014,Q2,Outside the workforce,Paraná,3148
+2014,Q2,Outside the workforce,Santa Catarina,2047
+2014,Q2,Outside the workforce,Rio Grande do Sul,3354
+2014,Q2,Outside the workforce,Mato Grosso do Sul,700
+2014,Q2,Outside the workforce,Mato Grosso,894
+2014,Q2,Outside the workforce,Goiás,1799
+2014,Q2,Outside the workforce,Distrito Federal,765
+2014,Q3,Workforce - Employed,Rondônia,750
+2014,Q3,Workforce - Employed,Acre,313
+2014,Q3,Workforce - Employed,Amazonas,1539
+2014,Q3,Workforce - Employed,Roraima,199
+2014,Q3,Workforce - Employed,Pará,3403
+2014,Q3,Workforce - Employed,Amapá,313
+2014,Q3,Workforce - Employed,Tocantins,638
+2014,Q3,Workforce - Employed,Maranhão,2629
+2014,Q3,Workforce - Employed,Piauí,1416
+2014,Q3,Workforce - Employed,Ceará,3535
+2014,Q3,Workforce - Employed,Rio Grande do Norte,1318
+2014,Q3,Workforce - Employed,Paraíba,1548
+2014,Q3,Workforce - Employed,Pernambuco,3626
+2014,Q3,Workforce - Employed,Alagoas,1137
+2014,Q3,Workforce - Employed,Sergipe,919
+2014,Q3,Workforce - Employed,Bahia,6306
+2014,Q3,Workforce - Employed,Minas Gerais,9646
+2014,Q3,Workforce - Employed,Espírito Santo,1818
+2014,Q3,Workforce - Employed,Rio de Janeiro,7542
+2014,Q3,Workforce - Employed,São Paulo,21340
+2014,Q3,Workforce - Employed,Paraná,5525
+2014,Q3,Workforce - Employed,Santa Catarina,3407
+2014,Q3,Workforce - Employed,Rio Grande do Sul,5544
+2014,Q3,Workforce - Employed,Mato Grosso do Sul,1238
+2014,Q3,Workforce - Employed,Mato Grosso,1594
+2014,Q3,Workforce - Employed,Goiás,3188
+2014,Q3,Workforce - Employed,Distrito Federal,1362
+2014,Q3,Workforce - Unemployed,Rondônia,32
+2014,Q3,Workforce - Unemployed,Acre,23
+2014,Q3,Workforce - Unemployed,Amazonas,111
+2014,Q3,Workforce - Unemployed,Roraima,13
+2014,Q3,Workforce - Unemployed,Pará,264
+2014,Q3,Workforce - Unemployed,Amapá,37
+2014,Q3,Workforce - Unemployed,Tocantins,52
+2014,Q3,Workforce - Unemployed,Maranhão,188
+2014,Q3,Workforce - Unemployed,Piauí,92
+2014,Q3,Workforce - Unemployed,Ceará,283
+2014,Q3,Workforce - Unemployed,Rio Grande do Norte,155
+2014,Q3,Workforce - Unemployed,Paraíba,157
+2014,Q3,Workforce - Unemployed,Pernambuco,329
+2014,Q3,Workforce - Unemployed,Alagoas,122
+2014,Q3,Workforce - Unemployed,Sergipe,91
+2014,Q3,Workforce - Unemployed,Bahia,681
+2014,Q3,Workforce - Unemployed,Minas Gerais,709
+2014,Q3,Workforce - Unemployed,Espírito Santo,112
+2014,Q3,Workforce - Unemployed,Rio de Janeiro,492
+2014,Q3,Workforce - Unemployed,São Paulo,1660
+2014,Q3,Workforce - Unemployed,Paraná,234
+2014,Q3,Workforce - Unemployed,Santa Catarina,102
+2014,Q3,Workforce - Unemployed,Rio Grande do Sul,302
+2014,Q3,Workforce - Unemployed,Mato Grosso do Sul,52
+2014,Q3,Workforce - Unemployed,Mato Grosso,62
+2014,Q3,Workforce - Unemployed,Goiás,173
+2014,Q3,Workforce - Unemployed,Distrito Federal,132
+2014,Q3,Outside the workforce,Rondônia,529
+2014,Q3,Outside the workforce,Acre,240
+2014,Q3,Outside the workforce,Amazonas,1001
+2014,Q3,Outside the workforce,Roraima,117
+2014,Q3,Outside the workforce,Pará,2353
+2014,Q3,Outside the workforce,Amapá,203
+2014,Q3,Outside the workforce,Tocantins,439
+2014,Q3,Outside the workforce,Maranhão,2221
+2014,Q3,Outside the workforce,Piauí,1021
+2014,Q3,Outside the workforce,Ceará,3201
+2014,Q3,Outside the workforce,Rio Grande do Norte,1205
+2014,Q3,Outside the workforce,Paraíba,1336
+2014,Q3,Outside the workforce,Pernambuco,3338
+2014,Q3,Outside the workforce,Alagoas,1232
+2014,Q3,Outside the workforce,Sergipe,695
+2014,Q3,Outside the workforce,Bahia,4427
+2014,Q3,Outside the workforce,Minas Gerais,6428
+2014,Q3,Outside the workforce,Espírito Santo,1129
+2014,Q3,Outside the workforce,Rio de Janeiro,5940
+2014,Q3,Outside the workforce,São Paulo,13345
+2014,Q3,Outside the workforce,Paraná,3175
+2014,Q3,Outside the workforce,Santa Catarina,2032
+2014,Q3,Outside the workforce,Rio Grande do Sul,3364
+2014,Q3,Outside the workforce,Mato Grosso do Sul,712
+2014,Q3,Outside the workforce,Mato Grosso,880
+2014,Q3,Outside the workforce,Goiás,1821
+2014,Q3,Outside the workforce,Distrito Federal,775
+2014,Q4,Workforce - Employed,Rondônia,773
+2014,Q4,Workforce - Employed,Acre,314
+2014,Q4,Workforce - Employed,Amazonas,1503
+2014,Q4,Workforce - Employed,Roraima,210
+2014,Q4,Workforce - Employed,Pará,3400
+2014,Q4,Workforce - Employed,Amapá,313
+2014,Q4,Workforce - Employed,Tocantins,633
+2014,Q4,Workforce - Employed,Maranhão,2636
+2014,Q4,Workforce - Employed,Piauí,1402
+2014,Q4,Workforce - Employed,Ceará,3488
+2014,Q4,Workforce - Employed,Rio Grande do Norte,1324
+2014,Q4,Workforce - Employed,Paraíba,1567
+2014,Q4,Workforce - Employed,Pernambuco,3674
+2014,Q4,Workforce - Employed,Alagoas,1162
+2014,Q4,Workforce - Employed,Sergipe,939
+2014,Q4,Workforce - Employed,Bahia,6432
+2014,Q4,Workforce - Employed,Minas Gerais,9763
+2014,Q4,Workforce - Employed,Espírito Santo,1788
+2014,Q4,Workforce - Employed,Rio de Janeiro,7536
+2014,Q4,Workforce - Employed,São Paulo,21585
+2014,Q4,Workforce - Employed,Paraná,5468
+2014,Q4,Workforce - Employed,Santa Catarina,3474
+2014,Q4,Workforce - Employed,Rio Grande do Sul,5594
+2014,Q4,Workforce - Employed,Mato Grosso do Sul,1249
+2014,Q4,Workforce - Employed,Mato Grosso,1581
+2014,Q4,Workforce - Employed,Goiás,3244
+2014,Q4,Workforce - Employed,Distrito Federal,1344
+2014,Q4,Workforce - Unemployed,Rondônia,29
+2014,Q4,Workforce - Unemployed,Acre,21
+2014,Q4,Workforce - Unemployed,Amazonas,126
+2014,Q4,Workforce - Unemployed,Roraima,14
+2014,Q4,Workforce - Unemployed,Pará,256
+2014,Q4,Workforce - Unemployed,Amapá,33
+2014,Q4,Workforce - Unemployed,Tocantins,43
+2014,Q4,Workforce - Unemployed,Maranhão,199
+2014,Q4,Workforce - Unemployed,Piauí,88
+2014,Q4,Workforce - Unemployed,Ceará,246
+2014,Q4,Workforce - Unemployed,Rio Grande do Norte,153
+2014,Q4,Workforce - Unemployed,Paraíba,138
+2014,Q4,Workforce - Unemployed,Pernambuco,302
+2014,Q4,Workforce - Unemployed,Alagoas,120
+2014,Q4,Workforce - Unemployed,Sergipe,92
+2014,Q4,Workforce - Unemployed,Bahia,694
+2014,Q4,Workforce - Unemployed,Minas Gerais,650
+2014,Q4,Workforce - Unemployed,Espírito Santo,115
+2014,Q4,Workforce - Unemployed,Rio de Janeiro,462
+2014,Q4,Workforce - Unemployed,São Paulo,1646
+2014,Q4,Workforce - Unemployed,Paraná,210
+2014,Q4,Workforce - Unemployed,Santa Catarina,95
+2014,Q4,Workforce - Unemployed,Rio Grande do Sul,263
+2014,Q4,Workforce - Unemployed,Mato Grosso do Sul,49
+2014,Q4,Workforce - Unemployed,Mato Grosso,65
+2014,Q4,Workforce - Unemployed,Goiás,172
+2014,Q4,Workforce - Unemployed,Distrito Federal,128
+2014,Q4,Outside the workforce,Rondônia,513
+2014,Q4,Outside the workforce,Acre,248
+2014,Q4,Outside the workforce,Amazonas,1054
+2014,Q4,Outside the workforce,Roraima,112
+2014,Q4,Outside the workforce,Pará,2394
+2014,Q4,Outside the workforce,Amapá,205
+2014,Q4,Outside the workforce,Tocantins,442
+2014,Q4,Outside the workforce,Maranhão,2221
+2014,Q4,Outside the workforce,Piauí,1045
+2014,Q4,Outside the workforce,Ceará,3270
+2014,Q4,Outside the workforce,Rio Grande do Norte,1209
+2014,Q4,Outside the workforce,Paraíba,1338
+2014,Q4,Outside the workforce,Pernambuco,3359
+2014,Q4,Outside the workforce,Alagoas,1228
+2014,Q4,Outside the workforce,Sergipe,689
+2014,Q4,Outside the workforce,Bahia,4378
+2014,Q4,Outside the workforce,Minas Gerais,6421
+2014,Q4,Outside the workforce,Espírito Santo,1161
+2014,Q4,Outside the workforce,Rio de Janeiro,6065
+2014,Q4,Outside the workforce,São Paulo,13279
+2014,Q4,Outside the workforce,Paraná,3292
+2014,Q4,Outside the workforce,Santa Catarina,1995
+2014,Q4,Outside the workforce,Rio Grande do Sul,3374
+2014,Q4,Outside the workforce,Mato Grosso do Sul,709
+2014,Q4,Outside the workforce,Mato Grosso,898
+2014,Q4,Outside the workforce,Goiás,1810
+2014,Q4,Outside the workforce,Distrito Federal,806
+2015,Q1,Workforce - Employed,Rondônia,756
+2015,Q1,Workforce - Employed,Acre,316
+2015,Q1,Workforce - Employed,Amazonas,1498
+2015,Q1,Workforce - Employed,Roraima,199
+2015,Q1,Workforce - Employed,Pará,3401
+2015,Q1,Workforce - Employed,Amapá,306
+2015,Q1,Workforce - Employed,Tocantins,615
+2015,Q1,Workforce - Employed,Maranhão,2606
+2015,Q1,Workforce - Employed,Piauí,1380
+2015,Q1,Workforce - Employed,Ceará,3422
+2015,Q1,Workforce - Employed,Rio Grande do Norte,1328
+2015,Q1,Workforce - Employed,Paraíba,1583
+2015,Q1,Workforce - Employed,Pernambuco,3659
+2015,Q1,Workforce - Employed,Alagoas,1113
+2015,Q1,Workforce - Employed,Sergipe,947
+2015,Q1,Workforce - Employed,Bahia,6349
+2015,Q1,Workforce - Employed,Minas Gerais,9592
+2015,Q1,Workforce - Employed,Espírito Santo,1789
+2015,Q1,Workforce - Employed,Rio de Janeiro,7508
+2015,Q1,Workforce - Employed,São Paulo,21414
+2015,Q1,Workforce - Employed,Paraná,5388
+2015,Q1,Workforce - Employed,Santa Catarina,3439
+2015,Q1,Workforce - Employed,Rio Grande do Sul,5622
+2015,Q1,Workforce - Employed,Mato Grosso do Sul,1225
+2015,Q1,Workforce - Employed,Mato Grosso,1577
+2015,Q1,Workforce - Employed,Goiás,3180
+2015,Q1,Workforce - Employed,Distrito Federal,1341
+2015,Q1,Workforce - Unemployed,Rondônia,35
+2015,Q1,Workforce - Unemployed,Acre,30
+2015,Q1,Workforce - Unemployed,Amazonas,155
+2015,Q1,Workforce - Unemployed,Roraima,19
+2015,Q1,Workforce - Unemployed,Pará,344
+2015,Q1,Workforce - Unemployed,Amapá,33
+2015,Q1,Workforce - Unemployed,Tocantins,59
+2015,Q1,Workforce - Unemployed,Maranhão,255
+2015,Q1,Workforce - Unemployed,Piauí,115
+2015,Q1,Workforce - Unemployed,Ceará,297
+2015,Q1,Workforce - Unemployed,Rio Grande do Norte,172
+2015,Q1,Workforce - Unemployed,Paraíba,159
+2015,Q1,Workforce - Unemployed,Pernambuco,325
+2015,Q1,Workforce - Unemployed,Alagoas,138
+2015,Q1,Workforce - Unemployed,Sergipe,89
+2015,Q1,Workforce - Unemployed,Bahia,810
+2015,Q1,Workforce - Unemployed,Minas Gerais,861
+2015,Q1,Workforce - Unemployed,Espírito Santo,133
+2015,Q1,Workforce - Unemployed,Rio de Janeiro,526
+2015,Q1,Workforce - Unemployed,São Paulo,1977
+2015,Q1,Workforce - Unemployed,Paraná,302
+2015,Q1,Workforce - Unemployed,Santa Catarina,139
+2015,Q1,Workforce - Unemployed,Rio Grande do Sul,336
+2015,Q1,Workforce - Unemployed,Mato Grosso do Sul,80
+2015,Q1,Workforce - Unemployed,Mato Grosso,95
+2015,Q1,Workforce - Unemployed,Goiás,238
+2015,Q1,Workforce - Unemployed,Distrito Federal,162
+2015,Q1,Outside the workforce,Rondônia,521
+2015,Q1,Outside the workforce,Acre,239
+2015,Q1,Outside the workforce,Amazonas,1047
+2015,Q1,Outside the workforce,Roraima,120
+2015,Q1,Outside the workforce,Pará,2304
+2015,Q1,Outside the workforce,Amapá,213
+2015,Q1,Outside the workforce,Tocantins,452
+2015,Q1,Outside the workforce,Maranhão,2215
+2015,Q1,Outside the workforce,Piauí,1041
+2015,Q1,Outside the workforce,Ceará,3297
+2015,Q1,Outside the workforce,Rio Grande do Norte,1211
+2015,Q1,Outside the workforce,Paraíba,1313
+2015,Q1,Outside the workforce,Pernambuco,3397
+2015,Q1,Outside the workforce,Alagoas,1264
+2015,Q1,Outside the workforce,Sergipe,698
+2015,Q1,Outside the workforce,Bahia,4365
+2015,Q1,Outside the workforce,Minas Gerais,6434
+2015,Q1,Outside the workforce,Espírito Santo,1161
+2015,Q1,Outside the workforce,Rio de Janeiro,6130
+2015,Q1,Outside the workforce,São Paulo,13255
+2015,Q1,Outside the workforce,Paraná,3315
+2015,Q1,Outside the workforce,Santa Catarina,2000
+2015,Q1,Outside the workforce,Rio Grande do Sul,3312
+2015,Q1,Outside the workforce,Mato Grosso do Sul,723
+2015,Q1,Outside the workforce,Mato Grosso,889
+2015,Q1,Outside the workforce,Goiás,1840
+2015,Q1,Outside the workforce,Distrito Federal,788
+2015,Q2,Workforce - Employed,Rondônia,745
+2015,Q2,Workforce - Employed,Acre,310
+2015,Q2,Workforce - Employed,Amazonas,1504
+2015,Q2,Workforce - Employed,Roraima,202
+2015,Q2,Workforce - Employed,Pará,3410
+2015,Q2,Workforce - Employed,Amapá,307
+2015,Q2,Workforce - Employed,Tocantins,623
+2015,Q2,Workforce - Employed,Maranhão,2603
+2015,Q2,Workforce - Employed,Piauí,1401
+2015,Q2,Workforce - Employed,Ceará,3434
+2015,Q2,Workforce - Employed,Rio Grande do Norte,1337
+2015,Q2,Workforce - Employed,Paraíba,1575
+2015,Q2,Workforce - Employed,Pernambuco,3705
+2015,Q2,Workforce - Employed,Alagoas,1098
+2015,Q2,Workforce - Employed,Sergipe,937
+2015,Q2,Workforce - Employed,Bahia,6288
+2015,Q2,Workforce - Employed,Minas Gerais,9748
+2015,Q2,Workforce - Employed,Espírito Santo,1821
+2015,Q2,Workforce - Employed,Rio de Janeiro,7578
+2015,Q2,Workforce - Employed,São Paulo,21357
+2015,Q2,Workforce - Employed,Paraná,5393
+2015,Q2,Workforce - Employed,Santa Catarina,3475
+2015,Q2,Workforce - Employed,Rio Grande do Sul,5570
+2015,Q2,Workforce - Employed,Mato Grosso do Sul,1224
+2015,Q2,Workforce - Employed,Mato Grosso,1547
+2015,Q2,Workforce - Employed,Goiás,3203
+2015,Q2,Workforce - Employed,Distrito Federal,1356
+2015,Q2,Workforce - Unemployed,Rondônia,39
+2015,Q2,Workforce - Unemployed,Acre,30
+2015,Q2,Workforce - Unemployed,Amazonas,157
+2015,Q2,Workforce - Unemployed,Roraima,17
+2015,Q2,Workforce - Unemployed,Pará,335
+2015,Q2,Workforce - Unemployed,Amapá,34
+2015,Q2,Workforce - Unemployed,Tocantins,51
+2015,Q2,Workforce - Unemployed,Maranhão,250
+2015,Q2,Workforce - Unemployed,Piauí,116
+2015,Q2,Workforce - Unemployed,Ceará,332
+2015,Q2,Workforce - Unemployed,Rio Grande do Norte,175
+2015,Q2,Workforce - Unemployed,Paraíba,157
+2015,Q2,Workforce - Unemployed,Pernambuco,370
+2015,Q2,Workforce - Unemployed,Alagoas,145
+2015,Q2,Workforce - Unemployed,Sergipe,93
+2015,Q2,Workforce - Unemployed,Bahia,917
+2015,Q2,Workforce - Unemployed,Minas Gerais,830
+2015,Q2,Workforce - Unemployed,Espírito Santo,129
+2015,Q2,Workforce - Unemployed,Rio de Janeiro,587
+2015,Q2,Workforce - Unemployed,São Paulo,2110
+2015,Q2,Workforce - Unemployed,Paraná,354
+2015,Q2,Workforce - Unemployed,Santa Catarina,141
+2015,Q2,Workforce - Unemployed,Rio Grande do Sul,348
+2015,Q2,Workforce - Unemployed,Mato Grosso do Sul,81
+2015,Q2,Workforce - Unemployed,Mato Grosso,102
+2015,Q2,Workforce - Unemployed,Goiás,254
+2015,Q2,Workforce - Unemployed,Distrito Federal,144
+2015,Q2,Outside the workforce,Rondônia,523
+2015,Q2,Outside the workforce,Acre,245
+2015,Q2,Outside the workforce,Amazonas,1052
+2015,Q2,Outside the workforce,Roraima,121
+2015,Q2,Outside the workforce,Pará,2340
+2015,Q2,Outside the workforce,Amapá,209
+2015,Q2,Outside the workforce,Tocantins,452
+2015,Q2,Outside the workforce,Maranhão,2221
+2015,Q2,Outside the workforce,Piauí,1037
+2015,Q2,Outside the workforce,Ceará,3260
+2015,Q2,Outside the workforce,Rio Grande do Norte,1180
+2015,Q2,Outside the workforce,Paraíba,1340
+2015,Q2,Outside the workforce,Pernambuco,3320
+2015,Q2,Outside the workforce,Alagoas,1278
+2015,Q2,Outside the workforce,Sergipe,719
+2015,Q2,Outside the workforce,Bahia,4362
+2015,Q2,Outside the workforce,Minas Gerais,6350
+2015,Q2,Outside the workforce,Espírito Santo,1164
+2015,Q2,Outside the workforce,Rio de Janeiro,6019
+2015,Q2,Outside the workforce,São Paulo,13213
+2015,Q2,Outside the workforce,Paraná,3256
+2015,Q2,Outside the workforce,Santa Catarina,1996
+2015,Q2,Outside the workforce,Rio Grande do Sul,3350
+2015,Q2,Outside the workforce,Mato Grosso do Sul,722
+2015,Q2,Outside the workforce,Mato Grosso,889
+2015,Q2,Outside the workforce,Goiás,1818
+2015,Q2,Outside the workforce,Distrito Federal,799
+2015,Q3,Workforce - Employed,Rondônia,753
+2015,Q3,Workforce - Employed,Acre,314
+2015,Q3,Workforce - Employed,Amazonas,1520
+2015,Q3,Workforce - Employed,Roraima,199
+2015,Q3,Workforce - Employed,Pará,3479
+2015,Q3,Workforce - Employed,Amapá,306
+2015,Q3,Workforce - Employed,Tocantins,614
+2015,Q3,Workforce - Employed,Maranhão,2647
+2015,Q3,Workforce - Employed,Piauí,1398
+2015,Q3,Workforce - Employed,Ceará,3446
+2015,Q3,Workforce - Employed,Rio Grande do Norte,1349
+2015,Q3,Workforce - Employed,Paraíba,1563
+2015,Q3,Workforce - Employed,Pernambuco,3702
+2015,Q3,Workforce - Employed,Alagoas,1110
+2015,Q3,Workforce - Employed,Sergipe,929
+2015,Q3,Workforce - Employed,Bahia,6292
+2015,Q3,Workforce - Employed,Minas Gerais,9814
+2015,Q3,Workforce - Employed,Espírito Santo,1777
+2015,Q3,Workforce - Employed,Rio de Janeiro,7535
+2015,Q3,Workforce - Employed,São Paulo,21216
+2015,Q3,Workforce - Employed,Paraná,5397
+2015,Q3,Workforce - Employed,Santa Catarina,3458
+2015,Q3,Workforce - Employed,Rio Grande do Sul,5517
+2015,Q3,Workforce - Employed,Mato Grosso do Sul,1241
+2015,Q3,Workforce - Employed,Mato Grosso,1520
+2015,Q3,Workforce - Employed,Goiás,3194
+2015,Q3,Workforce - Employed,Distrito Federal,1346
+2015,Q3,Workforce - Unemployed,Rondônia,54
+2015,Q3,Workforce - Unemployed,Acre,30
+2015,Q3,Workforce - Unemployed,Amazonas,170
+2015,Q3,Workforce - Unemployed,Roraima,20
+2015,Q3,Workforce - Unemployed,Pará,320
+2015,Q3,Workforce - Unemployed,Amapá,41
+2015,Q3,Workforce - Unemployed,Tocantins,62
+2015,Q3,Workforce - Unemployed,Maranhão,244
+2015,Q3,Workforce - Unemployed,Piauí,115
+2015,Q3,Workforce - Unemployed,Ceará,363
+2015,Q3,Workforce - Unemployed,Rio Grande do Norte,195
+2015,Q3,Workforce - Unemployed,Paraíba,179
+2015,Q3,Workforce - Unemployed,Pernambuco,467
+2015,Q3,Workforce - Unemployed,Alagoas,133
+2015,Q3,Workforce - Unemployed,Sergipe,87
+2015,Q3,Workforce - Unemployed,Bahia,927
+2015,Q3,Workforce - Unemployed,Minas Gerais,928
+2015,Q3,Workforce - Unemployed,Espírito Santo,158
+2015,Q3,Workforce - Unemployed,Rio de Janeiro,676
+2015,Q3,Workforce - Unemployed,São Paulo,2244
+2015,Q3,Workforce - Unemployed,Paraná,352
+2015,Q3,Workforce - Unemployed,Santa Catarina,157
+2015,Q3,Workforce - Unemployed,Rio Grande do Sul,406
+2015,Q3,Workforce - Unemployed,Mato Grosso do Sul,83
+2015,Q3,Workforce - Unemployed,Mato Grosso,108
+2015,Q3,Workforce - Unemployed,Goiás,248
+2015,Q3,Workforce - Unemployed,Distrito Federal,154
+2015,Q3,Outside the workforce,Rondônia,502
+2015,Q3,Outside the workforce,Acre,245
+2015,Q3,Outside the workforce,Amazonas,1052
+2015,Q3,Outside the workforce,Roraima,123
+2015,Q3,Outside the workforce,Pará,2319
+2015,Q3,Outside the workforce,Amapá,207
+2015,Q3,Outside the workforce,Tocantins,443
+2015,Q3,Outside the workforce,Maranhão,2223
+2015,Q3,Outside the workforce,Piauí,1041
+2015,Q3,Outside the workforce,Ceará,3209
+2015,Q3,Outside the workforce,Rio Grande do Norte,1161
+2015,Q3,Outside the workforce,Paraíba,1343
+2015,Q3,Outside the workforce,Pernambuco,3298
+2015,Q3,Outside the workforce,Alagoas,1295
+2015,Q3,Outside the workforce,Sergipe,738
+2015,Q3,Outside the workforce,Bahia,4337
+2015,Q3,Outside the workforce,Minas Gerais,6274
+2015,Q3,Outside the workforce,Espírito Santo,1184
+2015,Q3,Outside the workforce,Rio de Janeiro,5972
+2015,Q3,Outside the workforce,São Paulo,13198
+2015,Q3,Outside the workforce,Paraná,3279
+2015,Q3,Outside the workforce,Santa Catarina,2019
+2015,Q3,Outside the workforce,Rio Grande do Sul,3361
+2015,Q3,Outside the workforce,Mato Grosso do Sul,702
+2015,Q3,Outside the workforce,Mato Grosso,915
+2015,Q3,Outside the workforce,Goiás,1876
+2015,Q3,Outside the workforce,Distrito Federal,820
+2015,Q4,Workforce - Employed,Rondônia,764
+2015,Q4,Workforce - Employed,Acre,318
+2015,Q4,Workforce - Employed,Amazonas,1511
+2015,Q4,Workforce - Employed,Roraima,203
+2015,Q4,Workforce - Employed,Pará,3487
+2015,Q4,Workforce - Employed,Amapá,309
+2015,Q4,Workforce - Employed,Tocantins,615
+2015,Q4,Workforce - Employed,Maranhão,2635
+2015,Q4,Workforce - Employed,Piauí,1384
+2015,Q4,Workforce - Employed,Ceará,3436
+2015,Q4,Workforce - Employed,Rio Grande do Norte,1336
+2015,Q4,Workforce - Employed,Paraíba,1555
+2015,Q4,Workforce - Employed,Pernambuco,3601
+2015,Q4,Workforce - Employed,Alagoas,1113
+2015,Q4,Workforce - Employed,Sergipe,901
+2015,Q4,Workforce - Employed,Bahia,6264
+2015,Q4,Workforce - Employed,Minas Gerais,9709
+2015,Q4,Workforce - Employed,Espírito Santo,1760
+2015,Q4,Workforce - Employed,Rio de Janeiro,7525
+2015,Q4,Workforce - Employed,São Paulo,21416
+2015,Q4,Workforce - Employed,Paraná,5483
+2015,Q4,Workforce - Employed,Santa Catarina,3488
+2015,Q4,Workforce - Employed,Rio Grande do Sul,5636
+2015,Q4,Workforce - Employed,Mato Grosso do Sul,1249
+2015,Q4,Workforce - Employed,Mato Grosso,1551
+2015,Q4,Workforce - Employed,Goiás,3189
+2015,Q4,Workforce - Employed,Distrito Federal,1363
+2015,Q4,Workforce - Unemployed,Rondônia,52
+2015,Q4,Workforce - Unemployed,Acre,26
+2015,Q4,Workforce - Unemployed,Amazonas,151
+2015,Q4,Workforce - Unemployed,Roraima,18
+2015,Q4,Workforce - Unemployed,Pará,329
+2015,Q4,Workforce - Unemployed,Amapá,45
+2015,Q4,Workforce - Unemployed,Tocantins,61
+2015,Q4,Workforce - Unemployed,Maranhão,236
+2015,Q4,Workforce - Unemployed,Piauí,107
+2015,Q4,Workforce - Unemployed,Ceará,340
+2015,Q4,Workforce - Unemployed,Rio Grande do Norte,185
+2015,Q4,Workforce - Unemployed,Paraíba,163
+2015,Q4,Workforce - Unemployed,Pernambuco,446
+2015,Q4,Workforce - Unemployed,Alagoas,142
+2015,Q4,Workforce - Unemployed,Sergipe,99
+2015,Q4,Workforce - Unemployed,Bahia,869
+2015,Q4,Workforce - Unemployed,Minas Gerais,995
+2015,Q4,Workforce - Unemployed,Espírito Santo,176
+2015,Q4,Workforce - Unemployed,Rio de Janeiro,702
+2015,Q4,Workforce - Unemployed,São Paulo,2412
+2015,Q4,Workforce - Unemployed,Paraná,337
+2015,Q4,Workforce - Unemployed,Santa Catarina,152
+2015,Q4,Workforce - Unemployed,Rio Grande do Sul,392
+2015,Q4,Workforce - Unemployed,Mato Grosso do Sul,79
+2015,Q4,Workforce - Unemployed,Mato Grosso,93
+2015,Q4,Workforce - Unemployed,Goiás,266
+2015,Q4,Workforce - Unemployed,Distrito Federal,146
+2015,Q4,Outside the workforce,Rondônia,483
+2015,Q4,Outside the workforce,Acre,248
+2015,Q4,Outside the workforce,Amazonas,1103
+2015,Q4,Outside the workforce,Roraima,125
+2015,Q4,Outside the workforce,Pará,2351
+2015,Q4,Outside the workforce,Amapá,203
+2015,Q4,Outside the workforce,Tocantins,458
+2015,Q4,Outside the workforce,Maranhão,2247
+2015,Q4,Outside the workforce,Piauí,1076
+2015,Q4,Outside the workforce,Ceará,3264
+2015,Q4,Outside the workforce,Rio Grande do Norte,1205
+2015,Q4,Outside the workforce,Paraíba,1374
+2015,Q4,Outside the workforce,Pernambuco,3415
+2015,Q4,Outside the workforce,Alagoas,1292
+2015,Q4,Outside the workforce,Sergipe,770
+2015,Q4,Outside the workforce,Bahia,4430
+2015,Q4,Outside the workforce,Minas Gerais,6387
+2015,Q4,Outside the workforce,Espírito Santo,1208
+2015,Q4,Outside the workforce,Rio de Janeiro,5918
+2015,Q4,Outside the workforce,São Paulo,12928
+2015,Q4,Outside the workforce,Paraná,3230
+2015,Q4,Outside the workforce,Santa Catarina,2024
+2015,Q4,Outside the workforce,Rio Grande do Sul,3277
+2015,Q4,Outside the workforce,Mato Grosso do Sul,708
+2015,Q4,Outside the workforce,Mato Grosso,922
+2015,Q4,Outside the workforce,Goiás,1880
+2015,Q4,Outside the workforce,Distrito Federal,806
+2016,Q1,Workforce - Employed,Rondônia,752
+2016,Q1,Workforce - Employed,Acre,313
+2016,Q1,Workforce - Employed,Amazonas,1498
+2016,Q1,Workforce - Employed,Roraima,204
+2016,Q1,Workforce - Employed,Pará,3439
+2016,Q1,Workforce - Employed,Amapá,295
+2016,Q1,Workforce - Employed,Tocantins,612
+2016,Q1,Workforce - Employed,Maranhão,2575
+2016,Q1,Workforce - Employed,Piauí,1332
+2016,Q1,Workforce - Employed,Ceará,3338
+2016,Q1,Workforce - Employed,Rio Grande do Norte,1277
+2016,Q1,Workforce - Employed,Paraíba,1527
+2016,Q1,Workforce - Employed,Pernambuco,3528
+2016,Q1,Workforce - Employed,Alagoas,1094
+2016,Q1,Workforce - Employed,Sergipe,900
+2016,Q1,Workforce - Employed,Bahia,5978
+2016,Q1,Workforce - Employed,Minas Gerais,9506
+2016,Q1,Workforce - Employed,Espírito Santo,1730
+2016,Q1,Workforce - Employed,Rio de Janeiro,7435
+2016,Q1,Workforce - Employed,São Paulo,21218
+2016,Q1,Workforce - Employed,Paraná,5413
+2016,Q1,Workforce - Employed,Santa Catarina,3432
+2016,Q1,Workforce - Employed,Rio Grande do Sul,5594
+2016,Q1,Workforce - Employed,Mato Grosso do Sul,1231
+2016,Q1,Workforce - Employed,Mato Grosso,1502
+2016,Q1,Workforce - Employed,Goiás,3138
+2016,Q1,Workforce - Employed,Distrito Federal,1355
+2016,Q1,Workforce - Unemployed,Rondônia,61
+2016,Q1,Workforce - Unemployed,Acre,30
+2016,Q1,Workforce - Unemployed,Amazonas,218
+2016,Q1,Workforce - Unemployed,Roraima,18
+2016,Q1,Workforce - Unemployed,Pará,384
+2016,Q1,Workforce - Unemployed,Amapá,49
+2016,Q1,Workforce - Unemployed,Tocantins,73
+2016,Q1,Workforce - Unemployed,Maranhão,312
+2016,Q1,Workforce - Unemployed,Piauí,141
+2016,Q1,Workforce - Unemployed,Ceará,403
+2016,Q1,Workforce - Unemployed,Rio Grande do Norte,214
+2016,Q1,Workforce - Unemployed,Paraíba,170
+2016,Q1,Workforce - Unemployed,Pernambuco,540
+2016,Q1,Workforce - Unemployed,Alagoas,161
+2016,Q1,Workforce - Unemployed,Sergipe,114
+2016,Q1,Workforce - Unemployed,Bahia,1099
+2016,Q1,Workforce - Unemployed,Minas Gerais,1193
+2016,Q1,Workforce - Unemployed,Espírito Santo,215
+2016,Q1,Workforce - Unemployed,Rio de Janeiro,827
+2016,Q1,Workforce - Unemployed,São Paulo,2884
+2016,Q1,Workforce - Unemployed,Paraná,475
+2016,Q1,Workforce - Unemployed,Santa Catarina,218
+2016,Q1,Workforce - Unemployed,Rio Grande do Sul,452
+2016,Q1,Workforce - Unemployed,Mato Grosso do Sul,104
+2016,Q1,Workforce - Unemployed,Mato Grosso,150
+2016,Q1,Workforce - Unemployed,Goiás,347
+2016,Q1,Workforce - Unemployed,Distrito Federal,171
+2016,Q1,Outside the workforce,Rondônia,496
+2016,Q1,Outside the workforce,Acre,250
+2016,Q1,Outside the workforce,Amazonas,1051
+2016,Q1,Outside the workforce,Roraima,125
+2016,Q1,Outside the workforce,Pará,2392
+2016,Q1,Outside the workforce,Amapá,217
+2016,Q1,Outside the workforce,Tocantins,458
+2016,Q1,Outside the workforce,Maranhão,2265
+2016,Q1,Outside the workforce,Piauí,1098
+2016,Q1,Outside the workforce,Ceará,3329
+2016,Q1,Outside the workforce,Rio Grande do Norte,1245
+2016,Q1,Outside the workforce,Paraíba,1415
+2016,Q1,Outside the workforce,Pernambuco,3426
+2016,Q1,Outside the workforce,Alagoas,1300
+2016,Q1,Outside the workforce,Sergipe,769
+2016,Q1,Outside the workforce,Bahia,4486
+2016,Q1,Outside the workforce,Minas Gerais,6441
+2016,Q1,Outside the workforce,Espírito Santo,1216
+2016,Q1,Outside the workforce,Rio de Janeiro,5925
+2016,Q1,Outside the workforce,São Paulo,12739
+2016,Q1,Outside the workforce,Paraná,3213
+2016,Q1,Outside the workforce,Santa Catarina,2033
+2016,Q1,Outside the workforce,Rio Grande do Sul,3310
+2016,Q1,Outside the workforce,Mato Grosso do Sul,726
+2016,Q1,Outside the workforce,Mato Grosso,933
+2016,Q1,Outside the workforce,Goiás,1873
+2016,Q1,Outside the workforce,Distrito Federal,807
+2016,Q2,Workforce - Employed,Rondônia,771
+2016,Q2,Workforce - Employed,Acre,294
+2016,Q2,Workforce - Employed,Amazonas,1541
+2016,Q2,Workforce - Employed,Roraima,205
+2016,Q2,Workforce - Employed,Pará,3360
+2016,Q2,Workforce - Employed,Amapá,297
+2016,Q2,Workforce - Employed,Tocantins,618
+2016,Q2,Workforce - Employed,Maranhão,2447
+2016,Q2,Workforce - Employed,Piauí,1305
+2016,Q2,Workforce - Employed,Ceará,3465
+2016,Q2,Workforce - Employed,Rio Grande do Norte,1305
+2016,Q2,Workforce - Employed,Paraíba,1492
+2016,Q2,Workforce - Employed,Pernambuco,3498
+2016,Q2,Workforce - Employed,Alagoas,1100
+2016,Q2,Workforce - Employed,Sergipe,894
+2016,Q2,Workforce - Employed,Bahia,5976
+2016,Q2,Workforce - Employed,Minas Gerais,9677
+2016,Q2,Workforce - Employed,Espírito Santo,1755
+2016,Q2,Workforce - Employed,Rio de Janeiro,7381
+2016,Q2,Workforce - Employed,São Paulo,21345
+2016,Q2,Workforce - Employed,Paraná,5411
+2016,Q2,Workforce - Employed,Santa Catarina,3389
+2016,Q2,Workforce - Employed,Rio Grande do Sul,5514
+2016,Q2,Workforce - Employed,Mato Grosso do Sul,1266
+2016,Q2,Workforce - Employed,Mato Grosso,1533
+2016,Q2,Workforce - Employed,Goiás,3185
+2016,Q2,Workforce - Employed,Distrito Federal,1354
+2016,Q2,Workforce - Unemployed,Rondônia,65
+2016,Q2,Workforce - Unemployed,Acre,36
+2016,Q2,Workforce - Unemployed,Amazonas,235
+2016,Q2,Workforce - Unemployed,Roraima,18
+2016,Q2,Workforce - Unemployed,Pará,410
+2016,Q2,Workforce - Unemployed,Amapá,56
+2016,Q2,Workforce - Unemployed,Tocantins,78
+2016,Q2,Workforce - Unemployed,Maranhão,328
+2016,Q2,Workforce - Unemployed,Piauí,143
+2016,Q2,Workforce - Unemployed,Ceará,448
+2016,Q2,Workforce - Unemployed,Rio Grande do Norte,203
+2016,Q2,Workforce - Unemployed,Paraíba,179
+2016,Q2,Workforce - Unemployed,Pernambuco,567
+2016,Q2,Workforce - Unemployed,Alagoas,178
+2016,Q2,Workforce - Unemployed,Sergipe,129
+2016,Q2,Workforce - Unemployed,Bahia,1086
+2016,Q2,Workforce - Unemployed,Minas Gerais,1188
+2016,Q2,Workforce - Unemployed,Espírito Santo,228
+2016,Q2,Workforce - Unemployed,Rio de Janeiro,948
+2016,Q2,Workforce - Unemployed,São Paulo,2960
+2016,Q2,Workforce - Unemployed,Paraná,482
+2016,Q2,Workforce - Unemployed,Santa Catarina,242
+2016,Q2,Workforce - Unemployed,Rio Grande do Sul,527
+2016,Q2,Workforce - Unemployed,Mato Grosso do Sul,95
+2016,Q2,Workforce - Unemployed,Mato Grosso,167
+2016,Q2,Workforce - Unemployed,Goiás,360
+2016,Q2,Workforce - Unemployed,Distrito Federal,166
+2016,Q2,Outside the workforce,Rondônia,479
+2016,Q2,Outside the workforce,Acre,272
+2016,Q2,Outside the workforce,Amazonas,1009
+2016,Q2,Outside the workforce,Roraima,128
+2016,Q2,Outside the workforce,Pará,2488
+2016,Q2,Outside the workforce,Amapá,214
+2016,Q2,Outside the workforce,Tocantins,464
+2016,Q2,Outside the workforce,Maranhão,2385
+2016,Q2,Outside the workforce,Piauí,1124
+2016,Q2,Outside the workforce,Ceará,3201
+2016,Q2,Outside the workforce,Rio Grande do Norte,1259
+2016,Q2,Outside the workforce,Paraíba,1455
+2016,Q2,Outside the workforce,Pernambuco,3434
+2016,Q2,Outside the workforce,Alagoas,1289
+2016,Q2,Outside the workforce,Sergipe,756
+2016,Q2,Outside the workforce,Bahia,4549
+2016,Q2,Outside the workforce,Minas Gerais,6328
+2016,Q2,Outside the workforce,Espírito Santo,1172
+2016,Q2,Outside the workforce,Rio de Janeiro,5858
+2016,Q2,Outside the workforce,São Paulo,12806
+2016,Q2,Outside the workforce,Paraná,3246
+2016,Q2,Outside the workforce,Santa Catarina,2072
+2016,Q2,Outside the workforce,Rio Grande do Sul,3325
+2016,Q2,Outside the workforce,Mato Grosso do Sul,712
+2016,Q2,Outside the workforce,Mato Grosso,908
+2016,Q2,Outside the workforce,Goiás,1839
+2016,Q2,Outside the workforce,Distrito Federal,815
+2016,Q3,Workforce - Employed,Rondônia,749
+2016,Q3,Workforce - Employed,Acre,284
+2016,Q3,Workforce - Employed,Amazonas,1508
+2016,Q3,Workforce - Employed,Roraima,195
+2016,Q3,Workforce - Employed,Pará,3331
+2016,Q3,Workforce - Employed,Amapá,300
+2016,Q3,Workforce - Employed,Tocantins,607
+2016,Q3,Workforce - Employed,Maranhão,2369
+2016,Q3,Workforce - Employed,Piauí,1300
+2016,Q3,Workforce - Employed,Ceará,3394
+2016,Q3,Workforce - Employed,Rio Grande do Norte,1298
+2016,Q3,Workforce - Employed,Paraíba,1441
+2016,Q3,Workforce - Employed,Pernambuco,3377
+2016,Q3,Workforce - Employed,Alagoas,1079
+2016,Q3,Workforce - Employed,Sergipe,873
+2016,Q3,Workforce - Employed,Bahia,5851
+2016,Q3,Workforce - Employed,Minas Gerais,9656
+2016,Q3,Workforce - Employed,Espírito Santo,1701
+2016,Q3,Workforce - Employed,Rio de Janeiro,7335
+2016,Q3,Workforce - Employed,São Paulo,21224
+2016,Q3,Workforce - Employed,Paraná,5343
+2016,Q3,Workforce - Employed,Santa Catarina,3413
+2016,Q3,Workforce - Employed,Rio Grande do Sul,5533
+2016,Q3,Workforce - Employed,Mato Grosso do Sul,1254
+2016,Q3,Workforce - Employed,Mato Grosso,1522
+2016,Q3,Workforce - Employed,Goiás,3114
+2016,Q3,Workforce - Employed,Distrito Federal,1381
+2016,Q3,Workforce - Unemployed,Rondônia,69
+2016,Q3,Workforce - Unemployed,Acre,39
+2016,Q3,Workforce - Unemployed,Amazonas,237
+2016,Q3,Workforce - Unemployed,Roraima,21
+2016,Q3,Workforce - Unemployed,Pará,411
+2016,Q3,Workforce - Unemployed,Amapá,52
+2016,Q3,Workforce - Unemployed,Tocantins,73
+2016,Q3,Workforce - Unemployed,Maranhão,319
+2016,Q3,Workforce - Unemployed,Piauí,135
+2016,Q3,Workforce - Unemployed,Ceará,510
+2016,Q3,Workforce - Unemployed,Rio Grande do Norte,213
+2016,Q3,Workforce - Unemployed,Paraíba,211
+2016,Q3,Workforce - Unemployed,Pernambuco,612
+2016,Q3,Workforce - Unemployed,Alagoas,187
+2016,Q3,Workforce - Unemployed,Sergipe,145
+2016,Q3,Workforce - Unemployed,Bahia,1107
+2016,Q3,Workforce - Unemployed,Minas Gerais,1219
+2016,Q3,Workforce - Unemployed,Espírito Santo,248
+2016,Q3,Workforce - Unemployed,Rio de Janeiro,1010
+2016,Q3,Workforce - Unemployed,São Paulo,3110
+2016,Q3,Workforce - Unemployed,Paraná,496
+2016,Q3,Workforce - Unemployed,Santa Catarina,232
+2016,Q3,Workforce - Unemployed,Rio Grande do Sul,497
+2016,Q3,Workforce - Unemployed,Mato Grosso do Sul,104
+2016,Q3,Workforce - Unemployed,Mato Grosso,150
+2016,Q3,Workforce - Unemployed,Goiás,364
+2016,Q3,Workforce - Unemployed,Distrito Federal,188
+2016,Q3,Outside the workforce,Rondônia,496
+2016,Q3,Outside the workforce,Acre,285
+2016,Q3,Outside the workforce,Amazonas,1043
+2016,Q3,Outside the workforce,Roraima,140
+2016,Q3,Outside the workforce,Pará,2527
+2016,Q3,Outside the workforce,Amapá,224
+2016,Q3,Outside the workforce,Tocantins,476
+2016,Q3,Outside the workforce,Maranhão,2498
+2016,Q3,Outside the workforce,Piauí,1143
+2016,Q3,Outside the workforce,Ceará,3237
+2016,Q3,Outside the workforce,Rio Grande do Norte,1270
+2016,Q3,Outside the workforce,Paraíba,1486
+2016,Q3,Outside the workforce,Pernambuco,3536
+2016,Q3,Outside the workforce,Alagoas,1318
+2016,Q3,Outside the workforce,Sergipe,773
+2016,Q3,Outside the workforce,Bahia,4730
+2016,Q3,Outside the workforce,Minas Gerais,6257
+2016,Q3,Outside the workforce,Espírito Santo,1210
+2016,Q3,Outside the workforce,Rio de Janeiro,5858
+2016,Q3,Outside the workforce,São Paulo,12714
+2016,Q3,Outside the workforce,Paraná,3316
+2016,Q3,Outside the workforce,Santa Catarina,2070
+2016,Q3,Outside the workforce,Rio Grande do Sul,3367
+2016,Q3,Outside the workforce,Mato Grosso do Sul,733
+2016,Q3,Outside the workforce,Mato Grosso,942
+2016,Q3,Outside the workforce,Goiás,1926
+2016,Q3,Outside the workforce,Distrito Federal,769
+2016,Q4,Workforce - Employed,Rondônia,765
+2016,Q4,Workforce - Employed,Acre,292
+2016,Q4,Workforce - Employed,Amazonas,1476
+2016,Q4,Workforce - Employed,Roraima,192
+2016,Q4,Workforce - Employed,Pará,3324
+2016,Q4,Workforce - Employed,Amapá,301
+2016,Q4,Workforce - Employed,Tocantins,605
+2016,Q4,Workforce - Employed,Maranhão,2364
+2016,Q4,Workforce - Employed,Piauí,1282
+2016,Q4,Workforce - Employed,Ceará,3415
+2016,Q4,Workforce - Employed,Rio Grande do Norte,1287
+2016,Q4,Workforce - Employed,Paraíba,1455
+2016,Q4,Workforce - Employed,Pernambuco,3415
+2016,Q4,Workforce - Employed,Alagoas,1057
+2016,Q4,Workforce - Employed,Sergipe,868
+2016,Q4,Workforce - Employed,Bahia,5850
+2016,Q4,Workforce - Employed,Minas Gerais,9660
+2016,Q4,Workforce - Employed,Espírito Santo,1727
+2016,Q4,Workforce - Employed,Rio de Janeiro,7321
+2016,Q4,Workforce - Employed,São Paulo,21474
+2016,Q4,Workforce - Employed,Paraná,5425
+2016,Q4,Workforce - Employed,Santa Catarina,3440
+2016,Q4,Workforce - Employed,Rio Grande do Sul,5555
+2016,Q4,Workforce - Employed,Mato Grosso do Sul,1264
+2016,Q4,Workforce - Employed,Mato Grosso,1533
+2016,Q4,Workforce - Employed,Goiás,3154
+2016,Q4,Workforce - Employed,Distrito Federal,1370
+2016,Q4,Workforce - Unemployed,Rondônia,65
+2016,Q4,Workforce - Unemployed,Acre,39
+2016,Q4,Workforce - Unemployed,Amazonas,257
+2016,Q4,Workforce - Unemployed,Roraima,19
+2016,Q4,Workforce - Unemployed,Pará,482
+2016,Q4,Workforce - Unemployed,Amapá,61
+2016,Q4,Workforce - Unemployed,Tocantins,91
+2016,Q4,Workforce - Unemployed,Maranhão,352
+2016,Q4,Workforce - Unemployed,Piauí,124
+2016,Q4,Workforce - Unemployed,Ceará,484
+2016,Q4,Workforce - Unemployed,Rio Grande do Norte,221
+2016,Q4,Workforce - Unemployed,Paraíba,197
+2016,Q4,Workforce - Unemployed,Pernambuco,632
+2016,Q4,Workforce - Unemployed,Alagoas,183
+2016,Q4,Workforce - Unemployed,Sergipe,153
+2016,Q4,Workforce - Unemployed,Bahia,1168
+2016,Q4,Workforce - Unemployed,Minas Gerais,1207
+2016,Q4,Workforce - Unemployed,Espírito Santo,272
+2016,Q4,Workforce - Unemployed,Rio de Janeiro,1136
+2016,Q4,Workforce - Unemployed,São Paulo,3042
+2016,Q4,Workforce - Unemployed,Paraná,475
+2016,Q4,Workforce - Unemployed,Santa Catarina,226
+2016,Q4,Workforce - Unemployed,Rio Grande do Sul,500
+2016,Q4,Workforce - Unemployed,Mato Grosso do Sul,112
+2016,Q4,Workforce - Unemployed,Mato Grosso,161
+2016,Q4,Workforce - Unemployed,Goiás,398
+2016,Q4,Workforce - Unemployed,Distrito Federal,221
+2016,Q4,Outside the workforce,Rondônia,498
+2016,Q4,Outside the workforce,Acre,284
+2016,Q4,Outside the workforce,Amazonas,1060
+2016,Q4,Outside the workforce,Roraima,150
+2016,Q4,Outside the workforce,Pará,2510
+2016,Q4,Outside the workforce,Amapá,225
+2016,Q4,Outside the workforce,Tocantins,472
+2016,Q4,Outside the workforce,Maranhão,2487
+2016,Q4,Outside the workforce,Piauí,1183
+2016,Q4,Outside the workforce,Ceará,3275
+2016,Q4,Outside the workforce,Rio Grande do Norte,1286
+2016,Q4,Outside the workforce,Paraíba,1492
+2016,Q4,Outside the workforce,Pernambuco,3471
+2016,Q4,Outside the workforce,Alagoas,1351
+2016,Q4,Outside the workforce,Sergipe,779
+2016,Q4,Outside the workforce,Bahia,4738
+2016,Q4,Outside the workforce,Minas Gerais,6295
+2016,Q4,Outside the workforce,Espírito Santo,1179
+2016,Q4,Outside the workforce,Rio de Janeiro,5817
+2016,Q4,Outside the workforce,São Paulo,12724
+2016,Q4,Outside the workforce,Paraná,3303
+2016,Q4,Outside the workforce,Santa Catarina,2059
+2016,Q4,Outside the workforce,Rio Grande do Sul,3305
+2016,Q4,Outside the workforce,Mato Grosso do Sul,729
+2016,Q4,Outside the workforce,Mato Grosso,936
+2016,Q4,Outside the workforce,Goiás,1884
+2016,Q4,Outside the workforce,Distrito Federal,758
+2017,Q1,Workforce - Employed,Rondônia,742
+2017,Q1,Workforce - Employed,Acre,281
+2017,Q1,Workforce - Employed,Amazonas,1485
+2017,Q1,Workforce - Employed,Roraima,193
+2017,Q1,Workforce - Employed,Pará,3217
+2017,Q1,Workforce - Employed,Amapá,296
+2017,Q1,Workforce - Employed,Tocantins,602
+2017,Q1,Workforce - Employed,Maranhão,2341
+2017,Q1,Workforce - Employed,Piauí,1229
+2017,Q1,Workforce - Employed,Ceará,3373
+2017,Q1,Workforce - Employed,Rio Grande do Norte,1260
+2017,Q1,Workforce - Employed,Paraíba,1429
+2017,Q1,Workforce - Employed,Pernambuco,3333
+2017,Q1,Workforce - Employed,Alagoas,1005
+2017,Q1,Workforce - Employed,Sergipe,829
+2017,Q1,Workforce - Employed,Bahia,5682
+2017,Q1,Workforce - Employed,Minas Gerais,9416
+2017,Q1,Workforce - Employed,Espírito Santo,1700
+2017,Q1,Workforce - Employed,Rio de Janeiro,7290
+2017,Q1,Workforce - Employed,São Paulo,21327
+2017,Q1,Workforce - Employed,Paraná,5327
+2017,Q1,Workforce - Employed,Santa Catarina,3474
+2017,Q1,Workforce - Employed,Rio Grande do Sul,5534
+2017,Q1,Workforce - Employed,Mato Grosso do Sul,1237
+2017,Q1,Workforce - Employed,Mato Grosso,1493
+2017,Q1,Workforce - Employed,Goiás,3108
+2017,Q1,Workforce - Employed,Distrito Federal,1377
+2017,Q1,Workforce - Unemployed,Rondônia,65
+2017,Q1,Workforce - Unemployed,Acre,53
+2017,Q1,Workforce - Unemployed,Amazonas,320
+2017,Q1,Workforce - Unemployed,Roraima,22
+2017,Q1,Workforce - Unemployed,Pará,516
+2017,Q1,Workforce - Unemployed,Amapá,67
+2017,Q1,Workforce - Unemployed,Tocantins,87
+2017,Q1,Workforce - Unemployed,Maranhão,412
+2017,Q1,Workforce - Unemployed,Piauí,177
+2017,Q1,Workforce - Unemployed,Ceará,560
+2017,Q1,Workforce - Unemployed,Rio Grande do Norte,246
+2017,Q1,Workforce - Unemployed,Paraíba,217
+2017,Q1,Workforce - Unemployed,Pernambuco,687
+2017,Q1,Workforce - Unemployed,Alagoas,213
+2017,Q1,Workforce - Unemployed,Sergipe,159
+2017,Q1,Workforce - Unemployed,Bahia,1295
+2017,Q1,Workforce - Unemployed,Minas Gerais,1491
+2017,Q1,Workforce - Unemployed,Espírito Santo,287
+2017,Q1,Workforce - Unemployed,Rio de Janeiro,1237
+2017,Q1,Workforce - Unemployed,São Paulo,3537
+2017,Q1,Workforce - Unemployed,Paraná,614
+2017,Q1,Workforce - Unemployed,Santa Catarina,297
+2017,Q1,Workforce - Unemployed,Rio Grande do Sul,557
+2017,Q1,Workforce - Unemployed,Mato Grosso do Sul,134
+2017,Q1,Workforce - Unemployed,Mato Grosso,175
+2017,Q1,Workforce - Unemployed,Goiás,452
+2017,Q1,Workforce - Unemployed,Distrito Federal,226
+2017,Q1,Outside the workforce,Rondônia,530
+2017,Q1,Outside the workforce,Acre,286
+2017,Q1,Outside the workforce,Amazonas,1007
+2017,Q1,Outside the workforce,Roraima,152
+2017,Q1,Outside the workforce,Pará,2618
+2017,Q1,Outside the workforce,Amapá,233
+2017,Q1,Outside the workforce,Tocantins,488
+2017,Q1,Outside the workforce,Maranhão,2455
+2017,Q1,Outside the workforce,Piauí,1168
+2017,Q1,Outside the workforce,Ceará,3279
+2017,Q1,Outside the workforce,Rio Grande do Norte,1283
+2017,Q1,Outside the workforce,Paraíba,1502
+2017,Q1,Outside the workforce,Pernambuco,3534
+2017,Q1,Outside the workforce,Alagoas,1384
+2017,Q1,Outside the workforce,Sergipe,810
+2017,Q1,Outside the workforce,Bahia,4857
+2017,Q1,Outside the workforce,Minas Gerais,6270
+2017,Q1,Outside the workforce,Espírito Santo,1207
+2017,Q1,Outside the workforce,Rio de Janeiro,5839
+2017,Q1,Outside the workforce,São Paulo,12244
+2017,Q1,Outside the workforce,Paraná,3299
+2017,Q1,Outside the workforce,Santa Catarina,1996
+2017,Q1,Outside the workforce,Rio Grande do Sul,3300
+2017,Q1,Outside the workforce,Mato Grosso do Sul,727
+2017,Q1,Outside the workforce,Mato Grosso,978
+2017,Q1,Outside the workforce,Goiás,1905
+2017,Q1,Outside the workforce,Distrito Federal,773
+2017,Q2,Workforce - Employed,Rondônia,761
+2017,Q2,Workforce - Employed,Acre,294
+2017,Q2,Workforce - Employed,Amazonas,1527
+2017,Q2,Workforce - Employed,Roraima,200
+2017,Q2,Workforce - Employed,Pará,3353
+2017,Q2,Workforce - Employed,Amapá,301
+2017,Q2,Workforce - Employed,Tocantins,601
+2017,Q2,Workforce - Employed,Maranhão,2298
+2017,Q2,Workforce - Employed,Piauí,1244
+2017,Q2,Workforce - Employed,Ceará,3403
+2017,Q2,Workforce - Employed,Rio Grande do Norte,1269
+2017,Q2,Workforce - Employed,Paraíba,1486
+2017,Q2,Workforce - Employed,Pernambuco,3291
+2017,Q2,Workforce - Employed,Alagoas,1006
+2017,Q2,Workforce - Employed,Sergipe,870
+2017,Q2,Workforce - Employed,Bahia,5770
+2017,Q2,Workforce - Employed,Minas Gerais,9665
+2017,Q2,Workforce - Employed,Espírito Santo,1790
+2017,Q2,Workforce - Employed,Rio de Janeiro,7301
+2017,Q2,Workforce - Employed,São Paulo,21575
+2017,Q2,Workforce - Employed,Paraná,5414
+2017,Q2,Workforce - Employed,Santa Catarina,3485
+2017,Q2,Workforce - Employed,Rio Grande do Sul,5547
+2017,Q2,Workforce - Employed,Mato Grosso do Sul,1261
+2017,Q2,Workforce - Employed,Mato Grosso,1532
+2017,Q2,Workforce - Employed,Goiás,3248
+2017,Q2,Workforce - Employed,Distrito Federal,1382
+2017,Q2,Workforce - Unemployed,Rondônia,75
+2017,Q2,Workforce - Unemployed,Acre,52
+2017,Q2,Workforce - Unemployed,Amazonas,280
+2017,Q2,Workforce - Unemployed,Roraima,24
+2017,Q2,Workforce - Unemployed,Pará,431
+2017,Q2,Workforce - Unemployed,Amapá,62
+2017,Q2,Workforce - Unemployed,Tocantins,80
+2017,Q2,Workforce - Unemployed,Maranhão,393
+2017,Q2,Workforce - Unemployed,Piauí,195
+2017,Q2,Workforce - Unemployed,Ceará,519
+2017,Q2,Workforce - Unemployed,Rio Grande do Norte,235
+2017,Q2,Workforce - Unemployed,Paraíba,192
+2017,Q2,Workforce - Unemployed,Pernambuco,764
+2017,Q2,Workforce - Unemployed,Alagoas,218
+2017,Q2,Workforce - Unemployed,Sergipe,142
+2017,Q2,Workforce - Unemployed,Bahia,1222
+2017,Q2,Workforce - Unemployed,Minas Gerais,1340
+2017,Q2,Workforce - Unemployed,Espírito Santo,276
+2017,Q2,Workforce - Unemployed,Rio de Janeiro,1354
+2017,Q2,Workforce - Unemployed,São Paulo,3368
+2017,Q2,Workforce - Unemployed,Paraná,530
+2017,Q2,Workforce - Unemployed,Santa Catarina,283
+2017,Q2,Workforce - Unemployed,Rio Grande do Sul,510
+2017,Q2,Workforce - Unemployed,Mato Grosso do Sul,123
+2017,Q2,Workforce - Unemployed,Mato Grosso,144
+2017,Q2,Workforce - Unemployed,Goiás,403
+2017,Q2,Workforce - Unemployed,Distrito Federal,209
+2017,Q2,Outside the workforce,Rondônia,513
+2017,Q2,Outside the workforce,Acre,276
+2017,Q2,Outside the workforce,Amazonas,1031
+2017,Q2,Outside the workforce,Roraima,145
+2017,Q2,Outside the workforce,Pará,2594
+2017,Q2,Outside the workforce,Amapá,235
+2017,Q2,Outside the workforce,Tocantins,504
+2017,Q2,Outside the workforce,Maranhão,2538
+2017,Q2,Outside the workforce,Piauí,1150
+2017,Q2,Outside the workforce,Ceará,3322
+2017,Q2,Outside the workforce,Rio Grande do Norte,1286
+2017,Q2,Outside the workforce,Paraíba,1488
+2017,Q2,Outside the workforce,Pernambuco,3520
+2017,Q2,Outside the workforce,Alagoas,1385
+2017,Q2,Outside the workforce,Sergipe,791
+2017,Q2,Outside the workforce,Bahia,4809
+2017,Q2,Outside the workforce,Minas Gerais,6249
+2017,Q2,Outside the workforce,Espírito Santo,1136
+2017,Q2,Outside the workforce,Rio de Janeiro,5812
+2017,Q2,Outside the workforce,São Paulo,12384
+2017,Q2,Outside the workforce,Paraná,3289
+2017,Q2,Outside the workforce,Santa Catarina,2002
+2017,Q2,Outside the workforce,Rio Grande do Sul,3341
+2017,Q2,Outside the workforce,Mato Grosso do Sul,726
+2017,Q2,Outside the workforce,Mato Grosso,954
+2017,Q2,Outside the workforce,Goiás,1855
+2017,Q2,Outside the workforce,Distrito Federal,800
+2017,Q3,Workforce - Employed,Rondônia,773
+2017,Q3,Workforce - Employed,Acre,303
+2017,Q3,Workforce - Employed,Amazonas,1483
+2017,Q3,Workforce - Employed,Roraima,207
+2017,Q3,Workforce - Employed,Pará,3449
+2017,Q3,Workforce - Employed,Amapá,308
+2017,Q3,Workforce - Employed,Tocantins,590
+2017,Q3,Workforce - Employed,Maranhão,2373
+2017,Q3,Workforce - Employed,Piauí,1272
+2017,Q3,Workforce - Employed,Ceará,3491
+2017,Q3,Workforce - Employed,Rio Grande do Norte,1298
+2017,Q3,Workforce - Employed,Paraíba,1519
+2017,Q3,Workforce - Employed,Pernambuco,3355
+2017,Q3,Workforce - Employed,Alagoas,1024
+2017,Q3,Workforce - Employed,Sergipe,869
+2017,Q3,Workforce - Employed,Bahia,5745
+2017,Q3,Workforce - Employed,Minas Gerais,9703
+2017,Q3,Workforce - Employed,Espírito Santo,1821
+2017,Q3,Workforce - Employed,Rio de Janeiro,7472
+2017,Q3,Workforce - Employed,São Paulo,21778
+2017,Q3,Workforce - Employed,Paraná,5419
+2017,Q3,Workforce - Employed,Santa Catarina,3545
+2017,Q3,Workforce - Employed,Rio Grande do Sul,5589
+2017,Q3,Workforce - Employed,Mato Grosso do Sul,1260
+2017,Q3,Workforce - Employed,Mato Grosso,1568
+2017,Q3,Workforce - Employed,Goiás,3359
+2017,Q3,Workforce - Employed,Distrito Federal,1380
+2017,Q3,Workforce - Unemployed,Rondônia,68
+2017,Q3,Workforce - Unemployed,Acre,47
+2017,Q3,Workforce - Unemployed,Amazonas,283
+2017,Q3,Workforce - Unemployed,Roraima,20
+2017,Q3,Workforce - Unemployed,Pará,432
+2017,Q3,Workforce - Unemployed,Amapá,61
+2017,Q3,Workforce - Unemployed,Tocantins,79
+2017,Q3,Workforce - Unemployed,Maranhão,398
+2017,Q3,Workforce - Unemployed,Piauí,174
+2017,Q3,Workforce - Unemployed,Ceará,465
+2017,Q3,Workforce - Unemployed,Rio Grande do Norte,206
+2017,Q3,Workforce - Unemployed,Paraíba,183
+2017,Q3,Workforce - Unemployed,Pernambuco,731
+2017,Q3,Workforce - Unemployed,Alagoas,193
+2017,Q3,Workforce - Unemployed,Sergipe,137
+2017,Q3,Workforce - Unemployed,Bahia,1152
+2017,Q3,Workforce - Unemployed,Minas Gerais,1360
+2017,Q3,Workforce - Unemployed,Espírito Santo,272
+2017,Q3,Workforce - Unemployed,Rio de Janeiro,1265
+2017,Q3,Workforce - Unemployed,São Paulo,3323
+2017,Q3,Workforce - Unemployed,Paraná,501
+2017,Q3,Workforce - Unemployed,Santa Catarina,256
+2017,Q3,Workforce - Unemployed,Rio Grande do Sul,490
+2017,Q3,Workforce - Unemployed,Mato Grosso do Sul,108
+2017,Q3,Workforce - Unemployed,Mato Grosso,162
+2017,Q3,Workforce - Unemployed,Goiás,342
+2017,Q3,Workforce - Unemployed,Distrito Federal,194
+2017,Q3,Outside the workforce,Rondônia,518
+2017,Q3,Outside the workforce,Acre,273
+2017,Q3,Outside the workforce,Amazonas,1098
+2017,Q3,Outside the workforce,Roraima,145
+2017,Q3,Outside the workforce,Pará,2565
+2017,Q3,Outside the workforce,Amapá,237
+2017,Q3,Outside the workforce,Tocantins,527
+2017,Q3,Outside the workforce,Maranhão,2493
+2017,Q3,Outside the workforce,Piauí,1141
+2017,Q3,Outside the workforce,Ceará,3300
+2017,Q3,Outside the workforce,Rio Grande do Norte,1289
+2017,Q3,Outside the workforce,Paraíba,1465
+2017,Q3,Outside the workforce,Pernambuco,3521
+2017,Q3,Outside the workforce,Alagoas,1401
+2017,Q3,Outside the workforce,Sergipe,791
+2017,Q3,Outside the workforce,Bahia,4964
+2017,Q3,Outside the workforce,Minas Gerais,6229
+2017,Q3,Outside the workforce,Espírito Santo,1115
+2017,Q3,Outside the workforce,Rio de Janeiro,5716
+2017,Q3,Outside the workforce,São Paulo,12337
+2017,Q3,Outside the workforce,Paraná,3357
+2017,Q3,Outside the workforce,Santa Catarina,2000
+2017,Q3,Outside the workforce,Rio Grande do Sul,3328
+2017,Q3,Outside the workforce,Mato Grosso do Sul,738
+2017,Q3,Outside the workforce,Mato Grosso,934
+2017,Q3,Outside the workforce,Goiás,1861
+2017,Q3,Outside the workforce,Distrito Federal,839
+2017,Q4,Workforce - Employed,Rondônia,787
+2017,Q4,Workforce - Employed,Acre,311
+2017,Q4,Workforce - Employed,Amazonas,1522
+2017,Q4,Workforce - Employed,Roraima,213
+2017,Q4,Workforce - Employed,Pará,3491
+2017,Q4,Workforce - Employed,Amapá,301
+2017,Q4,Workforce - Employed,Tocantins,625
+2017,Q4,Workforce - Employed,Maranhão,2344
+2017,Q4,Workforce - Employed,Piauí,1239
+2017,Q4,Workforce - Employed,Ceará,3630
+2017,Q4,Workforce - Employed,Rio Grande do Norte,1308
+2017,Q4,Workforce - Employed,Paraíba,1532
+2017,Q4,Workforce - Employed,Pernambuco,3436
+2017,Q4,Workforce - Employed,Alagoas,977
+2017,Q4,Workforce - Employed,Sergipe,896
+2017,Q4,Workforce - Employed,Bahia,5905
+2017,Q4,Workforce - Employed,Minas Gerais,9909
+2017,Q4,Workforce - Employed,Espírito Santo,1821
+2017,Q4,Workforce - Employed,Rio de Janeiro,7461
+2017,Q4,Workforce - Employed,São Paulo,21859
+2017,Q4,Workforce - Employed,Paraná,5464
+2017,Q4,Workforce - Employed,Santa Catarina,3598
+2017,Q4,Workforce - Employed,Rio Grande do Sul,5583
+2017,Q4,Workforce - Employed,Mato Grosso do Sul,1288
+2017,Q4,Workforce - Employed,Mato Grosso,1589
+2017,Q4,Workforce - Employed,Goiás,3311
+2017,Q4,Workforce - Employed,Distrito Federal,1371
+2017,Q4,Workforce - Unemployed,Rondônia,66
+2017,Q4,Workforce - Unemployed,Acre,43
+2017,Q4,Workforce - Unemployed,Amazonas,238
+2017,Q4,Workforce - Unemployed,Roraima,22
+2017,Q4,Workforce - Unemployed,Pará,416
+2017,Q4,Workforce - Unemployed,Amapá,69
+2017,Q4,Workforce - Unemployed,Tocantins,73
+2017,Q4,Workforce - Unemployed,Maranhão,359
+2017,Q4,Workforce - Unemployed,Piauí,190
+2017,Q4,Workforce - Unemployed,Ceará,451
+2017,Q4,Workforce - Unemployed,Rio Grande do Norte,183
+2017,Q4,Workforce - Unemployed,Paraíba,171
+2017,Q4,Workforce - Unemployed,Pernambuco,696
+2017,Q4,Workforce - Unemployed,Alagoas,179
+2017,Q4,Workforce - Unemployed,Sergipe,139
+2017,Q4,Workforce - Unemployed,Bahia,1042
+2017,Q4,Workforce - Unemployed,Minas Gerais,1181
+2017,Q4,Workforce - Unemployed,Espírito Santo,239
+2017,Q4,Workforce - Unemployed,Rio de Janeiro,1324
+2017,Q4,Workforce - Unemployed,São Paulo,3184
+2017,Q4,Workforce - Unemployed,Paraná,493
+2017,Q4,Workforce - Unemployed,Santa Catarina,244
+2017,Q4,Workforce - Unemployed,Rio Grande do Sul,485
+2017,Q4,Workforce - Unemployed,Mato Grosso do Sul,101
+2017,Q4,Workforce - Unemployed,Mato Grosso,126
+2017,Q4,Workforce - Unemployed,Goiás,343
+2017,Q4,Workforce - Unemployed,Distrito Federal,209
+2017,Q4,Outside the workforce,Rondônia,522
+2017,Q4,Outside the workforce,Acre,268
+2017,Q4,Outside the workforce,Amazonas,1139
+2017,Q4,Outside the workforce,Roraima,138
+2017,Q4,Outside the workforce,Pará,2556
+2017,Q4,Outside the workforce,Amapá,235
+2017,Q4,Outside the workforce,Tocantins,503
+2017,Q4,Outside the workforce,Maranhão,2579
+2017,Q4,Outside the workforce,Piauí,1153
+2017,Q4,Outside the workforce,Ceará,3184
+2017,Q4,Outside the workforce,Rio Grande do Norte,1318
+2017,Q4,Outside the workforce,Paraíba,1475
+2017,Q4,Outside the workforce,Pernambuco,3499
+2017,Q4,Outside the workforce,Alagoas,1465
+2017,Q4,Outside the workforce,Sergipe,763
+2017,Q4,Outside the workforce,Bahia,4864
+2017,Q4,Outside the workforce,Minas Gerais,6285
+2017,Q4,Outside the workforce,Espírito Santo,1139
+2017,Q4,Outside the workforce,Rio de Janeiro,5693
+2017,Q4,Outside the workforce,São Paulo,12438
+2017,Q4,Outside the workforce,Paraná,3337
+2017,Q4,Outside the workforce,Santa Catarina,1980
+2017,Q4,Outside the workforce,Rio Grande do Sul,3361
+2017,Q4,Outside the workforce,Mato Grosso do Sul,732
+2017,Q4,Outside the workforce,Mato Grosso,959
+2017,Q4,Outside the workforce,Goiás,1929
+2017,Q4,Outside the workforce,Distrito Federal,847
+2018,Q1,Workforce - Employed,Rondônia,762
+2018,Q1,Workforce - Employed,Acre,307
+2018,Q1,Workforce - Employed,Amazonas,1547
+2018,Q1,Workforce - Employed,Roraima,214
+2018,Q1,Workforce - Employed,Pará,3325
+2018,Q1,Workforce - Employed,Amapá,293
+2018,Q1,Workforce - Employed,Tocantins,623
+2018,Q1,Workforce - Employed,Maranhão,2258
+2018,Q1,Workforce - Employed,Piauí,1210
+2018,Q1,Workforce - Employed,Ceará,3541
+2018,Q1,Workforce - Employed,Rio Grande do Norte,1276
+2018,Q1,Workforce - Employed,Paraíba,1495
+2018,Q1,Workforce - Employed,Pernambuco,3445
+2018,Q1,Workforce - Employed,Alagoas,929
+2018,Q1,Workforce - Employed,Sergipe,850
+2018,Q1,Workforce - Employed,Bahia,5659
+2018,Q1,Workforce - Employed,Minas Gerais,9703
+2018,Q1,Workforce - Employed,Espírito Santo,1803
+2018,Q1,Workforce - Employed,Rio de Janeiro,7420
+2018,Q1,Workforce - Employed,São Paulo,21707
+2018,Q1,Workforce - Employed,Paraná,5379
+2018,Q1,Workforce - Employed,Santa Catarina,3561
+2018,Q1,Workforce - Employed,Rio Grande do Sul,5466
+2018,Q1,Workforce - Employed,Mato Grosso do Sul,1284
+2018,Q1,Workforce - Employed,Mato Grosso,1564
+2018,Q1,Workforce - Employed,Goiás,3276
+2018,Q1,Workforce - Employed,Distrito Federal,1376
+2018,Q1,Workforce - Unemployed,Rondônia,89
+2018,Q1,Workforce - Unemployed,Acre,52
+2018,Q1,Workforce - Unemployed,Amazonas,250
+2018,Q1,Workforce - Unemployed,Roraima,25
+2018,Q1,Workforce - Unemployed,Pará,461
+2018,Q1,Workforce - Unemployed,Amapá,80
+2018,Q1,Workforce - Unemployed,Tocantins,77
+2018,Q1,Workforce - Unemployed,Maranhão,417
+2018,Q1,Workforce - Unemployed,Piauí,184
+2018,Q1,Workforce - Unemployed,Ceará,522
+2018,Q1,Workforce - Unemployed,Rio Grande do Norte,224
+2018,Q1,Workforce - Unemployed,Paraíba,199
+2018,Q1,Workforce - Unemployed,Pernambuco,743
+2018,Q1,Workforce - Unemployed,Alagoas,200
+2018,Q1,Workforce - Unemployed,Sergipe,175
+2018,Q1,Workforce - Unemployed,Bahia,1237
+2018,Q1,Workforce - Unemployed,Minas Gerais,1402
+2018,Q1,Workforce - Unemployed,Espírito Santo,258
+2018,Q1,Workforce - Unemployed,Rio de Janeiro,1313
+2018,Q1,Workforce - Unemployed,São Paulo,3519
+2018,Q1,Workforce - Unemployed,Paraná,572
+2018,Q1,Workforce - Unemployed,Santa Catarina,249
+2018,Q1,Workforce - Unemployed,Rio Grande do Sul,509
+2018,Q1,Workforce - Unemployed,Mato Grosso do Sul,119
+2018,Q1,Workforce - Unemployed,Mato Grosso,160
+2018,Q1,Workforce - Unemployed,Goiás,375
+2018,Q1,Workforce - Unemployed,Distrito Federal,224
+2018,Q1,Outside the workforce,Rondônia,523
+2018,Q1,Outside the workforce,Acre,270
+2018,Q1,Outside the workforce,Amazonas,1137
+2018,Q1,Outside the workforce,Roraima,144
+2018,Q1,Outside the workforce,Pará,2680
+2018,Q1,Outside the workforce,Amapá,234
+2018,Q1,Outside the workforce,Tocantins,505
+2018,Q1,Outside the workforce,Maranhão,2620
+2018,Q1,Outside the workforce,Piauí,1196
+2018,Q1,Outside the workforce,Ceará,3204
+2018,Q1,Outside the workforce,Rio Grande do Norte,1311
+2018,Q1,Outside the workforce,Paraíba,1476
+2018,Q1,Outside the workforce,Pernambuco,3414
+2018,Q1,Outside the workforce,Alagoas,1493
+2018,Q1,Outside the workforce,Sergipe,766
+2018,Q1,Outside the workforce,Bahia,4948
+2018,Q1,Outside the workforce,Minas Gerais,6254
+2018,Q1,Outside the workforce,Espírito Santo,1145
+2018,Q1,Outside the workforce,Rio de Janeiro,5776
+2018,Q1,Outside the workforce,São Paulo,12174
+2018,Q1,Outside the workforce,Paraná,3337
+2018,Q1,Outside the workforce,Santa Catarina,2038
+2018,Q1,Outside the workforce,Rio Grande do Sul,3462
+2018,Q1,Outside the workforce,Mato Grosso do Sul,729
+2018,Q1,Outside the workforce,Mato Grosso,967
+2018,Q1,Outside the workforce,Goiás,1950
+2018,Q1,Outside the workforce,Distrito Federal,846
+2018,Q2,Workforce - Employed,Rondônia,767
+2018,Q2,Workforce - Employed,Acre,304
+2018,Q2,Workforce - Employed,Amazonas,1526
+2018,Q2,Workforce - Employed,Roraima,213
+2018,Q2,Workforce - Employed,Pará,3416
+2018,Q2,Workforce - Employed,Amapá,292
+2018,Q2,Workforce - Employed,Tocantins,629
+2018,Q2,Workforce - Employed,Maranhão,2221
+2018,Q2,Workforce - Employed,Piauí,1236
+2018,Q2,Workforce - Employed,Ceará,3555
+2018,Q2,Workforce - Employed,Rio Grande do Norte,1308
+2018,Q2,Workforce - Employed,Paraíba,1501
+2018,Q2,Workforce - Employed,Pernambuco,3480
+2018,Q2,Workforce - Employed,Alagoas,934
+2018,Q2,Workforce - Employed,Sergipe,844
+2018,Q2,Workforce - Employed,Bahia,5682
+2018,Q2,Workforce - Employed,Minas Gerais,9974
+2018,Q2,Workforce - Employed,Espírito Santo,1840
+2018,Q2,Workforce - Employed,Rio de Janeiro,7418
+2018,Q2,Workforce - Employed,São Paulo,21806
+2018,Q2,Workforce - Employed,Paraná,5399
+2018,Q2,Workforce - Employed,Santa Catarina,3544
+2018,Q2,Workforce - Employed,Rio Grande do Sul,5428
+2018,Q2,Workforce - Employed,Mato Grosso do Sul,1297
+2018,Q2,Workforce - Employed,Mato Grosso,1604
+2018,Q2,Workforce - Employed,Goiás,3304
+2018,Q2,Workforce - Employed,Distrito Federal,1419
+2018,Q2,Workforce - Unemployed,Rondônia,68
+2018,Q2,Workforce - Unemployed,Acre,48
+2018,Q2,Workforce - Unemployed,Amazonas,253
+2018,Q2,Workforce - Unemployed,Roraima,27
+2018,Q2,Workforce - Unemployed,Pará,430
+2018,Q2,Workforce - Unemployed,Amapá,79
+2018,Q2,Workforce - Unemployed,Tocantins,80
+2018,Q2,Workforce - Unemployed,Maranhão,371
+2018,Q2,Workforce - Unemployed,Piauí,190
+2018,Q2,Workforce - Unemployed,Ceará,472
+2018,Q2,Workforce - Unemployed,Rio Grande do Norte,198
+2018,Q2,Workforce - Unemployed,Paraíba,185
+2018,Q2,Workforce - Unemployed,Pernambuco,707
+2018,Q2,Workforce - Unemployed,Alagoas,195
+2018,Q2,Workforce - Unemployed,Sergipe,171
+2018,Q2,Workforce - Unemployed,Bahia,1124
+2018,Q2,Workforce - Unemployed,Minas Gerais,1207
+2018,Q2,Workforce - Unemployed,Espírito Santo,252
+2018,Q2,Workforce - Unemployed,Rio de Janeiro,1347
+2018,Q2,Workforce - Unemployed,São Paulo,3443
+2018,Q2,Workforce - Unemployed,Paraná,539
+2018,Q2,Workforce - Unemployed,Santa Catarina,245
+2018,Q2,Workforce - Unemployed,Rio Grande do Sul,493
+2018,Q2,Workforce - Unemployed,Mato Grosso do Sul,106
+2018,Q2,Workforce - Unemployed,Mato Grosso,149
+2018,Q2,Workforce - Unemployed,Goiás,346
+2018,Q2,Workforce - Unemployed,Distrito Federal,197
+2018,Q2,Outside the workforce,Rondônia,548
+2018,Q2,Outside the workforce,Acre,280
+2018,Q2,Outside the workforce,Amazonas,1181
+2018,Q2,Outside the workforce,Roraima,148
+2018,Q2,Outside the workforce,Pará,2656
+2018,Q2,Outside the workforce,Amapá,242
+2018,Q2,Outside the workforce,Tocantins,507
+2018,Q2,Outside the workforce,Maranhão,2731
+2018,Q2,Outside the workforce,Piauí,1169
+2018,Q2,Outside the workforce,Ceará,3305
+2018,Q2,Outside the workforce,Rio Grande do Norte,1314
+2018,Q2,Outside the workforce,Paraíba,1509
+2018,Q2,Outside the workforce,Pernambuco,3454
+2018,Q2,Outside the workforce,Alagoas,1512
+2018,Q2,Outside the workforce,Sergipe,784
+2018,Q2,Outside the workforce,Bahia,5075
+2018,Q2,Outside the workforce,Minas Gerais,6265
+2018,Q2,Outside the workforce,Espírito Santo,1135
+2018,Q2,Outside the workforce,Rio de Janeiro,5771
+2018,Q2,Outside the workforce,São Paulo,12359
+2018,Q2,Outside the workforce,Paraná,3368
+2018,Q2,Outside the workforce,Santa Catarina,2071
+2018,Q2,Outside the workforce,Rio Grande do Sul,3534
+2018,Q2,Outside the workforce,Mato Grosso do Sul,720
+2018,Q2,Outside the workforce,Mato Grosso,955
+2018,Q2,Outside the workforce,Goiás,1949
+2018,Q2,Outside the workforce,Distrito Federal,836
+2018,Q3,Workforce - Employed,Rondônia,788
+2018,Q3,Workforce - Employed,Acre,312
+2018,Q3,Workforce - Employed,Amazonas,1580
+2018,Q3,Workforce - Employed,Roraima,212
+2018,Q3,Workforce - Employed,Pará,3427
+2018,Q3,Workforce - Employed,Amapá,314
+2018,Q3,Workforce - Employed,Tocantins,639
+2018,Q3,Workforce - Employed,Maranhão,2260
+2018,Q3,Workforce - Employed,Piauí,1274
+2018,Q3,Workforce - Employed,Ceará,3666
+2018,Q3,Workforce - Employed,Rio Grande do Norte,1357
+2018,Q3,Workforce - Employed,Paraíba,1532
+2018,Q3,Workforce - Employed,Pernambuco,3489
+2018,Q3,Workforce - Employed,Alagoas,968
+2018,Q3,Workforce - Employed,Sergipe,848
+2018,Q3,Workforce - Employed,Bahia,5860
+2018,Q3,Workforce - Employed,Minas Gerais,10095
+2018,Q3,Workforce - Employed,Espírito Santo,1875
+2018,Q3,Workforce - Employed,Rio de Janeiro,7498
+2018,Q3,Workforce - Employed,São Paulo,22108
+2018,Q3,Workforce - Employed,Paraná,5457
+2018,Q3,Workforce - Employed,Santa Catarina,3580
+2018,Q3,Workforce - Employed,Rio Grande do Sul,5458
+2018,Q3,Workforce - Employed,Mato Grosso do Sul,1329
+2018,Q3,Workforce - Employed,Mato Grosso,1649
+2018,Q3,Workforce - Employed,Goiás,3324
+2018,Q3,Workforce - Employed,Distrito Federal,1434
+2018,Q3,Workforce - Unemployed,Rondônia,74
+2018,Q3,Workforce - Unemployed,Acre,47
+2018,Q3,Workforce - Unemployed,Amazonas,239
+2018,Q3,Workforce - Unemployed,Roraima,33
+2018,Q3,Workforce - Unemployed,Pará,420
+2018,Q3,Workforce - Unemployed,Amapá,70
+2018,Q3,Workforce - Unemployed,Tocantins,69
+2018,Q3,Workforce - Unemployed,Maranhão,360
+2018,Q3,Workforce - Unemployed,Piauí,179
+2018,Q3,Workforce - Unemployed,Ceará,436
+2018,Q3,Workforce - Unemployed,Rio Grande do Norte,199
+2018,Q3,Workforce - Unemployed,Paraíba,184
+2018,Q3,Workforce - Unemployed,Pernambuco,701
+2018,Q3,Workforce - Unemployed,Alagoas,199
+2018,Q3,Workforce - Unemployed,Sergipe,180
+2018,Q3,Workforce - Unemployed,Bahia,1130
+2018,Q3,Workforce - Unemployed,Minas Gerais,1089
+2018,Q3,Workforce - Unemployed,Espírito Santo,237
+2018,Q3,Workforce - Unemployed,Rio de Janeiro,1280
+2018,Q3,Workforce - Unemployed,São Paulo,3331
+2018,Q3,Workforce - Unemployed,Paraná,515
+2018,Q3,Workforce - Unemployed,Santa Catarina,236
+2018,Q3,Workforce - Unemployed,Rio Grande do Sul,486
+2018,Q3,Workforce - Unemployed,Mato Grosso do Sul,103
+2018,Q3,Workforce - Unemployed,Mato Grosso,119
+2018,Q3,Workforce - Unemployed,Goiás,326
+2018,Q3,Workforce - Unemployed,Distrito Federal,207
+2018,Q3,Outside the workforce,Rondônia,532
+2018,Q3,Outside the workforce,Acre,281
+2018,Q3,Outside the workforce,Amazonas,1156
+2018,Q3,Outside the workforce,Roraima,148
+2018,Q3,Outside the workforce,Pará,2674
+2018,Q3,Outside the workforce,Amapá,240
+2018,Q3,Outside the workforce,Tocantins,516
+2018,Q3,Outside the workforce,Maranhão,2703
+2018,Q3,Outside the workforce,Piauí,1144
+2018,Q3,Outside the workforce,Ceará,3234
+2018,Q3,Outside the workforce,Rio Grande do Norte,1273
+2018,Q3,Outside the workforce,Paraíba,1483
+2018,Q3,Outside the workforce,Pernambuco,3448
+2018,Q3,Outside the workforce,Alagoas,1464
+2018,Q3,Outside the workforce,Sergipe,776
+2018,Q3,Outside the workforce,Bahia,4985
+2018,Q3,Outside the workforce,Minas Gerais,6251
+2018,Q3,Outside the workforce,Espírito Santo,1122
+2018,Q3,Outside the workforce,Rio de Janeiro,5765
+2018,Q3,Outside the workforce,São Paulo,12376
+2018,Q3,Outside the workforce,Paraná,3366
+2018,Q3,Outside the workforce,Santa Catarina,2070
+2018,Q3,Outside the workforce,Rio Grande do Sul,3505
+2018,Q3,Outside the workforce,Mato Grosso do Sul,694
+2018,Q3,Outside the workforce,Mato Grosso,952
+2018,Q3,Outside the workforce,Goiás,1961
+2018,Q3,Outside the workforce,Distrito Federal,831
+2018,Q4,Workforce - Employed,Rondônia,794
+2018,Q4,Workforce - Employed,Acre,316
+2018,Q4,Workforce - Employed,Amazonas,1573
+2018,Q4,Workforce - Employed,Roraima,217
+2018,Q4,Workforce - Employed,Pará,3474
+2018,Q4,Workforce - Employed,Amapá,304
+2018,Q4,Workforce - Employed,Tocantins,649
+2018,Q4,Workforce - Employed,Maranhão,2268
+2018,Q4,Workforce - Employed,Piauí,1278
+2018,Q4,Workforce - Employed,Ceará,3675
+2018,Q4,Workforce - Employed,Rio Grande do Norte,1327
+2018,Q4,Workforce - Employed,Paraíba,1524
+2018,Q4,Workforce - Employed,Pernambuco,3548
+2018,Q4,Workforce - Employed,Alagoas,986
+2018,Q4,Workforce - Employed,Sergipe,895
+2018,Q4,Workforce - Employed,Bahia,5753
+2018,Q4,Workforce - Employed,Minas Gerais,10040
+2018,Q4,Workforce - Employed,Espírito Santo,1890
+2018,Q4,Workforce - Employed,Rio de Janeiro,7503
+2018,Q4,Workforce - Employed,São Paulo,22200
+2018,Q4,Workforce - Employed,Paraná,5529
+2018,Q4,Workforce - Employed,Santa Catarina,3618
+2018,Q4,Workforce - Employed,Rio Grande do Sul,5576
+2018,Q4,Workforce - Employed,Mato Grosso do Sul,1335
+2018,Q4,Workforce - Employed,Mato Grosso,1662
+2018,Q4,Workforce - Employed,Goiás,3359
+2018,Q4,Workforce - Employed,Distrito Federal,1444
+2018,Q4,Workforce - Unemployed,Rondônia,78
+2018,Q4,Workforce - Unemployed,Acre,48
+2018,Q4,Workforce - Unemployed,Amazonas,265
+2018,Q4,Workforce - Unemployed,Roraima,35
+2018,Q4,Workforce - Unemployed,Pará,394
+2018,Q4,Workforce - Unemployed,Amapá,74
+2018,Q4,Workforce - Unemployed,Tocantins,75
+2018,Q4,Workforce - Unemployed,Maranhão,371
+2018,Q4,Workforce - Unemployed,Piauí,178
+2018,Q4,Workforce - Unemployed,Ceará,412
+2018,Q4,Workforce - Unemployed,Rio Grande do Norte,205
+2018,Q4,Workforce - Unemployed,Paraíba,188
+2018,Q4,Workforce - Unemployed,Pernambuco,648
+2018,Q4,Workforce - Unemployed,Alagoas,186
+2018,Q4,Workforce - Unemployed,Sergipe,158
+2018,Q4,Workforce - Unemployed,Bahia,1211
+2018,Q4,Workforce - Unemployed,Minas Gerais,1073
+2018,Q4,Workforce - Unemployed,Espírito Santo,215
+2018,Q4,Workforce - Unemployed,Rio de Janeiro,1305
+2018,Q4,Workforce - Unemployed,São Paulo,3149
+2018,Q4,Workforce - Unemployed,Paraná,469
+2018,Q4,Workforce - Unemployed,Santa Catarina,246
+2018,Q4,Workforce - Unemployed,Rio Grande do Sul,448
+2018,Q4,Workforce - Unemployed,Mato Grosso do Sul,100
+2018,Q4,Workforce - Unemployed,Mato Grosso,123
+2018,Q4,Workforce - Unemployed,Goiás,300
+2018,Q4,Workforce - Unemployed,Distrito Federal,198
+2018,Q4,Outside the workforce,Rondônia,526
+2018,Q4,Outside the workforce,Acre,286
+2018,Q4,Outside the workforce,Amazonas,1146
+2018,Q4,Outside the workforce,Roraima,145
+2018,Q4,Outside the workforce,Pará,2681
+2018,Q4,Outside the workforce,Amapá,246
+2018,Q4,Outside the workforce,Tocantins,497
+2018,Q4,Outside the workforce,Maranhão,2714
+2018,Q4,Outside the workforce,Piauí,1152
+2018,Q4,Outside the workforce,Ceará,3226
+2018,Q4,Outside the workforce,Rio Grande do Norte,1307
+2018,Q4,Outside the workforce,Paraíba,1489
+2018,Q4,Outside the workforce,Pernambuco,3403
+2018,Q4,Outside the workforce,Alagoas,1466
+2018,Q4,Outside the workforce,Sergipe,776
+2018,Q4,Outside the workforce,Bahia,4961
+2018,Q4,Outside the workforce,Minas Gerais,6327
+2018,Q4,Outside the workforce,Espírito Santo,1126
+2018,Q4,Outside the workforce,Rio de Janeiro,5740
+2018,Q4,Outside the workforce,São Paulo,12621
+2018,Q4,Outside the workforce,Paraná,3357
+2018,Q4,Outside the workforce,Santa Catarina,2047
+2018,Q4,Outside the workforce,Rio Grande do Sul,3481
+2018,Q4,Outside the workforce,Mato Grosso do Sul,720
+2018,Q4,Outside the workforce,Mato Grosso,918
+2018,Q4,Outside the workforce,Goiás,1947
+2018,Q4,Outside the workforce,Distrito Federal,829
+2019,Q1,Workforce - Employed,Rondônia,789
+2019,Q1,Workforce - Employed,Acre,292
+2019,Q1,Workforce - Employed,Amazonas,1550
+2019,Q1,Workforce - Employed,Roraima,218
+2019,Q1,Workforce - Employed,Pará,3400
+2019,Q1,Workforce - Employed,Amapá,307
+2019,Q1,Workforce - Employed,Tocantins,627
+2019,Q1,Workforce - Employed,Maranhão,2158
+2019,Q1,Workforce - Employed,Piauí,1264
+2019,Q1,Workforce - Employed,Ceará,3620
+2019,Q1,Workforce - Employed,Rio Grande do Norte,1300
+2019,Q1,Workforce - Employed,Paraíba,1488
+2019,Q1,Workforce - Employed,Pernambuco,3536
+2019,Q1,Workforce - Employed,Alagoas,993
+2019,Q1,Workforce - Employed,Sergipe,890
+2019,Q1,Workforce - Employed,Bahia,5724
+2019,Q1,Workforce - Employed,Minas Gerais,9836
+2019,Q1,Workforce - Employed,Espírito Santo,1878
+2019,Q1,Workforce - Employed,Rio de Janeiro,7524
+2019,Q1,Workforce - Employed,São Paulo,22125
+2019,Q1,Workforce - Employed,Paraná,5500
+2019,Q1,Workforce - Employed,Santa Catarina,3568
+2019,Q1,Workforce - Employed,Rio Grande do Sul,5584
+2019,Q1,Workforce - Employed,Mato Grosso do Sul,1291
+2019,Q1,Workforce - Employed,Mato Grosso,1648
+2019,Q1,Workforce - Employed,Goiás,3327
+2019,Q1,Workforce - Employed,Distrito Federal,1424
+2019,Q1,Workforce - Unemployed,Rondônia,77
+2019,Q1,Workforce - Unemployed,Acre,64
+2019,Q1,Workforce - Unemployed,Amazonas,293
+2019,Q1,Workforce - Unemployed,Roraima,39
+2019,Q1,Workforce - Unemployed,Pará,441
+2019,Q1,Workforce - Unemployed,Amapá,77
+2019,Q1,Workforce - Unemployed,Tocantins,88
+2019,Q1,Workforce - Unemployed,Maranhão,420
+2019,Q1,Workforce - Unemployed,Piauí,184
+2019,Q1,Workforce - Unemployed,Ceará,467
+2019,Q1,Workforce - Unemployed,Rio Grande do Norte,209
+2019,Q1,Workforce - Unemployed,Paraíba,186
+2019,Q1,Workforce - Unemployed,Pernambuco,678
+2019,Q1,Workforce - Unemployed,Alagoas,189
+2019,Q1,Workforce - Unemployed,Sergipe,163
+2019,Q1,Workforce - Unemployed,Bahia,1282
+2019,Q1,Workforce - Unemployed,Minas Gerais,1235
+2019,Q1,Workforce - Unemployed,Espírito Santo,260
+2019,Q1,Workforce - Unemployed,Rio de Janeiro,1358
+2019,Q1,Workforce - Unemployed,São Paulo,3448
+2019,Q1,Workforce - Unemployed,Paraná,536
+2019,Q1,Workforce - Unemployed,Santa Catarina,277
+2019,Q1,Workforce - Unemployed,Rio Grande do Sul,485
+2019,Q1,Workforce - Unemployed,Mato Grosso do Sul,135
+2019,Q1,Workforce - Unemployed,Mato Grosso,165
+2019,Q1,Workforce - Unemployed,Goiás,397
+2019,Q1,Workforce - Unemployed,Distrito Federal,233
+2019,Q1,Outside the workforce,Rondônia,528
+2019,Q1,Outside the workforce,Acre,297
+2019,Q1,Outside the workforce,Amazonas,1161
+2019,Q1,Outside the workforce,Roraima,140
+2019,Q1,Outside the workforce,Pará,2718
+2019,Q1,Outside the workforce,Amapá,238
+2019,Q1,Outside the workforce,Tocantins,497
+2019,Q1,Outside the workforce,Maranhão,2800
+2019,Q1,Outside the workforce,Piauí,1159
+2019,Q1,Outside the workforce,Ceará,3257
+2019,Q1,Outside the workforce,Rio Grande do Norte,1311
+2019,Q1,Outside the workforce,Paraíba,1525
+2019,Q1,Outside the workforce,Pernambuco,3421
+2019,Q1,Outside the workforce,Alagoas,1455
+2019,Q1,Outside the workforce,Sergipe,771
+2019,Q1,Outside the workforce,Bahia,5003
+2019,Q1,Outside the workforce,Minas Gerais,6400
+2019,Q1,Outside the workforce,Espírito Santo,1096
+2019,Q1,Outside the workforce,Rio de Janeiro,5712
+2019,Q1,Outside the workforce,São Paulo,12524
+2019,Q1,Outside the workforce,Paraná,3305
+2019,Q1,Outside the workforce,Santa Catarina,2053
+2019,Q1,Outside the workforce,Rio Grande do Sul,3481
+2019,Q1,Outside the workforce,Mato Grosso do Sul,722
+2019,Q1,Outside the workforce,Mato Grosso,908
+2019,Q1,Outside the workforce,Goiás,1942
+2019,Q1,Outside the workforce,Distrito Federal,823
+2019,Q2,Workforce - Employed,Rondônia,805
+2019,Q2,Workforce - Employed,Acre,308
+2019,Q2,Workforce - Employed,Amazonas,1626
+2019,Q2,Workforce - Employed,Roraima,212
+2019,Q2,Workforce - Employed,Pará,3411
+2019,Q2,Workforce - Employed,Amapá,336
+2019,Q2,Workforce - Employed,Tocantins,640
+2019,Q2,Workforce - Employed,Maranhão,2231
+2019,Q2,Workforce - Employed,Piauí,1273
+2019,Q2,Workforce - Employed,Ceará,3679
+2019,Q2,Workforce - Employed,Rio Grande do Norte,1331
+2019,Q2,Workforce - Employed,Paraíba,1482
+2019,Q2,Workforce - Employed,Pernambuco,3513
+2019,Q2,Workforce - Employed,Alagoas,1048
+2019,Q2,Workforce - Employed,Sergipe,924
+2019,Q2,Workforce - Employed,Bahia,5805
+2019,Q2,Workforce - Employed,Minas Gerais,10193
+2019,Q2,Workforce - Employed,Espírito Santo,1947
+2019,Q2,Workforce - Employed,Rio de Janeiro,7504
+2019,Q2,Workforce - Employed,São Paulo,22479
+2019,Q2,Workforce - Employed,Paraná,5529
+2019,Q2,Workforce - Employed,Santa Catarina,3608
+2019,Q2,Workforce - Employed,Rio Grande do Sul,5631
+2019,Q2,Workforce - Employed,Mato Grosso do Sul,1335
+2019,Q2,Workforce - Employed,Mato Grosso,1695
+2019,Q2,Workforce - Employed,Goiás,3348
+2019,Q2,Workforce - Employed,Distrito Federal,1451
+2019,Q2,Workforce - Unemployed,Rondônia,58
+2019,Q2,Workforce - Unemployed,Acre,48
+2019,Q2,Workforce - Unemployed,Amazonas,262
+2019,Q2,Workforce - Unemployed,Roraima,37
+2019,Q2,Workforce - Unemployed,Pará,429
+2019,Q2,Workforce - Unemployed,Amapá,68
+2019,Q2,Workforce - Unemployed,Tocantins,83
+2019,Q2,Workforce - Unemployed,Maranhão,380
+2019,Q2,Workforce - Unemployed,Piauí,186
+2019,Q2,Workforce - Unemployed,Ceará,449
+2019,Q2,Workforce - Unemployed,Rio Grande do Norte,191
+2019,Q2,Workforce - Unemployed,Paraíba,201
+2019,Q2,Workforce - Unemployed,Pernambuco,671
+2019,Q2,Workforce - Unemployed,Alagoas,179
+2019,Q2,Workforce - Unemployed,Sergipe,167
+2019,Q2,Workforce - Unemployed,Bahia,1215
+2019,Q2,Workforce - Unemployed,Minas Gerais,1077
+2019,Q2,Workforce - Unemployed,Espírito Santo,239
+2019,Q2,Workforce - Unemployed,Rio de Janeiro,1338
+2019,Q2,Workforce - Unemployed,São Paulo,3310
+2019,Q2,Workforce - Unemployed,Paraná,545
+2019,Q2,Workforce - Unemployed,Santa Catarina,231
+2019,Q2,Workforce - Unemployed,Rio Grande do Sul,505
+2019,Q2,Workforce - Unemployed,Mato Grosso do Sul,120
+2019,Q2,Workforce - Unemployed,Mato Grosso,153
+2019,Q2,Workforce - Unemployed,Goiás,393
+2019,Q2,Workforce - Unemployed,Distrito Federal,230
+2019,Q2,Outside the workforce,Rondônia,540
+2019,Q2,Outside the workforce,Acre,295
+2019,Q2,Outside the workforce,Amazonas,1093
+2019,Q2,Outside the workforce,Roraima,148
+2019,Q2,Outside the workforce,Pará,2717
+2019,Q2,Outside the workforce,Amapá,236
+2019,Q2,Outside the workforce,Tocantins,500
+2019,Q2,Outside the workforce,Maranhão,2792
+2019,Q2,Outside the workforce,Piauí,1141
+2019,Q2,Outside the workforce,Ceará,3208
+2019,Q2,Outside the workforce,Rio Grande do Norte,1319
+2019,Q2,Outside the workforce,Paraíba,1535
+2019,Q2,Outside the workforce,Pernambuco,3487
+2019,Q2,Outside the workforce,Alagoas,1417
+2019,Q2,Outside the workforce,Sergipe,748
+2019,Q2,Outside the workforce,Bahia,4991
+2019,Q2,Outside the workforce,Minas Gerais,6300
+2019,Q2,Outside the workforce,Espírito Santo,1054
+2019,Q2,Outside the workforce,Rio de Janeiro,5786
+2019,Q2,Outside the workforce,São Paulo,12345
+2019,Q2,Outside the workforce,Paraná,3277
+2019,Q2,Outside the workforce,Santa Catarina,2089
+2019,Q2,Outside the workforce,Rio Grande do Sul,3437
+2019,Q2,Outside the workforce,Mato Grosso do Sul,690
+2019,Q2,Outside the workforce,Mato Grosso,865
+2019,Q2,Outside the workforce,Goiás,1944
+2019,Q2,Outside the workforce,Distrito Federal,801
+2019,Q3,Workforce - Employed,Rondônia,808
+2019,Q3,Workforce - Employed,Acre,309
+2019,Q3,Workforce - Employed,Amazonas,1649
+2019,Q3,Workforce - Employed,Roraima,211
+2019,Q3,Workforce - Employed,Pará,3470
+2019,Q3,Workforce - Employed,Amapá,326
+2019,Q3,Workforce - Employed,Tocantins,646
+2019,Q3,Workforce - Employed,Maranhão,2266
+2019,Q3,Workforce - Employed,Piauí,1336
+2019,Q3,Workforce - Employed,Ceará,3675
+2019,Q3,Workforce - Employed,Rio Grande do Norte,1321
+2019,Q3,Workforce - Employed,Paraíba,1491
+2019,Q3,Workforce - Employed,Pernambuco,3494
+2019,Q3,Workforce - Employed,Alagoas,1027
+2019,Q3,Workforce - Employed,Sergipe,925
+2019,Q3,Workforce - Employed,Bahia,5802
+2019,Q3,Workforce - Employed,Minas Gerais,10219
+2019,Q3,Workforce - Employed,Espírito Santo,1930
+2019,Q3,Workforce - Employed,Rio de Janeiro,7575
+2019,Q3,Workforce - Employed,São Paulo,22707
+2019,Q3,Workforce - Employed,Paraná,5544
+2019,Q3,Workforce - Employed,Santa Catarina,3619
+2019,Q3,Workforce - Employed,Rio Grande do Sul,5570
+2019,Q3,Workforce - Employed,Mato Grosso do Sul,1323
+2019,Q3,Workforce - Employed,Mato Grosso,1698
+2019,Q3,Workforce - Employed,Goiás,3407
+2019,Q3,Workforce - Employed,Distrito Federal,1456
+2019,Q3,Workforce - Unemployed,Rondônia,72
+2019,Q3,Workforce - Unemployed,Acre,45
+2019,Q3,Workforce - Unemployed,Amazonas,252
+2019,Q3,Workforce - Unemployed,Roraima,37
+2019,Q3,Workforce - Unemployed,Pará,437
+2019,Q3,Workforce - Unemployed,Amapá,66
+2019,Q3,Workforce - Unemployed,Tocantins,76
+2019,Q3,Workforce - Unemployed,Maranhão,373
+2019,Q3,Workforce - Unemployed,Piauí,195
+2019,Q3,Workforce - Unemployed,Ceará,467
+2019,Q3,Workforce - Unemployed,Rio Grande do Norte,204
+2019,Q3,Workforce - Unemployed,Paraíba,189
+2019,Q3,Workforce - Unemployed,Pernambuco,658
+2019,Q3,Workforce - Unemployed,Alagoas,186
+2019,Q3,Workforce - Unemployed,Sergipe,159
+2019,Q3,Workforce - Unemployed,Bahia,1170
+2019,Q3,Workforce - Unemployed,Minas Gerais,1123
+2019,Q3,Workforce - Unemployed,Espírito Santo,228
+2019,Q3,Workforce - Unemployed,Rio de Janeiro,1287
+2019,Q3,Workforce - Unemployed,São Paulo,3093
+2019,Q3,Workforce - Unemployed,Paraná,544
+2019,Q3,Workforce - Unemployed,Santa Catarina,222
+2019,Q3,Workforce - Unemployed,Rio Grande do Sul,540
+2019,Q3,Workforce - Unemployed,Mato Grosso do Sul,108
+2019,Q3,Workforce - Unemployed,Mato Grosso,148
+2019,Q3,Workforce - Unemployed,Goiás,414
+2019,Q3,Workforce - Unemployed,Distrito Federal,221
+2019,Q3,Outside the workforce,Rondônia,526
+2019,Q3,Outside the workforce,Acre,301
+2019,Q3,Outside the workforce,Amazonas,1087
+2019,Q3,Outside the workforce,Roraima,148
+2019,Q3,Outside the workforce,Pará,2698
+2019,Q3,Outside the workforce,Amapá,240
+2019,Q3,Outside the workforce,Tocantins,512
+2019,Q3,Outside the workforce,Maranhão,2774
+2019,Q3,Outside the workforce,Piauí,1095
+2019,Q3,Outside the workforce,Ceará,3213
+2019,Q3,Outside the workforce,Rio Grande do Norte,1288
+2019,Q3,Outside the workforce,Paraíba,1549
+2019,Q3,Outside the workforce,Pernambuco,3514
+2019,Q3,Outside the workforce,Alagoas,1441
+2019,Q3,Outside the workforce,Sergipe,758
+2019,Q3,Outside the workforce,Bahia,5017
+2019,Q3,Outside the workforce,Minas Gerais,6252
+2019,Q3,Outside the workforce,Espírito Santo,1090
+2019,Q3,Outside the workforce,Rio de Janeiro,5825
+2019,Q3,Outside the workforce,São Paulo,12353
+2019,Q3,Outside the workforce,Paraná,3287
+2019,Q3,Outside the workforce,Santa Catarina,2118
+2019,Q3,Outside the workforce,Rio Grande do Sul,3443
+2019,Q3,Outside the workforce,Mato Grosso do Sul,726
+2019,Q3,Outside the workforce,Mato Grosso,871
+2019,Q3,Outside the workforce,Goiás,1910
+2019,Q3,Outside the workforce,Distrito Federal,806
+2019,Q4,Workforce - Employed,Rondônia,807
+2019,Q4,Workforce - Employed,Acre,304
+2019,Q4,Workforce - Employed,Amazonas,1657
+2019,Q4,Workforce - Employed,Roraima,218
+2019,Q4,Workforce - Employed,Pará,3521
+2019,Q4,Workforce - Employed,Amapá,332
+2019,Q4,Workforce - Employed,Tocantins,651
+2019,Q4,Workforce - Employed,Maranhão,2323
+2019,Q4,Workforce - Employed,Piauí,1300
+2019,Q4,Workforce - Employed,Ceará,3763
+2019,Q4,Workforce - Employed,Rio Grande do Norte,1322
+2019,Q4,Workforce - Employed,Paraíba,1473
+2019,Q4,Workforce - Employed,Pernambuco,3601
+2019,Q4,Workforce - Employed,Alagoas,1013
+2019,Q4,Workforce - Employed,Sergipe,948
+2019,Q4,Workforce - Employed,Bahia,5809
+2019,Q4,Workforce - Employed,Minas Gerais,10243
+2019,Q4,Workforce - Employed,Espírito Santo,1932
+2019,Q4,Workforce - Employed,Rio de Janeiro,7651
+2019,Q4,Workforce - Employed,São Paulo,22779
+2019,Q4,Workforce - Employed,Paraná,5605
+2019,Q4,Workforce - Employed,Santa Catarina,3695
+2019,Q4,Workforce - Employed,Rio Grande do Sul,5728
+2019,Q4,Workforce - Employed,Mato Grosso do Sul,1329
+2019,Q4,Workforce - Employed,Mato Grosso,1693
+2019,Q4,Workforce - Employed,Goiás,3406
+2019,Q4,Workforce - Employed,Distrito Federal,1451
+2019,Q4,Workforce - Unemployed,Rondônia,70
+2019,Q4,Workforce - Unemployed,Acre,48
+2019,Q4,Workforce - Unemployed,Amazonas,246
+2019,Q4,Workforce - Unemployed,Roraima,38
+2019,Q4,Workforce - Unemployed,Pará,356
+2019,Q4,Workforce - Unemployed,Amapá,61
+2019,Q4,Workforce - Unemployed,Tocantins,65
+2019,Q4,Workforce - Unemployed,Maranhão,321
+2019,Q4,Workforce - Unemployed,Piauí,195
+2019,Q4,Workforce - Unemployed,Ceará,423
+2019,Q4,Workforce - Unemployed,Rio Grande do Norte,191
+2019,Q4,Workforce - Unemployed,Paraíba,202
+2019,Q4,Workforce - Unemployed,Pernambuco,586
+2019,Q4,Workforce - Unemployed,Alagoas,159
+2019,Q4,Workforce - Unemployed,Sergipe,165
+2019,Q4,Workforce - Unemployed,Bahia,1141
+2019,Q4,Workforce - Unemployed,Minas Gerais,1071
+2019,Q4,Workforce - Unemployed,Espírito Santo,222
+2019,Q4,Workforce - Unemployed,Rio de Janeiro,1216
+2019,Q4,Workforce - Unemployed,São Paulo,2953
+2019,Q4,Workforce - Unemployed,Paraná,441
+2019,Q4,Workforce - Unemployed,Santa Catarina,209
+2019,Q4,Workforce - Unemployed,Rio Grande do Sul,441
+2019,Q4,Workforce - Unemployed,Mato Grosso do Sul,93
+2019,Q4,Workforce - Unemployed,Mato Grosso,116
+2019,Q4,Workforce - Unemployed,Goiás,396
+2019,Q4,Workforce - Unemployed,Distrito Federal,208
+2019,Q4,Outside the workforce,Rondônia,534
+2019,Q4,Outside the workforce,Acre,311
+2019,Q4,Outside the workforce,Amazonas,1122
+2019,Q4,Outside the workforce,Roraima,147
+2019,Q4,Outside the workforce,Pará,2764
+2019,Q4,Outside the workforce,Amapá,235
+2019,Q4,Outside the workforce,Tocantins,526
+2019,Q4,Outside the workforce,Maranhão,2789
+2019,Q4,Outside the workforce,Piauí,1137
+2019,Q4,Outside the workforce,Ceará,3224
+2019,Q4,Outside the workforce,Rio Grande do Norte,1313
+2019,Q4,Outside the workforce,Paraíba,1552
+2019,Q4,Outside the workforce,Pernambuco,3560
+2019,Q4,Outside the workforce,Alagoas,1470
+2019,Q4,Outside the workforce,Sergipe,728
+2019,Q4,Outside the workforce,Bahia,5039
+2019,Q4,Outside the workforce,Minas Gerais,6326
+2019,Q4,Outside the workforce,Espírito Santo,1134
+2019,Q4,Outside the workforce,Rio de Janeiro,5875
+2019,Q4,Outside the workforce,São Paulo,12430
+2019,Q4,Outside the workforce,Paraná,3328
+2019,Q4,Outside the workforce,Santa Catarina,2083
+2019,Q4,Outside the workforce,Rio Grande do Sul,3386
+2019,Q4,Outside the workforce,Mato Grosso do Sul,756
+2019,Q4,Outside the workforce,Mato Grosso,906
+2019,Q4,Outside the workforce,Goiás,1923
+2019,Q4,Outside the workforce,Distrito Federal,833
+2020,Q1,Workforce - Employed,Rondônia,809
+2020,Q1,Workforce - Employed,Acre,293
+2020,Q1,Workforce - Employed,Amazonas,1637
+2020,Q1,Workforce - Employed,Roraima,213
+2020,Q1,Workforce - Employed,Pará,3469
+2020,Q1,Workforce - Employed,Amapá,322
+2020,Q1,Workforce - Employed,Tocantins,640
+2020,Q1,Workforce - Employed,Maranhão,2211
+2020,Q1,Workforce - Employed,Piauí,1232
+2020,Q1,Workforce - Employed,Ceará,3609
+2020,Q1,Workforce - Employed,Rio Grande do Norte,1303
+2020,Q1,Workforce - Employed,Paraíba,1428
+2020,Q1,Workforce - Employed,Pernambuco,3488
+2020,Q1,Workforce - Employed,Alagoas,1004
+2020,Q1,Workforce - Employed,Sergipe,906
+2020,Q1,Workforce - Employed,Bahia,5700
+2020,Q1,Workforce - Employed,Minas Gerais,9862
+2020,Q1,Workforce - Employed,Espírito Santo,1898
+2020,Q1,Workforce - Employed,Rio de Janeiro,7526
+2020,Q1,Workforce - Employed,São Paulo,22264
+2020,Q1,Workforce - Employed,Paraná,5524
+2020,Q1,Workforce - Employed,Santa Catarina,3595
+2020,Q1,Workforce - Employed,Rio Grande do Sul,5579
+2020,Q1,Workforce - Employed,Mato Grosso do Sul,1292
+2020,Q1,Workforce - Employed,Mato Grosso,1679
+2020,Q1,Workforce - Employed,Goiás,3311
+2020,Q1,Workforce - Employed,Distrito Federal,1428
+2020,Q1,Workforce - Unemployed,Rondônia,74
+2020,Q1,Workforce - Unemployed,Acre,46
+2020,Q1,Workforce - Unemployed,Amazonas,277
+2020,Q1,Workforce - Unemployed,Roraima,42
+2020,Q1,Workforce - Unemployed,Pará,413
+2020,Q1,Workforce - Unemployed,Amapá,67
+2020,Q1,Workforce - Unemployed,Tocantins,81
+2020,Q1,Workforce - Unemployed,Maranhão,424
+2020,Q1,Workforce - Unemployed,Piauí,195
+2020,Q1,Workforce - Unemployed,Ceará,496
+2020,Q1,Workforce - Unemployed,Rio Grande do Norte,237
+2020,Q1,Workforce - Unemployed,Paraíba,228
+2020,Q1,Workforce - Unemployed,Pernambuco,593
+2020,Q1,Workforce - Unemployed,Alagoas,199
+2020,Q1,Workforce - Unemployed,Sergipe,166
+2020,Q1,Workforce - Unemployed,Bahia,1311
+2020,Q1,Workforce - Unemployed,Minas Gerais,1283
+2020,Q1,Workforce - Unemployed,Espírito Santo,238
+2020,Q1,Workforce - Unemployed,Rio de Janeiro,1277
+2020,Q1,Workforce - Unemployed,São Paulo,3096
+2020,Q1,Workforce - Unemployed,Paraná,477
+2020,Q1,Workforce - Unemployed,Santa Catarina,215
+2020,Q1,Workforce - Unemployed,Rio Grande do Sul,504
+2020,Q1,Workforce - Unemployed,Mato Grosso do Sul,107
+2020,Q1,Workforce - Unemployed,Mato Grosso,156
+2020,Q1,Workforce - Unemployed,Goiás,423
+2020,Q1,Workforce - Unemployed,Distrito Federal,226
+2020,Q1,Outside the workforce,Rondônia,534
+2020,Q1,Outside the workforce,Acre,322
+2020,Q1,Outside the workforce,Amazonas,1139
+2020,Q1,Outside the workforce,Roraima,153
+2020,Q1,Outside the workforce,Pará,2761
+2020,Q1,Outside the workforce,Amapá,248
+2020,Q1,Outside the workforce,Tocantins,532
+2020,Q1,Outside the workforce,Maranhão,2831
+2020,Q1,Outside the workforce,Piauí,1180
+2020,Q1,Outside the workforce,Ceará,3342
+2020,Q1,Outside the workforce,Rio Grande do Norte,1296
+2020,Q1,Outside the workforce,Paraíba,1562
+2020,Q1,Outside the workforce,Pernambuco,3781
+2020,Q1,Outside the workforce,Alagoas,1425
+2020,Q1,Outside the workforce,Sergipe,766
+2020,Q1,Outside the workforce,Bahia,5031
+2020,Q1,Outside the workforce,Minas Gerais,6545
+2020,Q1,Outside the workforce,Espírito Santo,1165
+2020,Q1,Outside the workforce,Rio de Janeiro,6022
+2020,Q1,Outside the workforce,São Paulo,13004
+2020,Q1,Outside the workforce,Paraná,3396
+2020,Q1,Outside the workforce,Santa Catarina,2195
+2020,Q1,Outside the workforce,Rio Grande do Sul,3487
+2020,Q1,Outside the workforce,Mato Grosso do Sul,780
+2020,Q1,Outside the workforce,Mato Grosso,905
+2020,Q1,Outside the workforce,Goiás,2014
+2020,Q1,Outside the workforce,Distrito Federal,864
